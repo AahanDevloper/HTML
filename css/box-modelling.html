@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Box model</title>
+        <style>
+            .container-one{
+                background-color: aqua;
+                width: 175px;
+                height: 175px;
+                border-style: solid;
+                border-color: red;
+                border-width: 10px;
+                margin-top: 50px;
+            }
+            .container-three{
+                width: 400px;
+                height: 400px;
+                margin-left: 500px;
+                background-color: aqua;
+            }
+            .child-div-one{
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                border-style: solid;
+                border-width: 3px;
+                margin-left: 150px;
+            }
+            .child-div-two{
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                border-style: solid;
+                margin-left: 150px;
+            }
+            .child-div-three{
+                width: 100px;
+                height: 100px;
+                background-color: aquamarine;
+                border-style: solid;
+                margin-left: 150px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-one"></div>
+        <br>
+        <div class="container-three">
+            <div class="child-div-one"></div>
+            <br>
+            <div class="child-div-two"></div>
+            <br>
+            <div class="child-div-three"></div>
+        </div>
+    </body>
+</html>
