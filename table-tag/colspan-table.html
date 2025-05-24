@@ -1,33 +1,97 @@
 <!DOCTYPE html>
 <html lang>
     <head>
-        <title>Colspan Table</title>
+        <title>Colspan table</title>
         <style>
+            .table{
+                width: 600px;
+                height: 350px;
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+                border-collapse: collapse;
+            }
+            .td-one{
+                width: 26%;
+                height: 175px;
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+            }
+            .td-two{
+                width: 74%;
+                height: 175px;
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+
+            }
+            .td-three{
+                width: 70%;
+                height: 175px;
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+            }
+            .td-four{
+                width: 30%;
+                height: 175px;
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+            }
             table{
-                width: 90%;
-                height: 600px;
-                background-color: aquamarine;
+                border-collapse: collapse;
+                border-style: solid;
+                border-color: black;
+                border-width: 3px;
+
             }
             td{
-                background-color: lightskyblue;
+                border-style: solid;
+                border-color: black;
+                border-width: 2px;
+                width: 145px;
+                height: 160px;
+            }
+            .tr-one{
+                height: 70px;
+            }
+            .tr-one-td{
+                height: 70px;
             }
         </style>
     </head>
     <body>
-        <h1>This is a colspan table</h1>
+        <table class="table">
+            <!-- row one -->
+            <tr>
+                <td class="td-one"></td>
+                <td colspan="3" class="td-two"></td>
+            </tr>
+            <!-- row two -->
+            <tr>
+                <td colspan="3" class="td-three"></td>
+                <td colspan="td-four"></td>
+            </tr>
+        </table>
+        <br>
         <table>
+            <!-- row one -->
+            <tr class="tr-one">
+                <td class="tr-one-td"></td>
+                <td class="tr-one-td"></td>
+                <td class="tr-one-td"></td>
+                <td class="tr-one-td"></td>
+            </tr>
+            <!-- row two -->
             <tr>
+                <td rowspan="2"></td>
                 <td colspan="3"></td>
             </tr>
+            <!-- row three -->
             <tr>
                 <td colspan="3"></td>
-                <td></td>
-                <td></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
             </tr>
         </table>
     </body>
