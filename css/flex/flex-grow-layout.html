@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flex Grow Property: Layout</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        /* row one */
+        .container-1 {
+            width: 100%;
+            height: 30%;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .box{
+            height: 90%;
+            flex-grow: 1;
+            background-color: orange;
+        }
+
+        /* row two */
+        .container-2 {
+            width: 100%;
+            height: 30%;
+            background-color: aqua;
+            display: flex;
+            justify-content: space-evenly;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .row-2-box-1 {
+            height: 90%;
+            flex-grow: 2.5;
+            background-color: orange;
+        }
+
+        .row-2-box-2 {
+            height: 90%;
+            flex-grow: 4;
+            background-color: orange;
+        }
+
+        .row-2-box-3 {
+            height: 90%;
+            flex-grow: 1;
+            background-color: orange;
+        }
+
+        /* row three */
+        .container-3 {
+            width: 100%;
+            height: 30%;
+            background-color: aqua;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .row-3-box-1{
+            height: 90%;
+            flex-grow: 1;
+            background-color: orange;
+        }
+        .row-3-box-2{
+            height: 90%;
+            flex-grow: 1;
+            background-color: orange;
+        }
+        .row-3-box-3{
+            height: 90%;
+            flex-grow: 1;
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="container-1">
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <div class="container-2">
+            <div class="row-2-box-1"></div>
+            <div class="row-2-box-2"></div>
+            <div class="row-2-box-3"></div>
+        </div>
+        <div class="container-3">
+            <div class="row-3-box-1"></div>
+            <div class="row-3-box-2"></div>
+            <div class="row-3-box-3"></div>
+        </div>
+    </div>
+</body>
+
+</html>

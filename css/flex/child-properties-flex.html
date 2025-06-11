@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Flex Child Properties</title>
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            .main-container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+            }
+            .box-1{
+                width: 200px;
+                height: 200px;
+                background-color: aqua;
+            }
+            .box-2{
+                flex-basis: 500px;
+                width: 200px;
+                height: 200px;
+                background-color: lightskyblue;
+            }
+            .box-3{
+                width: 200px;
+                height: 200px;
+                background-color: violet;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+        </div>
+    </body>
+</html>

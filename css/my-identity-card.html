@@ -3,7 +3,7 @@
     <head>
         <title>My Identity</title>
         <style>
-            .box-a{
+            .box-1{
                 width: 300px;
                 height: 500px;
                 background-color: white;
@@ -11,7 +11,7 @@
                 border-style: solid;
                 border-radius: 50px;
             }
-            .box-c{
+            .box-2{
                 width: 125px;
                 height: 125px;
                 border-style: solid;
@@ -37,29 +37,40 @@
                 margin-left: 5px;
                 margin-right: 5px;
             }
-            .box-d{
-                width: 100px;
-                height: 35px;
-                margin-left: 100px;
-                border-radius: 17px;
-                background-color: green;
-                padding-top: 13px;
+            button{
+                width: 45%;
+                padding: 7px;
+                background-color: transparent;
+                font-size: 20px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                justify-self: center;
+                border-radius: 10px;
+                margin-top: 40px;
             }
             a{
                 color: white;
             }
+            button:hover{
+                background-color: green;
+                border-style: solid;
+                border-color: green;
+                color: white;
+            }
+            a{
+                text-decoration: none;
+            }
         </style>
     </head>
     <body>
-        <div class="box-a">
-            <div class="box-b">
-                <div class="box-c"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpLhKv0KjeSHDcQiAQBcnWm1WtbhM4TeS9g&s" width="125px" height="125px"></div>
-            </div>
+        <div class="box-1">
+                <div class="box-2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOpLhKv0KjeSHDcQiAQBcnWm1WtbhM4TeS9g&s" width="125px" height="125px"></div>
             <h2>Aahan Jiwani</h2>
             <p>Web Developer</p>
             <h4>Passionate about creating user-friendly and visually appealing websites. Loves coding and coffee !!!</h4>
             <a href="../contact.html">
-                <div class="box-d">Contact Me</div></a>
+                <button>Contact Me</button></a>
         </div>
     </body>
 </html>
