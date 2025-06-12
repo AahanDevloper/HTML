@@ -71,6 +71,7 @@ article{
     height: 50%;
     background-color: rgb(210, 210, 210);
     display: flex;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
@@ -93,6 +94,105 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+@media (max-width:280px) {
+    body{
+        height: 60vh;
+    }
+    article{
+        flex-direction: column;
+        gap: 10px;
+    }
+    span{
+        font-size: 7px;
+    }
+    .box-1{
+        width: 50%;
+    }
+    .box-2{
+        width: 50%;
+    }
+    .card{
+        width: 80%;
+        height: 20%;
+    }
+    section{
+        flex-direction: column;
+    }
+}
+@media (min-width:280px) and (max-width:480px) {
+    body{
+        height: 80vh;
+    }
+    article{
+        flex-direction: column;
+        gap: 13px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .box-1{
+        width: 50%;
+    }
+    .box-2{
+        width: 50%;
+    }
+    .card{
+        width: 80%;
+        height: 20%;
+    }
+    section{
+        flex-direction: column;
+    }
+}
+@media (min-width:280px) and (max-width:480px) {
+    body{
+        height: 80vh;
+    }
+    article{
+        flex-direction: column;
+        gap: 13px;
+    }
+    span{
+        font-size: 10px;
+    }
+    .box-1{
+        width: 50%;
+    }
+    .box-2{
+        width: 50%;
+    }
+    .card{
+        width: 80%;
+        height: 20%;
+    }
+    section{
+        flex-direction: column;
+    }
+}
+@media (min-width:700px) and (max-width:1024px){
+    span{
+        font-size: 20px;
+    }
+    .card{
+        width: 80%;
+        height: 20%;
+    }
+    section{
+        flex-direction: column;
+    }
+}
+@media (min-width:480px) and (max-width:699px){
+    span{
+        font-size: 17px;
+    }
+    .card{
+        width: 80%;
+        height: 20%;
+    }
+    section{
+        flex-direction: column;
+    }
 }
 h2{
     color: rgb(240, 240, 240);
