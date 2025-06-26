@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Nav Bar</title>
+        <!-- codify styling starts -->
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            header{
+                width: 100%;
+                height: 80px;
+                background-color: rgb(71, 49, 49);
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-content: center;
+            }
+            span{
+                font-size: 25px;
+                font-weight: 700;
+                font-family: fantasy;
+                color: white;
+            }
+            /* nav tag styling */
+            nav{
+                width: 100%;
+                height: 80px;
+                display: flex;
+                flex-direction: row;
+                background-color: rgb(123, 66, 66);
+            }
+            /* styling for left side */
+            .left-side{
+                width: 50%;
+                height: 100%;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                font-family: fantasy;
+                padding-left: 50px;
+                color: white;
+                font-size: 25px;
+            }
+            /* styling for right side */
+            .right-side{
+                width: 50%;
+                height: 100%;
+            }
+            /*  unordered list & list tag */
+            ul{
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+            li{
+                list-style-type: none;
+                font-size: 30px;
+                font-weight: 600;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- header -->
+        <header>
+            <span>Welcome to Codify</span>
+        </header>
+        <!-- navigation bar -->
+        <nav>
+            <div class="left-side">Codify</div>
+            <div class="right-side">
+                <!-- unordered list  -->
+                <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Pages</li>
+                <li>Contact</li>
+            </ul></div>
+        </nav>
+    </body>
+</html>
