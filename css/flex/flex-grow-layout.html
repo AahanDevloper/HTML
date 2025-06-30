@@ -4,15 +4,19 @@
 <head>
     <title>Flex Grow Property: Layout</title>
     <style>
+        /* css starts */
+        /* body */
         body {
             width: 100vw;
             height: 100vh;
             margin: 0;
             padding: 0;
+            display: flex;
+            justify-content: center;
         }
 
         .main-container {
-            width: 100%;
+            width: 90%;
             height: 100%;
             display: flex;
             flex-direction: column;
@@ -36,7 +40,7 @@
             background-color: orange;
         }
 
-        /* row two */
+        /* row two container and boxes */
         .container-2 {
             width: 100%;
             height: 30%;
@@ -65,7 +69,7 @@
             background-color: orange;
         }
 
-        /* row three */
+        /* row two container and boxes */
         .container-3 {
             width: 100%;
             height: 30%;
@@ -93,18 +97,23 @@
 </head>
 
 <body>
+    <!-- main container -->
     <div class="main-container">
+        <!-- three divisions : container : 1, 2 and 3 -->
         <div class="container-1">
+            <!-- child divisions -->
             <div class="box"></div>
             <div class="box"></div>
             <div class="box"></div>
         </div>
         <div class="container-2">
+            <!-- child divisions -->
             <div class="row-2-box-1"></div>
             <div class="row-2-box-2"></div>
             <div class="row-2-box-3"></div>
         </div>
         <div class="container-3">
+            <!-- child divisions -->
             <div class="row-3-box-1"></div>
             <div class="row-3-box-2"></div>
             <div class="row-3-box-3"></div>

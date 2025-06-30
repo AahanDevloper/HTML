@@ -1,9 +1,11 @@
+/* web page external css */
 body{
     width: 100vw;
     height: 100vh;
     margin: 0;
     padding: 0;
 }
+/* header contains logo & links */
 header{
     width: 100%;
     height: 10%;
@@ -20,6 +22,7 @@ header{
     align-items: center;
     justify-content: center;
 }
+/* links */
 .links{
     font-size: 30px;
     width: 50%;
@@ -29,6 +32,7 @@ header{
     justify-content: space-around;
     align-items: center;
 }
+/* nav bar */
 nav{
     width: 100%;
     height: 10%;
@@ -45,6 +49,7 @@ span{
     align-items: center;
     justify-content: center;
 }
+/* main section css */
 main{
     width: 100%;
     height: 70%;
@@ -58,6 +63,7 @@ section{
     align-items: center;
     background-color: rgb(210, 210, 210);
 }
+/* cards css */
 .card{
     width: 20%;
     height: 80%;
@@ -75,6 +81,7 @@ article{
     justify-content: space-evenly;
     align-items: center;
 }
+/* boxes : box-1/2/3 */
 .box-1{
     width: 36%;
     height: 85%;
@@ -95,6 +102,16 @@ footer{
     align-items: center;
     justify-content: center;
 }
+h2{
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+p{
+    color: rgb(240, 240, 240);
+    text-align: center;
+}
+/* media query starts */
+/* for very small screens */
 @media (max-width:280px) {
     body{
         height: 60vh;
@@ -120,6 +137,7 @@ footer{
         flex-direction: column;
     }
 }
+/* for small mobile screens  */
 @media (min-width:280px) and (max-width:480px) {
     body{
         height: 80vh;
@@ -145,31 +163,7 @@ footer{
         flex-direction: column;
     }
 }
-@media (min-width:280px) and (max-width:480px) {
-    body{
-        height: 80vh;
-    }
-    article{
-        flex-direction: column;
-        gap: 13px;
-    }
-    span{
-        font-size: 10px;
-    }
-    .box-1{
-        width: 50%;
-    }
-    .box-2{
-        width: 50%;
-    }
-    .card{
-        width: 80%;
-        height: 20%;
-    }
-    section{
-        flex-direction: column;
-    }
-}
+/* for computers and tabs */
 @media (min-width:700px) and (max-width:1024px){
     span{
         font-size: 20px;
@@ -193,12 +187,4 @@ footer{
     section{
         flex-direction: column;
     }
-}
-h2{
-    color: rgb(240, 240, 240);
-    text-align: center;
-}
-p{
-    color: rgb(240, 240, 240);
-    text-align: center;
 }

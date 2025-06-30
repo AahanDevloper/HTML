@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- dash board with flex css -->
 <head>
     <title>Dashboard</title>
     <style>
+        /* css starts */
         body {
             width: 100vw;
             height: 100vh;
@@ -23,7 +24,7 @@
             border-color: black;
             border-radius: 10px;
         }
-
+        /* top container styling */
         .top-container {
             width: 100%;
             height: 25%;
@@ -31,7 +32,7 @@
             align-items: center;
             justify-content: center;
         }
-
+        /* heading */
         .heading {
             display: flex;
             flex-direction: row;
@@ -40,7 +41,7 @@
             color: blue;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         }
-
+        /* bottom container */
         .bottom-container {
             width: 100%;
             height: 75%;
@@ -55,6 +56,7 @@
             height: 80%;
             background-color: #f0f0f0;
             text-align: center;
+            border-radius: 10px;
         }
 
         .box-icon {
@@ -82,29 +84,41 @@
 </head>
 
 <body>
+    <!-- main container -->
     <div class="main-container">
+        <!-- two containers  -->
+         <!-- top container -->
         <div class="top-container">
             <div class="heading">Dashboard Overview</div>
         </div>
+        <!-- bottom container -->
         <div class="bottom-container">
+            <!-- child box 1 -->
+             <!-- revenue -->
             <div class="box">
                 <span class="box-icon">📈</span>
                 <div class="box-title">Total Revenue</div>
                 <div class="box-value">12,000</div>
                 <div class="box-text red-text"><i>- 5% from last Month</i></div>
             </div>
+            <!-- child box 2 -->
+             <!-- new users -->
             <div class="box">
                 <span class="box-icon">👥</span>
                 <div class="box-title">New Users</div>
                 <div class="box-value">150</div>
                 <div class="box-text green-text"><i>+ 8% from last Month</i></div>
             </div>
+            <!-- child box 3 -->
+             <!-- orders -->
             <div class="box">
                 <span class="box-icon">📦</span>
                 <div class="box-title">Orders</div>
                 <div class="box-value">200</div>
                 <div class="box-text green-text"><i>+ 3% from last Month</i></div>
             </div>
+            <!-- child box 4 -->
+             <!-- satisfaction -->
             <div class="box"><span class="box-icon">⭐</span>
                 <div class="box-title">Satisfaction</div>
                 <div class="box-value">5,000</div>

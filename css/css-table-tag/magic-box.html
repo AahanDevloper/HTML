@@ -3,6 +3,7 @@
     <head>
         <title>Magic Box</title>
         <style>
+            /* magic area or main container */
             .magic-area{
                 position: relative;
                 width: 100%;
@@ -21,15 +22,17 @@
                 border-radius: 5px;
                 height: 30px;
             }
+            /* magic box  */
             .magic-box{
                 width: 300px;
                 height: 300px;
                 margin-top: 100px;
-                background-color: blue;
-                position: absolute;
+                background: linear-gradient(to bottom right,blue,pink);
                 display: none;
+                position: absolute;
                 border-radius: 10px;
             }
+            /* hover for magic box */
             .magic-button:hover + .magic-box{
                 display: block;
             }

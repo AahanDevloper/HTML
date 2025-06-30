@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- calculator by table tag -->
         <title>Calculator</title>
         <style>
             table{
@@ -20,12 +21,10 @@
                 border-radius: 10px;
                 background-color: black;
             }
-            a{
-                color: white;
-            }
             .number{
                 background-color: #3D3D3D;
             }
+            /* styling for orange keys */
             .orange{
                 border-width: 1px;
                 border-style: solid;
@@ -52,6 +51,7 @@
                 background-color: grey;
                 color: azure;
             }
+            /* border radius for 0 */
             .zero{
                 border-width: 1px;
                 border-style: solid;
@@ -63,38 +63,47 @@
         </style>
     </head>
     <body>
+        <!-- table starts -->
         <table>
+            <!-- row one
+             display section for keys pressed / clicked-->
             <tr>
                 <td colspan="4" rowspan="2" class="row-1">
                 </td>
             </tr>
-            <tr>
-            </tr>
+            <tr></tr>
+            <!-- row two -->
+             <!-- keys of calculator -->
             <tr>
                 <td>AC</td>
                 <td>+/-</td>
                 <td>%</td>
                 <td class="orange">/</td>
             </tr>
+            <!-- row three -->
             <tr>
                 <td class="number">7</td>
                 <td class="number">8</td>
                 <td class="number">9</td>
                 <td class="orange">x</td>
             </tr>
+            <!-- row four -->
             <tr>
                 <td class="number">4</td>
                 <td class="number">5</td>
                 <td class="number">6</td>
                 <td class="orange">-</td>
             </tr>
+            <!-- row five -->
             <tr>
                 <td class="number">1</td>
-                <td class="number"><a href="./calculator-2.html">2</a> </td>
+                <td class="number">2</td>
                 <td class="number">3</td>
                 <td class="orange">+</td>
             </tr>
+            <!-- row six -->
             <tr>
+                <!-- colspan zero key -->
                 <td colspan="2" class="zero">0</td>
                 <td class="number">.</td>
                 <td class="orange">=</td>

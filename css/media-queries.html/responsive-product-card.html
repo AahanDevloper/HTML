@@ -27,11 +27,13 @@
             align-items: center;
             justify-content: center;
         }
+        /* large image */
         .large-image{
             width: 90%;
             height: 75%;
             background-color: rgb(255, 255, 255);
         }
+        /* small images */
         .small-image{
             width: 90%;
             height: 15%;
@@ -80,6 +82,7 @@
             width: 100%;
             height: 8%;
         }
+        /* button */
         button{
             width: 150px;
             height: 80%;
@@ -91,6 +94,7 @@
             border-color: rgb(99, 177, 255);
             background-color: white;
         }
+        /* hover for buttons */
         button:hover{
             background-color: rgb(99, 177, 255);
             color: rgb(255, 255, 255);
@@ -128,6 +132,8 @@
             background-color: lightblue;
             padding: 5px;
         }
+        /* media query starts */
+        /* for small screens, screens till 480px  */
         @media (max-width:480px) {
             .main-container{
                 flex-direction: column;
@@ -156,6 +162,7 @@
                 width: 100%;
             }
         }
+        /* for mobile screens */
         @media (min-width:481) and (max-width:768px){
             .main-container{
                 flex-direction: column;
@@ -239,21 +246,27 @@
                 <h3>$150</h3>
                 <p>M2 chip with 8-core CPU, 7-core GPU and 16-cor, 16GB unified memory, 256GB SSD storage</p>
             </div>
+            <!-- second division -->
             <div class="second">
                 <button>Add to Cart</button>
             </div>
+            <!-- third division -->
             <div class="third">
                 <h1>Specifications</h1>
             </div>
+            <!-- second division -->
             <div class="second">
                 <ul>
                     <li>Feature 1: High performance processor</li>
                     <li>Feature 2: Cost efficient</li>
-                    <li>Feature 3: High performance processor</li>
+                    <li>Feature 3: Better Battery life</li>
                 </ul>
             </div>
+            <!-- fourth division -->
             <div class="fourth"><h1>Customer Reviews</h1> </div>
+            <!-- fifth division -->
             <div class="fifth">
+                <!-- reviews -->
                 <div class="review">
                     <p class="review-text">The product is very good - <cite>Aahan Jiwani</cite></p>
                 </div>
