@@ -143,7 +143,7 @@
 
         /* button */
         button {
-            width: 20%;
+            width: 30%;
             height: 15%;
             background-color: transparent;
             font-size: 20px;
@@ -327,9 +327,97 @@
             text-align: center;
             font-size: 15px;
         }
-        @media (min-width:300px) and (max-width:767px) {
+        /* media query */
+        @media (max-width:399px) {
+            header{
+                flex-direction: column;
+            }
+            .head{
+                width: 100%;
+                height: 50%;
+            }
+            .name{
+                font-size: 25px;
+            }
+            nav{
+                width: 100%;
+                height: 50%;
+                justify-content: flex-start;
+                gap: 15px;
+            }
+            .green{
+                font-size: 35px
+            }
+            p{
+                font-size: 13px;
+                margin: 0;
+                margin-top: 25px;
+                margin-left: 12px;
+            }
+            .about-image{
+                margin-top: 0;
+                margin-left: 20px;
+            }
+            h2{
+                font-size: 27px;
+            }
+            .box-2{
+                width: 70%;
+            }
+            button{
+                width: 50%;
+                border-radius: 35px;
+                margin: 0;
+                margin-top: 20px;
+                display: flex;
+                justify-self: center;
+                justify-content: center;
+                align-items: center;
+            }
+            .box-1{
+                width: 30%;
+            }
+            .sub-container{
+                flex-direction: column;
+            }
+            .box-4,.box-5{
+                width: 100%;
+                height: 50%;
+            }
+            h1{
+                font-size: 19px;
+            }
+            .project{
+                flex-direction: column;
+
+            }
+            .project-card{
+                width: 75%;
+                height: 45%;
+            }
+            img{
+                width: 70%;
+                margin-top: 15px;
+            }
+            .icon{
+                width: 60px;
+                height: 60px;
+                margin-top: 20px;
+            }
+            h3{
+                font-size: 15px;
+                margin: 10px;
+            }
+            .contact-span{
+                font-size: 13px;
+            }
+            .contact-card{
+                height: 75%;
+            }
+        }
+        @media (min-width:400px) and (max-width:767px) {
             body{
-                height: 300vh;
+                height: 320vh;
             }
             header{
                 flex-direction: column;
@@ -346,7 +434,7 @@
                 height: 4.5%;
             }
             .container-1{
-                height: 18%;
+                height: 14%;
             }
             .box-2{
                 width: 83%;
@@ -354,12 +442,16 @@
             button{
                 width: 50%;
                 height: 9%;
+                display: flex;
+                justify-self: center;
+                justify-content: center;
+                align-items: center;
             }
             .box-1{
                 width: 17%;
             }
             .container-2{
-                height: 25%;
+                height: 22%;
             }
             .sub-container{
                 flex-direction: column;
@@ -385,16 +477,22 @@
             }
             .contact-card{
                 width: 30%;
-                height: 75%;
+                height: 90%;
             }
             .contact-span{
-                font-size: 10px;
+                font-size: 15px;
             }
             .container-3{
-                height: 30%;
+                height: 27%;
+            }
+            .container-4{
+                height: 20%;
+            }
+            h3{
+                margin: 10px;
             }
         }
-        @media (min-width:768px) and (max-width:1024px){
+        @media (min-width:768px) and (max-width:1025px){
             body{
                 height: 290vh;
             }
@@ -402,7 +500,7 @@
                 height: 5%;
             }
             .container-1{
-                height: 15%;
+                height: 14%;
             }
             button{
                 width: 45%;
@@ -465,7 +563,7 @@
                 <span class="green">Home page!</span>
                 <p>Passionate about creating user-friendly and visually <br> appealing websites. Loves coding and coffee
                     !! <br>
-                    I am skillfull at HTML and CSS. <br>I can write attractive codes. <br>My brain is my strength...</p>
+                    I am skillfull at HTML and CSS. <br>I can write attractive codes.</p>
                 <div id="about"></div>
                 <button>My Resume</button>
             </div>
@@ -547,7 +645,7 @@
                         <a href="" class="anchor">
                             <div class="icon">📧</div>
                             <h3>Email</h3>
-                            <span class="contact-span">aahanjiwani@gmail.com</span>
+                            <span class="contact-span">aahanjiwani @gmail.com</span>
                         </a>
                     </div>
                 </div>
