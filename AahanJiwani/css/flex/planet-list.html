@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Planets' list</title>
         <style>
             body{
@@ -48,6 +50,16 @@
             a{
                 color: white;
                 text-decoration: none;
+            }
+            @media (max-width:375px) {
+                .planet{
+                    padding: 5px;
+                }
+            }
+            @media (min-width:1024px) and (max-width:1200px) {
+                .planet{
+                    padding: 13px;
+                }
             }
         </style>
     </head>
