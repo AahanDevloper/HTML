@@ -104,7 +104,42 @@
             align-items: center;
         }
         /* media query starts */
-        @media (max-width:375) {
+        @media (max-width:376px) {
+            .main-container{
+                grid-template-rows: 8% 92%;
+            }
+            .projects{
+                grid-template-columns: none;
+                grid-template-rows: 8% 92%;
+            }
+            .project-row-1{
+                grid-template-columns: none;
+                grid-template-rows: 33.34% 33.33% 33.33%;
+            }
+            .header{
+                grid-template-columns: none;
+                grid-template-rows: 1fr 1fr;
+            }
+            .name{
+                display: flex;
+                justify-content: center;
+            }
+            h1{
+                margin: 0;
+                font-size: 25px;
+            }
+            h2{
+                margin: 10px;
+            }
+            .card{
+                width: 85%;
+                height: 90%;
+            }
+            img{
+                height: 45%;
+            }
+        }
+        @media (min-width:376px) and (max-width:767px){
             .project-row-1{
                 height: 70%;
                 grid-template-columns: none;
@@ -114,9 +149,14 @@
                 grid-template-columns: none;
                 grid-template-rows: 1fr 1fr;
             }
+            .name{
+                display: flex;
+                justify-content: center;
+            }
             h1{
                 font-size: 20px;
                 margin: 0;
+                font-size: 25px;
             }
             h2{
                 margin: 10px;
@@ -126,26 +166,21 @@
                 height: 90%;
             }
         }
-        @media (min-width:376px) and (max-width:770px){
-            .project-row-1{
-                height: 70%;
-                grid-template-columns: none;
-                grid-template-rows: 1fr 1fr 1fr;
-            }
-            .header{
-                grid-template-columns: none;
-                grid-template-rows: 1fr 1fr;
-            }
-            h1{
-                font-size: 20px;
-                margin: 0;
-            }
-            h2{
-                margin: 10px;
+        @media (min-width:768px) and (max-width:1024px) {
+            .projects{
+                grid-template-rows: 1fr 5fr;
             }
             .card{
-                width: 85%;
-                height: 90%;
+                width: 90%;
+                height: 54%;
+            }
+            .heading{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            img{
+                height: 67%;
             }
         }
     </style>
