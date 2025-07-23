@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chessboard</title>
+    <title>Chessboard Grid</title>
     <style>
         body{
             width: 100vw;
@@ -13,42 +13,59 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: rgb(230, 230, 230);
+            background-color: rgb(227, 227, 227);
         }
         .chessboard{
             width: 600px;
             height: 600px;
             display: grid;
             grid-template-columns: repeat(8,1fr);
+            grid-template-rows: repeat(8,1fr);
+            border-style: solid;
+            border-color: rgb(6, 6, 6);
         }
         .box-1{
+            width: 100%;
+            height: 100%;
             background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
         .box-2{
+            width: 100%;
+            height: 100%;
             background-color: green;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        img{
+            width: 90%;
+            height: 90%;
         }
     </style>
 </head>
 <body>
     <div class="chessboard">
         <!-- row one -->
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-1"></div>
-        <div class="box-2"></div>
+        <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/b/b9/DarkRook.png/revision/latest/scale-to-width/360?cb=20230320152625"></div>
+        <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/7/7d/DarkKnight.png/revision/latest/scale-to-width/360?cb=20230320152239"></div>
+        <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/c/c3/DarkBishop.png/revision/latest/scale-to-width/360?cb=20230320152509"></div>
+        <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/9/90/DarkQueen.png/revision/latest/scale-to-width/360?cb=20230320152652"></div>
+        <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/d/d7/DarkKing.png/revision/latest/scale-to-width/360?cb=20230320152719"></div>
+        <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/c/c3/DarkBishop.png/revision/latest/scale-to-width/360?cb=20230320152509"></div>
+        <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/7/7d/DarkKnight.png/revision/latest/scale-to-width/360?cb=20230320152239"></div>
+        <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/b/b9/DarkRook.png/revision/latest/scale-to-width/360?cb=20230320152625"></div>
         <!-- row two -->
-        <div class="box-2"></div>
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-1"></div>
-        <div class="box-2"></div>
-        <div class="box-1"></div>
+        <div class="box-2"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
+        <div class="box-1"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
+        <div class="box-2"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
+        <div class="box-1"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
+        <div class="box-2"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
+        <div class="box-1"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
+        <div class="box-2"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
+        <div class="box-1"><img src="https://camo.githubusercontent.com/d692239020765c1c3003d876061b9bd68ac40cb5166f6b21788cf4f87ba9f32a/68747470733a2f2f696d616765732e6368657373636f6d66696c65732e636f6d2f63686573732d7468656d65732f7069656365732f6e656f2f3235362f62702e706e67"></div>
          <!-- row three -->
         <div class="box-1"></div>
         <div class="box-2"></div>
@@ -86,23 +103,23 @@
        <div class="box-2"></div>
        <div class="box-1"></div>
        <!-- row seven -->
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-1"></div>
-      <div class="box-2"></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
       <!-- row eight -->
-      <div class="box-2"></div>
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-1"></div>
-      <div class="box-2"></div>
-      <div class="box-1"></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/9/97/LightRook.png/revision/latest/scale-to-width/360?cb=20230320152615" alt=""></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightKnight.png/revision/latest/scale-to-width/360?cb=20230320152142" alt=""></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/d/d7/LightBishop.png/revision/latest/scale-to-width/360?cb=20230320152454" alt=""></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/4/42/LightQueen.png/revision/latest/scale-to-width/360?cb=20230320152643" alt=""></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/7/78/LightKing.png/revision/latest/scale-to-width/360?cb=20230320152710" alt=""></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/d/d7/LightBishop.png/revision/latest/scale-to-width/360?cb=20230320152454" alt=""></div>
+      <div class="box-2"><img src="https://static.wikia.nocookie.net/chess/images/3/32/LightKnight.png/revision/latest/scale-to-width/360?cb=20230320152142" alt=""></div>
+      <div class="box-1"><img src="https://static.wikia.nocookie.net/chess/images/9/97/LightRook.png/revision/latest/scale-to-width/360?cb=20230320152615" alt=""></div>
     </div>
 </body>
 </html>
