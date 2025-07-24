@@ -116,12 +116,6 @@
         .card:hover{
             box-shadow:  0.5px 0.5px 25px rgb(43, 180, 134);
         }
-        .card-8{
-            background-color: transparent;
-        }
-        .card-8:hover{
-            box-shadow: none;
-        }
         /* media query */
         @media (max-width:375px) {
             .main-container{
@@ -165,9 +159,6 @@
                 height: 85%;
                 background-color: rgb(26, 101, 148);
             }
-            .card-8{
-                background-color: transparent;
-            }
         }
         @media (min-width:376px) and (max-width:767px) {
             .header{
@@ -188,10 +179,10 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-top: 100px;
             }
             .projects{
                 grid-template-rows: 7% 93%;
+                margin-top: 100px;
             }
             .project-row-1{
                 grid-template-columns: 1fr 1fr;
@@ -200,9 +191,6 @@
                 width: 93%;
                 height: 90%;
                 background-color: rgb(26, 101, 148)
-            }
-            .card-8{
-                background-color: transparent;
             }
         }
         /* for 768 to 1024   px */
@@ -307,7 +295,12 @@
                         <h2 class="card-h2">News Page</h2>
                     </a>
                 </div>
-                <div class="card card-8"></div>
+                <div class="card">
+                    <a href="./chessboard-grid.html">
+                    <img src="https://png.pngtree.com/thumb_back/fh260/background/20241224/pngtree-a-dramatic-chess-scene-featuring-black-king-pieces-illuminated-by-warm-image_16833035.jpg" width="95%" height="60%">
+                    <h2 class="card-h2">Chess</h2>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
