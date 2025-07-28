@@ -424,6 +424,10 @@
             width: 90%;
             height: 80%;
         }
+        .icon{
+            width: 70px;
+            height: 200px;
+        }
     }
 
     /* for 375 to 768px */
@@ -554,11 +558,12 @@
 
     @media (min-width:768px) and (max-width:1024px) {
         body {
-            height: 250vh;
+            height: 290vh;
         }
 
         .header {
             flex-direction: column;
+            height: 7%;
         }
 
         .name {
@@ -574,7 +579,7 @@
 
         .container-1 {
             flex-direction: column;
-            height: 23%;
+            height: 20%;
         }
 
         .box-1 {
@@ -600,11 +605,11 @@
         }
 
         .container-2 {
-            height: 20%;
+            height: 17%;
         }
 
         .container-3 {
-            height: 25%;
+            height: 20%;
         }
 
         .projects {
@@ -618,7 +623,7 @@
         }
 
         .container-4 {
-            height: 27%;
+            height: 25%;
         }
     }
 </style>
@@ -632,7 +637,7 @@
             </div>
             <nav>
                 <span class="nav-bar-content"><a class="nav-a" href="#home">Home</a></span>
-                <span class="nav-bar-content"><a class="nav-a" href="#about">Abuot</a></span>
+                <span class="nav-bar-content"><a class="nav-a" href="#about">About</a></span>
                 <span class="nav-bar-content"><a class="nav-a" href="#project">Projects</a></span>
                 <span class="nav-bar-content"><a class="nav-a" href="#contact">Contact</a></span>
             </nav>
@@ -722,14 +727,18 @@
             <div class="contact-box">
                 <div class="contact-row-1">
                     <div class="contact-card">
-                        <div class="icon">📞</div>
-                        <h2 class="contact-h2">Call</h2>
-                        <h3 class="contact-h3">98222 10786</h3>
+                        <a href="tel:9822210786">
+                            <div class="icon">📞</div>
+                            <h2 class="contact-h2">Call</h2>
+                            <h3 class="contact-h3">98222 10786</h3>
+                        </a>
                     </div>
                     <div class="contact-card">
+                        <a href="mailto:aahanjiwani@gmail.com">
                         <div class="icon">📧</div>
                         <h2 class="contact-h2">Email</h2>
                         <h3 class="contact-h3">aahanjiwani @gmail.com</h3>
+                        </a>
                     </div>
                 </div>
                 <div class="contact-row-1">
