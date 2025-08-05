@@ -25,6 +25,9 @@
             box-shadow: 2px 4px 20px black;
             display: grid;
             grid-template-columns: 1fr 1fr;
+            position: fixed;
+            width: 100%;
+            height: 10%;
         }
         h1{
             color: white;
@@ -65,6 +68,7 @@
             background-color: rgb(15, 82, 123);
             display: grid;
             grid-template-rows: 1fr 8fr;
+            margin-top: 90px;
         }
         .heading{
             display: flex;
@@ -74,6 +78,7 @@
         .content{
             display: grid;
             grid-template-columns: repeat(4,1fr);
+            grid-template-rows: 1fr 1fr;
         }
         .card{
             width: 70%;
@@ -99,6 +104,82 @@
             display: flex;
             justify-self: center;
             margin-top: 10px;
+        }
+        @media (max-width:375px) {
+            .container-1{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .name{
+                display: flex;
+                justify-content: center;
+            }
+            .container-2{
+                grid-template-rows: 1fr 8fr;
+            }
+            .content{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+            .card{
+                width: 90%;
+                height: 90%;
+            }
+        }
+        @media (min-width:376px) and (max-width:767px){
+            .main-container{
+                grid-template-rows: 1fr 6fr;
+            }
+            .container-1{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .name{
+                display: flex;
+                justify-content: center;
+            }
+            .container-2{
+                grid-template-rows: 1fr 12fr;
+            }
+            .content{
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+            .card{
+                width: 80%;
+                height: 80%;
+            }
+            h1{
+                font-size: 24px;
+            }
+            a{
+                font-size: 19px;
+            }
+        }
+        @media (min-width:768px) and (max-width:1023px){
+            .main-container{
+                grid-template-rows: 1fr 9fr;
+            }
+            .container-1{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr;
+            }
+            .name{
+                display: flex;
+                justify-content: center;
+            }
+            .container-2{
+                grid-template-rows: 1fr 12fr;
+                margin-top: 120px;
+            }
+            .content{
+                grid-template-columns: repeat(4,1fr);
+                grid-template-rows: 1fr 1fr;
+            }
+            .card{
+                width: 90%;
+                height: 70%;
+            }
         }
     </style>
 </head>
