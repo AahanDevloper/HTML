@@ -17,7 +17,7 @@
             height: 100%;
             display: grid;
             grid-template-rows: 1fr 9fr;
-            background-color: rgb(15, 82, 123);
+            background-color: rgb(23, 96, 141);
         }
         .container-1{
             background-color: rgb(0, 126, 124);
@@ -27,7 +27,7 @@
             grid-template-columns: 1fr 1fr;
             position: fixed;
             width: 100%;
-            height: 10%;
+            height: 11%;
         }
         h1{
             color: white;
@@ -35,6 +35,7 @@
             margin-left: 10px;
             display: flex;
             align-self: center;
+            font-family: 'Times New Roman', Times, serif;
         }
         h2{
             font-size: 30px;
@@ -65,7 +66,7 @@
             margin-bottom: 2px;
         }
         .container-2{
-            background-color: rgb(15, 82, 123);
+            background-color: rgb(23, 96, 141);
             display: grid;
             grid-template-rows: 1fr 8fr;
             margin-top: 90px;
@@ -83,7 +84,7 @@
         .card{
             width: 70%;
             height: 90%;
-            background-color: rgb(17, 92, 138);
+            background-color: rgb(19, 90, 134);
             display: flex;
             flex-direction: column;
             justify-self: center;
@@ -115,15 +116,16 @@
             height: 60%;
             border-radius: 50px;
             border-style: solid;
-            border-color: rgb(0, 126, 124);
+            border-color: rgb(0, 149, 134);
+            background-color: transparent;
         }
         .projects-button:hover{
             color: white;
-            border-color: rgb(43, 180, 134);
-            background-color: rgb(43, 180, 134);
+            border-color: rgb(0, 149, 134);
+            background-color: rgb(0, 149, 134);
         }
         .p-anchor{
-            color: rgb(43, 180, 134);
+            color: white;
             font-size: 13px;
         }
         .p-anchor:hover{
@@ -149,6 +151,9 @@
                 width: 90%;
                 height: 90%;
             }
+            .projects-button{
+                height: 70%;
+            }
         }
         @media (min-width:376px) and (max-width:767px){
             .main-container{
@@ -173,14 +178,23 @@
                 width: 80%;
                 height: 80%;
             }
+            .card-h2{
+                font-size: 20px;
+            }
             h1{
                 font-size: 24px;
             }
             a{
                 font-size: 19px;
             }
+            .projects-button{
+                height: 75%;
+            }
+            .p-anchor{
+                font-size: 12px;
+            }
         }
-        @media (min-width:768px) and (max-width:1023px){
+        @media (min-width:768px) and (max-width:1024px){
             .main-container{
                 grid-template-rows: 1fr 9fr;
             }
@@ -194,7 +208,7 @@
             }
             .container-2{
                 grid-template-rows: 1fr 12fr;
-                margin-top: 120px;
+                margin-top: 130px;
             }
             .content{
                 grid-template-columns: repeat(4,1fr);
@@ -202,7 +216,7 @@
             }
             .card{
                 width: 90%;
-                height: 70%;
+                height: 85%;
             }
         }
     </style>
@@ -235,7 +249,7 @@
                                 <a href="../flex/planet-list.html" class="p-anchor">View Project</a>
                             </button>
                             <button class="projects-button">
-                                <a href="" class="p-anchor">View Code</a>
+                                <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/css/flex/planet-list.html" class="p-anchor">View Code</a>
                             </button>
                         </div>
                     </a>
@@ -249,7 +263,7 @@
                                 <a href="../flex/indian-flag.html" class="p-anchor">View Project</a>
                             </button>
                             <button class="projects-button">
-                                <a href="" class="p-anchor">View Code</a>
+                                <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/css/flex/indian-flag.html" class="p-anchor">View Code</a>
                             </button>
                         </div>
                 </div>
@@ -262,7 +276,7 @@
                                 <a href="../flex/product-cards.html" class="p-anchor">View Project</a>
                             </button>
                             <button class="projects-button">
-                                <a href="" class="p-anchor">View Code</a>
+                                <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/css/flex/product-cards.html" class="p-anchor">View Code</a>
                             </button>
                         </div>
                 </div>
@@ -275,7 +289,7 @@
                                 <a href="../../html/form-tag/form-tag.html" class="p-anchor">View Project</a>
                             </button>
                             <button class="projects-button">
-                                <a href="" class="p-anchor">View Code</a>
+                                <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/html/form-tag/form-tag.html" class="p-anchor">View Code</a>
                             </button>
                         </div>
                 </div>
@@ -288,7 +302,7 @@
                             <a href="../flex/dashboard.html" class="p-anchor">View Project</a>
                         </button>
                         <button class="projects-button">
-                            <a href="" class="p-anchor">View Code</a>
+                            <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/css/flex/dashboard.html" class="p-anchor">View Code</a>
                         </button>
                     </div>
                 </div>
@@ -301,7 +315,7 @@
                             <a href="../../html/text-formatting-tags/best-movies.html" class="p-anchor">View Project</a>
                         </button>
                         <button class="projects-button">
-                            <a href="" class="p-anchor">View Code</a>
+                            <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/html/text-formatting-tags/best-movies.html" class="p-anchor">View Code</a>
                         </button>
                     </div>
                 </div>
@@ -314,7 +328,7 @@
                             <a href="../flex/news-page.html" class="p-anchor">View Project</a>
                         </button>
                         <button class="projects-button">
-                            <a href="" class="p-anchor">View Code</a>
+                            <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/css/flex/news-page.html" class="p-anchor">View Code</a>
                         </button>
                     </div>
                 </div>
@@ -326,7 +340,7 @@
                         <a href="./chessboard-grid.html" class="p-anchor">View Project</a>
                     </button>
                     <button class="projects-button">
-                        <a href="" class="p-anchor">View Code</a>
+                        <a href="https://github.com/AahanDevloper/HTML/blob/main/AahanJiwani/pages/css/grid/chessboard-grid.html" class="p-anchor">View Code</a>
                     </button>
                 </div>
                 </div>
