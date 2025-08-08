@@ -91,9 +91,6 @@
             align-items: center;
             border-radius: 15px;
         }
-        .card:hover{
-            box-shadow:  0.5px 0.5px 25px rgb(37, 156, 116);
-        }
         .card-h2{
             font-size: 23px;
             margin-top: 10px;
@@ -120,9 +117,17 @@
             border-style: solid;
             border-color: rgb(0, 126, 124);
         }
+        .projects-button:hover{
+            color: white;
+            border-color: rgb(43, 180, 134);
+            background-color: rgb(43, 180, 134);
+        }
         .p-anchor{
-            color: rgb(0, 126, 124);
-            font-size: 10px;
+            color: rgb(43, 180, 134);
+            font-size: 13px;
+        }
+        .p-anchor:hover{
+            color: white;
         }
         @media (max-width:375px) {
             .container-1{
@@ -209,10 +214,10 @@
                 <h1>Aahan Jiwani</h1>
             </div>
             <nav>
-                <a href="../flex/home-page.html#home">Home</a>
-                <a href="../flex/home-page.html#about">About</a>
-                <a href="../flex/home-page.html#project">Projects</a>
-                <a href="../flex/home-page.html#contact">Contact</a>
+                <a href="../../../index.html#home">Home</a>
+                <a href="../../../index.html#about">About</a>
+                <a href="../../../index.html#project">Projects</a>
+                <a href="../../../index.html#contact">Contact</a>
             </nav>
         </div>
         <div class="container-2">
@@ -222,7 +227,6 @@
             <div class="content">
 
                 <div class="card">
-                    <a href="../flex/planet-list.html">
                         <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUSExIWFhUXFhUXFhUXFxUYFxcXFRcXFhUWGBUYHSggGholGxUWITEhJSkrLi4uFx8zODMsNygtLisBCgoKDg0OGxAQGi0lHyUtLS0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLy0tLS0tLS0tLS0tLS0tLS0tLS0tLS0tLf/AABEIAMMBAwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAEAAECAwUGBwj/xABDEAABAwIDBQQIAwcBCAMAAAABAAIRAyEEEjEFQVFhcROBkaEGIjJSscHR8BRC4QcjM2JykvGiQ2OCg6Oy0uIVJFP/xAAbAQACAwEBAQAAAAAAAAAAAAABAgADBAUGB//EACQRAAICAgMBAQEAAwEBAAAAAAABAhEDEgQhMRNBIlFhcTIF/9oADAMBAAIRAxEAPwAZ+yKVQSJDh6oJvMcVk7S2KGiIgrraVNzc0wDe1hY3s2/Cx5qmsxr2wT0cd0iy8XDkTjL3o95vfT8PLcXhSCs6oxdhtzDlpggcZBGnFc5iqK7/AB82yTOfzeIq2iZhTZlOo1UuW5OzgTjRYHqQqIfMmzp6KtgsVFIVEIwyp1XAWCGpNwoVU4qoEVE/aKah3DxVUhVWf2qftUNRvoaIqpxWWd2qftkNQ/U0hXUhXWX2yupP/wAfNTQP1NSm/imdilnVKpJsDu0Buoy73XeBQ0CsppjEJxiFmjP7rv7T9Ei5w1afAoaDfY0xXUhiFj/ieakMShoH7GwMQnFdY/4hSbiFPmH7mv26duIWW+o4agjqCPimGIQeOgrNZsdsSpses6jWRlN6GpYsgUApBihTKLpNQ1HUrKuzSRYppIUNZ1FZpsNbwLiwEFonU7/gqMU5xs0g2iBAndB75RuKowcxAc10aCCMsXnQFQ2ls+WS0ObaeveNxB+K8rCS6O+pLo4LFvqFxY95IbeHGSCYBgm/PulCVqP+V2NXZDHMJcBmiJnQTa+v6eWRU2WWtA3gQ7nzB5fRdbHyIPwv/mapnJ4mggajF0+LwVlhYmlC6OHKpHn+bxdHaM16rRLmX+9FF8Cw+XmtsWcWaog9wbpr5qnOnPd8U2bme5OUNkr/AObJTzH30UJHA+KkAdzfIqUSx8w4+X6pZxz8f0TgO4R3AJQ/j/qH1Uoljgnc3yKkM3un+39FX2ZO8f3N+qduHdwB7wfmpRLCaTH7/CQ1SqOqHT/uH1Q7qT49h39p+KHKNEsMNKr7rz0BPwSdh6gEmm+ObXfRBqVOoWmQSDxBIPkhRLJ9optxLho5w6EqY2lV3vLhwfDx4PkKTccw/wASgw82TTd/p9X/AEqUTZjN2jUH+0f/AHO+BKsp497jcMdxLqdM23kuyyrcPs6nXcG0KhDyYFOqIJPBtRsg94auxd+zdzaU5yXEX3Du5T8E0YOXgssij6cYMVTJIdRH9VN729/rZhHcu9/Z1sXD1KlR4LnFgaAH5fVzAkkFpvpEw068Vw20sF+GdBnNeDpPER4fcgLYPpBVwtQ1GGcwAc06OA000I+ZRg1GSbJO5RpHpfprsql2biAJAXlDaq3Nuelz67crWZZ1Myh6NCliv4bRSxH/AOYMUqvHJPsP/lmDyV3JyRyNUJgjKC7KMPVR9KosmnIMEEEEgg2II1BG4oyk9Y2jdGRtYZ62sDTn5LnMLUXT7IqDM3uVUkbMTs1mbOcRMJLtsAKfZt6JIaDPOv8AANTDXU7gQTJ3G/CE1HZxboS8AAjLcgE39UjyRVL1T6ncDxjUDRadJrwzOGw4Gco3tMgjuleRw4lNU/z/AAb8mZw8/Tmq+yQCb+qQN2p/wsfH4UAW1Ekk8II/z1XbF4rEskZgeJnQwY62XPY2jBMjQ3PHWeoSzXzkpRdxNPHzyk6l6cni8M0gwuN2rhIdovT62Hpup5hYiQR3SD5x3LivSCiBeF0eDme1FnISyQZx2IMaHpzCz6netHEhAvcePy+C9FjfR5rNCmU5eDZ8fklkdwA6gfNJ8niqlcjFIuh3vD+5v1TdkT+Zv9wVSSIpb2B4t/ub9VNuDedAD/S5rvIFDq0UTEnuHHT5KEGq0HN9prm9QR8VWr6GLqM9l7gOANu8aFE08VSfaswN/wB5TAaRzNP2XDpB5qEAGujRG4OrVe4Ma7MTufDhbk+Qo7RwDqRFw5jhLKjfZeOXAjQg3CEa4gyDBGhGqhDcds8n+JhnD+eifPsySD3ZVU30eq1CBh/3wJj1RDmnWKjHXZob6c1dhtvlzclUuHCoyzh1G9ewfsyr0KVBgrvy1KkubWqAhlVpPqDO72YECDF95JIFM8koK6GUUzx7HeiOLpDM+iY5XWG4RYr672ngKb2EObqNdR4i6+e/2kbDbSqlzI1vHDiq8XI3erDKFKzmfRzHdhiaVYiQx4Lh/L+bviV9A1NtUKlIPY9rmkaj58OhXzy8ho8tBe2vn8QVRWqTcE3AkaCwiLblsjLUpnDY3fTqvmxEgEAjM07i12hHEWXOhbuPd2mAoPPtU6j6U8WkZwO7RYSDdjJUqJBWMdBkGCLgjUEaEFVBSBSjI6Lab+2osxX557KtG9wHqVO8RPdwWbTeiNm1P/q4oHT9yR1zn6BZ7Kig8Wa2Hqrc2fi4j77lzGHqLQZiErhasvhl1dHe0NuQ0Az8fOE64gYzmkqtWafqj2F1R0lhaWOGvMG4t9OS1qO22UqLCSXkcbG2o++K5/amNNR4qtZLS2JzRBiQR4rPr4glhnLDDlI3lzjIk+A715DG5Y5NwZ3nx1lit0dGzHU6lVzxLS4mOAOt0Pi3G5cZgG2/ksmjWhxgghxF+FiAY7lN1cw33uXAnU+CpnFtjrCovoEr1LENGsmOg/TzC5jalXMNPh810tCqCCBqJBG+9jHiFytd8kxxIuBx5ro8Zd/8NShcWc/iqd9w/wCJo+SBcDx/6zR8VqY95G5vexh+IWY/EN/PSaebSWO8vV/0r0GGVo8xy4VJlb6bwJyVY4tfI8Q0jzVLawOlao3+qSO8tM+SIr4TKzt6D3FoIDvyvpk6B0ag7nBTwMYomk8AVoJp1AILiBOR8ayB7Wtt61o5U12DVm1GjO5rKjDbOA0joXNhwPIwUsPQpViGt/dVDZoJmm47hOrSec9yr2RjDTqDexxDXsNw5psQQtJlMYTGh8Zm0awcGyBIa4Ogk2BhEQHxvo/XoCa9Ms3iYI5TE/Z6A51etNhYL0D9ovpVTr0qbabIzsziRByuMXGn5fILzlLFtrsMkk+hLe2F6K18SM4aQzcTv6LN2PhhVr0aTjDX1abCeAc4NJ819WbI2ThaVMNYzNAA3kC3gqs03HpFuKEX3I+fcZ6KV20uyzEsBzhsAw6IJBiR00XJ4zBOpmCF9P8ApHVb2RAY1scSPIN+a8H9MKYzm8zO6AkxZrdN2PlxdWlRxy9f/ZT6aUBQGAxZaIJ7MvgtcHGcpJsHAkx1EaLyBE7Owbq1RtNurjruA1c48gJPcr5wU1TM6dM+j8RhW0RmwuIdRGvZyH0u6m+Q2eIuvKvTHabcQ8tOIpCoHAmA5gOWbZrgHlK5na21Q5xFJ7xSYGsY0EgFrBllwm86yRvWI95JkqrHx9XdjudnVVtgNqUwQWsePddmY7u1HcuYxNBzHFjhBGqgyoRcEjoYRWz8Ma1QAut7T3E+yxvtGenyV0U1+iNh2POTB0Ke9731iOXsNPeFioza2M7WoXAQ0ANY33WNs0ffFBpgDpSmV2FoF7g0b9TwG8qED82TCRvqvn/hZ/7LOAOqK2hVD3erZjRlYOQ396Fe/cFCFlKtuRTKqz2q9j0GOmHCqkhc6dCh9j1PG4gmwiWwPVmTpBjjF+aBpUqogDKRmM31IHqzEjhxNl1u2NgucW5ROVwdFwIE2MarJrYbLScGUcrj6togTYuHHj3LyeLJHXw9xDLFr+QbC4k53NBEgxJ921zwO+3BGU8Q4Nu31TmaDebEEjyPis6hSNn+s68lwEnOQGmQTugnwRDqhDxQBnM6c0m1hmgbyc0a3A8ZOEW+hpKymjicotfO4gwbgg+qTOmrlj4gfvH3vnd8VpbQDW1GvAIbUj1r2tmAn3rNI6rJyEVHg7nunrN1pxRXqLI1TZmbSasKuF0O1As3Z+y34ioKbN5ALjo0EwCfkN66nHf8nmeb/wCmQ2ecmHxLzo4Mpt5vJzW5hoJ71T6Peo52JPs0mkj+ao4FtNniZ6NK6H0t9GzRLKYfFKnABgx6x9eoYuXE+QAAWI2n23qM/d4emCczosSP4tSLl7rQ0TpAmL7cU4zVxZxssXF9noOw/Q3DHZ1OoOzNdzRUzvzXJBIaDFgLbtRvmV55XomviHS6GmalV5NmtmXnx0HFwC0qXpFXc04bD5exABL6onLE5qribMmdByAkrDx+NGXsqU5JBe8iHVXDRxG5o/K3drqrm0/ChX+lW1sb2tQuAytADWN91jRDR4eZKDTpQgEnhq5Y9r22c1zXA82mR5hfQWyfSqpicOyph/XJs9uYAscNWuBOvPod68HwWBBHaVCWUgdfzPI/JTG93PQb+BI/+crNcDRcaTQMrWNPqhut59px1LjcnwVGfB9VX6aMGf5Py0e2bYxbAIfUGaJIbLiDwzEkeC8k9Ldosc8hnxlZWK25iKnt1CVnhpcYuST1JJSYeP8AMbNyPoRaJMC54LXru/DU3UR/GqCKpH+zZr2QPvHV3cOKZkYbSDX8RR+tT4dVlPMmVpMxFJJO1pJgCSdAFCD02FxAAkkwBzWhi6gpMNBhlxvVcN5GjAeA38SoF/YghpmqRDnD8gOrWn3uJ3aBBsECT3KEFl4ppHBMTKlSZPQKEGAJ3LQNPs2ZfzuHrReB7g57ynptyDMfa/KLW5xx4IV9e55zPf8AfmlsFlT3blEBScAmKYJEKxpUEkSFspKvMkpRLPq+u8PYSW5NHCbOE2B5jVYu3sAG0hDgTGYuMjXkLbihGekjnMcHSH5rRO7lpvCfHbScWhjjNm21gkRB5rxWbJGXq7PVYcGXHJf9OdLWZQwEBxIeSCbkEa8Abac+CpxGIFPLLmWLXO0gi5MH3jfwhXioO0ALCWnePZBAsCOZ+MXuhsVhm1qnZFrgGMBykwc7xJMjcANE8av+vPTqr/YE57aznOBIcHh7ARqwABg3cSqMLs51St2dIFznE2MCDcuE8BB8F0btlkAvESQ4bgGjRoB3AAR3IQB1KHUz67b5/Za2bHXv146LRiypul4CWX+Hr7Ry23Nnmk8trODY3Nu53Jo+ZgDnosyni3McyqYpU2HNTYLufaCYsXEixqGBw4LQ2rinVKjnWqP1NRwAps5w63e7h7KxHOlxLR21XU1Hew3nDtY958DlvXbwRWtHmeTKXsvTpNo+kLa9AdqHNnSQ3O5obbIBdzRf1nW66Hl8TUNRoLiKWHE5QJJeRY5WmC927MYA5Waqq1ZrSXE9tUOrjJpg996h6w3+oIDEVnPcXOcSeJ+A4DktWLFGCqJy8s3J2y3FYzM0U2DJTFwyZJPvPd+Z3kNwCFhOrsPhXPkiA0avdZo6njyEnkriqyiFoNwraV6wl26iDB61CPYHL2jy1UfxLadqU5t9Vwh3/Lb+Tr7XTRBlSgFmMxLqjpduENAs1oGjWtFgFQCpImhhJAc45WbjEl39Ld/XTmoEjgqZe7K1skjuA3knQAcUZ27KIimZqGxqQbcRT4D+bU7o301cSA3K0AMtbe4je8/m+A4IEogE50qClCspUZubNGpPwHE8krCQpUi4wBJRBqimIYZdoX8OIZ9VCpWtlaIbv4u6n5KhQIwUquscLJU9R1CRaSSBxQIQWjg6WUExLuG4WtPNDMtpc8eHT6pMrQY46/JCXhB69XXidTzOsFDhEVKaryKRBYzQo7lJ5hMzQpqIRSTKxjFEEjCSIFFJNqxdkep4Oq2o8Br4IkizhmvYkutx6zuRjcXYU3GXF5AgEmJtfdvRGzSx9GbNJtpBtqcpvqtbBYE5MzgIg6gSBp016rxWSStprw99PIo+gOCw2jmtm+XMZgOvcTvBm/JaXo9skGSJcRmEutPjzJ4KOHpZQGCxdeSTEb45CO9FUscabjlNoPCBPsj57lTsnLvwzZZTaaiE7Xo0wA1ozRqNA2BGvjwXF+kbxEQXm8Mb7I8Lnujqt6vi8rZcZncNJ6rhPSHaBdImG8NAevHvWjixeTLf4V08eOmzA2hWBP7x0xpTYQGjq4WHdJO8hZOJxJcMtmt9xtmzxO9x5kkqzFVJKFDS4wASeAXqMS6OFyJ2ylyjSpOcYaCTwHxPAc0T2bW+0cx91pHm/TwnqFCpXJGUQ1vutsOp3uPMytUUc6bJCmxmv7x3utPqDq8Xd0bbmoV6znxmNho0Wa3k1osFENTtbuAumoQryqdKiXGAJ+XMnQDqrxSA9o390a950HmUzqhPqiw3NGnfxPMo0AdjWt0h7uJnIO783U26pqr9S4yTrMzY6cgPJSAy+PjG8ff6Uu1UolkK1Mg+tY2seBEjyKryogU+4fegSLo9m3PefogEryBvtXPu/U/JQqVCde4bhyATlqiQhRCKYhShSgDXw+qBCDG79BxU6z7mLA+JUXGVEoBIpk6ZAJJryNCnNQqKZQglYD6scSotZKKo0eKaMWxW6IUKCIbTuAOgVjbmB98uqKY3I089YI1B0Fpnnu6a3KKRW3ZWzBkiZ8AT5tBCdLt37jA4Q36JI9i2j1ak1rQwkgEbyATA1J4XtaERidpQJLtABci8zLQPmh+xD3CpJBjNaCBaCAY6b9yto4Fsue4e1cySQBYActNF4GTh6z6G69ZZgKrjD3kuIaRBMAXsOJ+d1Ri61jLrkjujdwVtZ8jcAJJIsAPquSxe0S55dGVos0E6C9456psOJ5ZNoMYrtmntLHwLlcXtDEF5Macd3eToiNobRndPM/QLFxFYnU924dBuXb4nG0Ryubn/ABDPyjU5jwFh3uOvcO9UVKpIjRvuiw7+PUymJVjacrrRVHAyTtgysp05spGmBqe4fXRE4adwj73lXfhlb7KnUANfAa/om7Q6AQOWp6n7CJfRVZoooDQPlVvs8Zv3/onyHckRJ4/BPQhTc380ZRptAFgTxKpLFNpICaKoWRTim+sqYVtRp1UMqVrsZFZCbJ4K0qDklDJlbuX6qeFo5jyGvG8+VlZSoyQTOX7junf8E+Nqj2RpETymY8h4d5AxRinAm263hpx+KoIUkyUhFICUipUxr0t9xwlCgkcpidwgeMx8CrOyBJgEDcCZPeYE+Cup4WIJ36XHPdu03q9lJWRxiuZWxgGgV1OlP3v+/ipiBIj4zbh97le2oGg8QYMjyFvP5a2UkVW2SpU2sBl0HQmOhtOo5b+l0LXxMknmVCq5zzfw+ispYXiorfiI2l6DmqUkf+ETJvnIXeJ7PSpNAygAcAPn9EHi6zW+ruEAkzHUDvQFfG2s6zQZPstk/wA3SVzWO2mXS1rjlmZNyb27tV4HDxZTds+jxh+sK2vtaYYxxiSTzvxXOYvEc/1TYjEbgs6tU5ruYMCiqRi5fLUVSGrVFQbpOf8AZ+igXSunCFHnM2VyZJsdfgi2aR5IWlSJ3LSw1MAjernEyXZClg53LSwWzp1R+BwuYhdXgNiFjM5bY6WVijaK26ZxGJwkGFnPsuu2zhwOu5czVpXRhHoE5dgbwoZUS9qiKaujEokytjLJ8iupCE9ZysroSwF7FQ4ItzVU4KqSLEwUhX0KBmS0wLRBvu3XgFWUqEmTprG8gax9/pHFuIgcrkTGpjX7EkaKtocrr1os0ndJ6SIjpvGqFIU0xCWhrKiFAhWwrKWHJS1bJZSylKLpUEVRobh8PmiG0I1JBuCBrdXxxFMsoGWgffj5qLmu6fHdu70c5pJkNidJkqTMK773aH7702jfgm4FToxe890RoRBF1c8Sb9w4K84R/Xx8FF+FPDz5X8fudUdGvwH0v9IF83JkwBJMmAAAO4ACOACQrj66Dfxv8FU+kRxCrNInnb4D6BS2gpJlpxSSFLCkhux9EdJtPaDqjjJhs2G7r1WdWxNl03on6FV8ex1Vrg2m0xJuSRrARe0fQSnRBNSuLbz/AOK4eLjdJI9fyf8A6UW9UzgKtYlVCmToFu4lmFpm0vPHQfXyQTtsECKbWs6a+JWuONR/Tl5cl+sop7Kfq6Gjnb/HepllFm/MfL77kO+u5/tElQ7Mq+NGKcl+FtXEToIHAIvBOQTKRWps/ClxDQnk+ihW2dDsgwQV3WK28ewbSMEC4XJUMOGAAfIm4+H1TYhpmSVXDM7osnBUR2i7NO8rnKrLreNbUBZ9WjeVqgjLORmGmm7NaIwx4J/ww4haowM8pGb2ag5q0nYYbiPgqKlGNQi8YFMzqjVGlQk+ccf0++hVRihXqWsADfuvMBUyiWxYPiKm4CItOp6D7+aDeFe8KshVNFlg7mqACKcyRMW4+GnHUeKrFNI0GyNKlP398Vo0sPujqpYTDbyj6VGbK/HiM+TKUspxpv4ffX9UTSwp1A5yjsLgy7RdJsj0fNQgASVujg6t+GV5LdL05X8LA3KJoOC9ZpegDiJI3ch5LG2t6MGlI38EYfGTpS7DJZIq3E89NN0TM9NUzwRYtM81r4zBALPNpbPGDP3ZNPFqLGaYLUa2eP3zQtTCAm1un3qiqkx3xO4kc+MHzUKblQ0n0y6LaMwsIsWmeR/RJapYElX8f9h+o3o76dYrB0nUqJblcZ9YTBOsLG2rt+viHF1Wq4k7hYeCyi5NK40UzuykrteluZTpi6rYEZSpCJlOuilysm1XUihqnJSw4JMJ0its08LRkwuq2fRbTYDqbcO8dx+S57BNaLGZkcrjn9+K23YiBqqcjbdIsjSQS+qZkqqo6UMysmNYLTiikZMsm2EABWNoz0Qba4CIZihAHetsKM7ssNCenBWNwHJE4Mgro8Dgg4LT9IwXZXpKT6ONrYGNyBqsixuF3G08EAFyO0AAU8ckZq0VuEoPsx8RThA1Go+s8R0+az6r1nnRdGwd4VRU3uVRcs8mXRQi1X07nd4QPBVCYndMHTUyY8tVYyoP0QVWSRsYSkC22trfHr+qIYy8d19eizcLi4iFptxbNdD3QSZ8AtcJRMU4Ss6DZdIcQNLncO5ej+iD2U3A2I4ryKltBrQACJBNwTBFoEGI3nvWrg/SMtGq0z1yw1bophOWKe1We+vxbAJL2gdVwPpptim4+oeU/NcJX9JydTppf6rJxO2S6b/ElZ8HFx4ZbOVmjLy55Vqo0HYyuON1k1zJv5DQabuqHOLJSruLW5hMEkE7swgx3AjxV+TPsZoQaBq9QyQDra3DeJ4JMbu++aZjL805Kzrt2abLWsdHsu8Ckqe0CdNaGOOThygkuIdawhjkTTegQ5TFREUPFVE0Krcu+bW0kgnQ9OW5ZTaivpvQYUa9LEQZNyrq2NWI7FKp2JKEY92wzafSN78aeKY4srCFdTFcq5OilxNynikQMWuebXKuZiVdGdCOCOuwGPjeut2ZtkAary3D4g6o4bTIsCjke5ILU73a+2QRquOx+MkrOrbRJ3oCriZRxS0QuRbMLfX1QlSqqHVVWXqSyWSMKLHPUC5VkpBV2PRaHKQKqaxX0221v56okZcIE3PLx4dOfwunV55feqqdJUmsPBMrEdFoqHip9ueJgaX0GseJPiqhTVgYrFZU6LBUKupPuO7W/wBhDtapSmtlbigoVOPIxvN/JLtRIMC3L48UIHJnVgEdiaBgcLyQIE3m+lhA1+iodXmyE7Yk28URSAA58flwU3sOlBDaZ4pKH4hJPaBTOUSSSXJOmOE6SSYBZTUyUkkAkHFRTpJhRKYKSSIGSaVbS+YSSRQrL3PN7+75tuohxSSViAMXKIKSSjIMUgEySBCbQrWtSSTIVloCmAmSVqK36TAUwkkmEY6SSSKAxiUxNvvmkkgwkHGzuQHxAQkyU6SqkPEIaITOcnSTiv0rLikkklHP/9k="
                             >
                             <h2 class="card-h2">Solar System</h2>
@@ -242,7 +246,7 @@
                             <h2 class="card-h2">India's Flag</h2>
                             <div class="button-section">
                             <button class="projects-button">
-                                <a href="" class="p-anchor">View Project</a>
+                                <a href="../flex/indian-flag.html" class="p-anchor">View Project</a>
                             </button>
                             <button class="projects-button">
                                 <a href="" class="p-anchor">View Code</a>
@@ -255,7 +259,7 @@
                             <h2 class="card-h2">Product Cards</h2>
                             <div class="button-section">
                             <button class="projects-button">
-                                <a href="" class="p-anchor">View Project</a>
+                                <a href="../flex/product-cards.html" class="p-anchor">View Project</a>
                             </button>
                             <button class="projects-button">
                                 <a href="" class="p-anchor">View Code</a>
@@ -268,7 +272,7 @@
                             <h2 class="card-h2">Login Form</h2>
                             <div class="button-section">
                             <button class="projects-button">
-                                <a href="" class="p-anchor">View Project</a>
+                                <a href="../../html/form-tag/form-tag.html" class="p-anchor">View Project</a>
                             </button>
                             <button class="projects-button">
                                 <a href="" class="p-anchor">View Code</a>
@@ -281,7 +285,7 @@
                         <h2 class="card-h2">Dashboard</h2>
                         <div class="button-section">
                         <button class="projects-button">
-                            <a href="" class="p-anchor">View Project</a>
+                            <a href="../flex/dashboard.html" class="p-anchor">View Project</a>
                         </button>
                         <button class="projects-button">
                             <a href="" class="p-anchor">View Code</a>
@@ -294,7 +298,7 @@
                         <h2 class="card-h2">Best Movies</h2>
                         <div class="button-section">
                         <button class="projects-button">
-                            <a href="" class="p-anchor">View Project</a>
+                            <a href="../../html/text-formatting-tags/best-movies.html" class="p-anchor">View Project</a>
                         </button>
                         <button class="projects-button">
                             <a href="" class="p-anchor">View Code</a>
@@ -307,7 +311,7 @@
                         <h2 class="card-h2">News Page</h2>
                         <div class="button-section">
                         <button class="projects-button">
-                            <a href="" class="p-anchor">View Project</a>
+                            <a href="../flex/news-page.html" class="p-anchor">View Project</a>
                         </button>
                         <button class="projects-button">
                             <a href="" class="p-anchor">View Code</a>
@@ -319,7 +323,7 @@
                     <h2 class="card-h2">Chess</h2>
                     <div class="button-section">
                     <button class="projects-button">
-                        <a href="" class="p-anchor">View Project</a>
+                        <a href="./chessboard-grid.html" class="p-anchor">View Project</a>
                     </button>
                     <button class="projects-button">
                         <a href="" class="p-anchor">View Code</a>
