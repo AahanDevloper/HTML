@@ -63,7 +63,7 @@
             align-items: center;
         }
         .time-table{
-            width: 68%;
+            width: 70%;
             height: 95%;
             border-radius: 7px;
             background-color: white;
@@ -72,7 +72,10 @@
         h1{
             color: rgb(0, 49, 68);
             margin-left: 30px;
-            border-bottom: rgb(73, 73, 255) solid;
+            text-decoration: underline blue;
+        }
+        .announcement-h1{
+            margin: 0;
         }
         table{
             width: 90%;
@@ -86,26 +89,68 @@
             gap: 10px;
             border-style: solid;
             border-color: rgb(242, 242, 242);
+            border-width: 2px;
             color: rgb(0, 0, 0);
+            text-align: center;
         }
         th{
             background-color: rgb(0, 49, 68);
             border-style: solid;
             border-color: rgb(242, 242, 242);
+            border-width: 2px;
             color: white;
         }
         .blue{
             background-color: rgba(80, 200, 255, 0.492);
+            font-weight: 600;
         }
         .colspan{
             background-color: rgb(214, 214, 214);
         }
         .announcements{
-            width: 27%;
+            width: 25%;
             height: 95%;
             border-radius: 7px;
             background-color: white;
             box-shadow: 2px 2px 10px black;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        .message-1{
+            width: 86%;
+            height: 30%;
+            background-color: rgba(255, 0, 0, 0.15);
+            border-radius: 10px;
+        }
+        .message-2{
+            width: 86%;
+            height: 27%;
+            background-color: rgba(0, 0, 255, 0.15);
+            border-radius: 10px;
+        }
+        .message-3{
+            width: 86%;
+            height: 22%;
+            background-color: rgba(0, 255, 0, 0.15);
+            border-radius: 10px;
+        }
+        h3{ 
+            margin: 0;
+            margin-left: 15px;
+        }
+        .notification{
+            color: black;
+            font-size: 16px;
+            margin: 10px;
+        }
+        .date{
+            font-size: 13px;
+            color: rgb(93, 93, 93);
+            margin: 0px;
+            margin-left: 10px;
+            font-weight: 600;
         }
         .container-2{
             width: 100%;
@@ -144,87 +189,104 @@
                         <th>Friday</th>
                     </tr>
                     <tr>
-                        <td class="blue"></td>
-                        <td>Mathemathics</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="blue">8:00 - 8:45</td>
+                        <td>Activity</td>
+                        <td>Activity</td>
+                        <td>Activity</td>
+                        <td>Activity</td>
+                        <td>Activity</td>
                     </tr>
                     <tr>
-                        <td class="blue"></td>
-                        <td>Mathemathics</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="blue">8:45 - 9:30</td>
+                        <td colspan="5" class="colspan">Morning Break</td>
                     </tr>
                     <tr>
-                        <td class="blue"></td>
-                        <td colspan="5" class="colspan"></td>
-                    </tr>
-                    <tr>
-                        <td class="blue"></td>
-                        <td>SST</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="blue"></td>
-                        <td>SST</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="blue"></td>
-                        <td colspan="5" class="colspan"></td>
-                    </tr>
-                    <tr>
-                        <td class="blue"></td>
+                        <td class="blue">9:30 - 9:45</td>
                         <td>Science</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                    <tr>
-                        <td class="blue"></td>
                         <td>Science</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td>Science</td>
+                        <td>Science</td>
+                        <td>Science</td>
                     </tr>
                     <tr>
-                        <td class="blue"></td>
-                        <td colspan="5" class="colspan"></td>
+                        <td class="blue">9:45 - 10:30</td>
+                        <td>Marathi</td>
+                        <td>Library</td>
+                        <td>Music</td>
+                        <td>Art and Craft</td>
+                        <td>Dance</td>
                     </tr>
                     <tr>
-                        <td class="blue"></td>
-                        <td>History</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="blue">10:30 - 11:15</td>
+                        <td colspan="5" class="colspan">Lunch Break</td>
                     </tr>
                     <tr>
-                        <td class="blue"></td>
-                        <td>History</td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
+                        <td class="blue">11:15 - 11:30</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>English</td>
+                        <td>English</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">11:30 - 12:15</td>
+                        <td>SST</td>
+                        <td>SST</td>
+                        <td>SST</td>
+                        <td>SST</td>
+                        <td>SST</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">12:15 - 1:00</td>
+                        <td>Maths</td>
+                        <td>Maths</td>
+                        <td>Maths</td>
+                        <td>Maths</td>
+                        <td>Maths</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">1:00 - 1:15</td>
+                        <td colspan="5" class="colspan">Short Break</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">1:15 - 2:00</td>
+                        <td>Marathi</td>
+                        <td>Marathi</td>
+                        <td>Marathi</td>
+                        <td>Sports</td>
+                        <td>Art and Craft</td>
+                    </tr>
+                    <tr>
+                        <td class="blue">2:00 - 2:45</td>
+                        <td>Sanskrit</td>
+                        <td>Sanskrit</td>
+                        <td>Sanskrit</td>
+                        <td>Sports</td>
+                        <td>Sanskrit</td>
                     </tr>
                 </table>
             </div>
-            <div class="announcements"></div>
+            <div class="announcements">
+                <h1 class="announcement-h1">Announcements</h1>
+                <div class="message-1">
+                    <h3>⚠️ Library Closure</h3>
+                    <p class="notification">The School library will be closed this <b>Wednesday</b> for inventory. Please return all the borrowed books by tommorow.</p>
+                    <p class="date">12<sup>th</sup> August</p>
+                </div>
+                <div class="message-2">
+                    <h3>🗓️ Parent - Teacher Meeting</h3>
+                    <p class="notification"><b>Sign-up sheets</b> for Parent - Teacher Meeting is now available at the office</p>
+                    <p class="date">9<sup>th</sup> August</p>
+                </div>
+                <div class="message-3">
+                    <h3>⚽ Sports Day</h3>
+                    <p class="notification">Annual Sports Meet will be held on <b>18th of August</b>. All participants should wear their <b>house uniforms</b>.</p>
+                    <p class="date">8<sup>th</sup> August</p>
+                </div>
+            </div>
         </div>
         <div class="container-2">
-            <p>2014 - Orchid Public School, All rights reserved. <br> Contact: spmcbsc@gmail.com , Phone: 9822210786</p>
+            <p>© 2014 - Orchid Public School, Katol, All rights reserved. <br> Contact: spmcbscschool@gmail.com , Phone: 8856842598</p>
         </div>
     </div>
 </body>

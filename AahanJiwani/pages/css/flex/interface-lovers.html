@@ -1,42 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interface Lovers</title>
     <style>
-        body{
+        body {
             width: 100vw;
             height: 400vh;
             margin: 0;
             padding: 0;
         }
-        .main-container{
+
+        .main-container {
             width: 100%;
             height: 100%;
             display: flex;
             flex-direction: column;
         }
-        header{
+
+        header {
             width: 100%;
             height: 11%;
             position: fixed;
-            background-color: rgb(94, 94, 94);
             display: flex;
+            background-color: white;
         }
-        .name{
+
+        .name {
             width: 70%;
             height: 100%;
         }
-        nav{
+
+        nav {
             width: 30%;
             height: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
         }
+
+        .container-1 {
+            width: 100%;
+            height: 22%;
+            display: flex;
+            margin-top: 6%;
+        }
+
+        .box-1 {
+            width: 50%;
+            height: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 125px;
+            font-family: sans-serif;
+        }
+
+        .sub-box-1 {
+            width: 100%;
+            height: 66.66%;
+            background-color: rgb(184, 184, 184);
+        }
+
+        .sub-box-2 {
+            width: 100%;
+            height: 33.34%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .intro {
+            font-size: 30px;
+            margin-left: 30px;
+            font-weight: 100;
+        }
+
+        .box-2 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .container-2 {
+            width: 100%;
+            height: 22%;
+
+        }
+
+        h2 {
+            margin-left: 30px;
+        }
+        h4{
+            font-size: 20px;
+        }
+
+        .recent-interviews {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .interview-box {
+            width: 18%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 60%;
+        }
     </style>
 </head>
+
 <body>
     <div class="main-container">
         <header>
@@ -50,6 +128,56 @@
                 <span>Search</span>
             </nav>
         </header>
+        <div class="container-1">
+            <div class="box-1">
+                <div class="sub-box-1">
+                    <h1>BRENNAN MCGRATH</h1>
+                </div>
+                <div class="sub-box-2">
+                    <p class="intro">Brennan McGrath is a Partner at Combo, an independent strategy, design, and
+                        creative office in New York City.
+                        <br> No. 609 ---------------------- Read Interview
+                    </p>
+                </div>
+            </div>
+            <div class="box-2"></div>
+        </div>
+        <div class="container-2">
+            <h2>Recent Interviews</h2>
+            <div class="recent-interviews">
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/julian-herbst/827399e440-1754692532/me_full-366x549-crop-q90.webp"
+                        alt="">
+                        <h4>Julian Herbst — Attio</h4>
+                        <p class="interview-p">Julian Herbst is a German product designer creating digital experiences and brand identities for startups and wide …</p>
+                </div>
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/alex-khomutov/a90f10c547-1749600107/img_3240-366x549-crop-q90.webp"
+                        alt="">
+                        <h4>Alex Khomutov he/him — Ford Motor Company</h4>
+                        <p class="interview-p">Alex Khomutov is a Ukrainian Digital Product Designer currently living in Los Angeles and designing the future of …</p>
+                </div>
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/rauno-freiberg/c2daab0494-1751662321/rauno2-366x549-crop-48-6-39-2-q90.webp"
+                        alt="">
+                        <h4>Rauno Freiberg — Vercel</h4>
+                        <p class="interview-p">Rauno Freiberg is an Estonian interaction designer. He currently works as a Staff Design Engineer at Vercel and was …</p>
+                </div>
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/amelie-schluter/bd528b6d74-1751632298/2025-amelie-profile-closeup_v2-366x549-crop-q90.webp"
+                        alt="">
+                        <h4>Amelie Schlüter — SPACING</h4>
+                        <p class="interview-p">Co-Founder of SPACING - a design venture studio creating a family of delightful AI software products and partnering …</p>
+                </div>
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/benoit-lemoine/f104a690ab-1746402801/benoit-lemoine-area17-366x549-crop-49-6-34-9-q90.webp"
+                        alt="">
+                        <h4>Benoit Lemoine — AREA 17</h4>
+                        <p class="interview-p">Benoit Lemoine is the Group Design Director at AREA 17 in New York. Over the course of his career, he has led …</p>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
+
 </html>
