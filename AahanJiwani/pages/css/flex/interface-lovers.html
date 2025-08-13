@@ -31,6 +31,25 @@
         .name {
             width: 70%;
             height: 100%;
+            display: flex;
+            align-items: center;
+        }
+        .head{
+            width: 25%;
+            height: 55%;
+            background-color: black;
+            border-radius: 100px;
+            margin-left: 25px;
+        }
+        .head:hover{
+            width: 27%;
+        }
+        h5{
+            font-size: 20px;
+            font-family: fantasy;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: white;
         }
 
         nav {
@@ -41,6 +60,7 @@
             align-items: center;
         }
 
+        /* container 1 */
         .container-1 {
             width: 100%;
             height: 22%;
@@ -58,6 +78,7 @@
             font-weight: 500;
             font-size: 125px;
             font-family: sans-serif;
+            text-align: center;
         }
 
         .sub-box-1 {
@@ -82,17 +103,22 @@
             width: 50%;
             height: 100%;
         }
+        .box-2-image{
+            width: 100%;
+            height: 100%;
+        }
 
+        /* container 2 */
         .container-2 {
             width: 100%;
             height: 22%;
-
         }
 
         h2 {
             margin-left: 30px;
         }
-        h4{
+
+        h4 {
             font-size: 20px;
         }
 
@@ -112,14 +138,120 @@
             width: 100%;
             height: 60%;
         }
+
+        /* container 3 */
+        .container-3 {
+            width: 100%;
+            height: 22%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .scouts {
+            width: 31%;
+            height: 72%;
+            background-color: rgb(165, 165, 165);
+        }
+
+        .culture {
+            width: 31%;
+            height: 72%;
+            background-color: rgb(165, 165, 165);
+        }
+
+        .studios {
+            width: 31%;
+            height: 72%;
+            background-color: rgb(165, 165, 165);
+        }
+
+        .cont-3-h2 {
+            font-size: 35px;
+            margin-top: 77%;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .cont-3-p {
+            font-size: 22px;
+            color: white;
+            margin-left: 26px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .container-4 {
+            width: 100%;
+            height: 30%;
+        }
+
+        .cards {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cont-4-box-1 {
+            width: 55%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+        }
+
+        .item-1 {
+            width: 50%;
+            height: 100%;
+            background-color: rgba(162, 116, 0, 0.92);
+        }
+
+        .item-2 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .cont-4-box-2 {
+            width: 17%;
+            height: 100%;
+        }
+
+        .cont-4-box-3 {
+            width: 17%;
+            height: 100%;
+        }
+
+        .cont-4-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cont-4-span {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+        }
+
+        .cont-4-span-2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 500;
+            display: flex;
+        }
+
+        .box-2-img {
+            width: 100%;
+            height: 25%;
+        }
     </style>
 </head>
 
 <body>
+    <!-- main container -->
     <div class="main-container">
+        <!-- header starts -->
         <header>
             <div class="name">
-                <div class="head"></div>
+                <div class="head"><h5>Lovers Magazine </h5></div>
             </div>
             <nav>
                 <span>Home</span>
@@ -128,7 +260,9 @@
                 <span>Search</span>
             </nav>
         </header>
+        <!-- container 1 -->
         <div class="container-1">
+            <!-- box 1 -->
             <div class="box-1">
                 <div class="sub-box-1">
                     <h1>BRENNAN MCGRATH</h1>
@@ -136,44 +270,112 @@
                 <div class="sub-box-2">
                     <p class="intro">Brennan McGrath is a Partner at Combo, an independent strategy, design, and
                         creative office in New York City.
-                        <br> No. 609 ---------------------- Read Interview
+                        <br> No. 609 ------------------------- Read Interview
                     </p>
                 </div>
             </div>
-            <div class="box-2"></div>
+            <!-- box 2 -->
+            <div class="box-2">
+                <img src="https://spaces.is/media/pages/loversmagazine/interviews/brennan-mcgrath/8a82b0dd01-1751989842/combo-headshots_0618250275-1-1146x1604.4-crop-q90.webp" class="box-2-image">
+            </div>
         </div>
+        <!-- container 2 starts -->
         <div class="container-2">
             <h2>Recent Interviews</h2>
+            <!-- box  -->
             <div class="recent-interviews">
                 <div class="interview-box">
                     <img src="https://spaces.is/media/pages/loversmagazine/interviews/julian-herbst/827399e440-1754692532/me_full-366x549-crop-q90.webp"
                         alt="">
-                        <h4>Julian Herbst — Attio</h4>
-                        <p class="interview-p">Julian Herbst is a German product designer creating digital experiences and brand identities for startups and wide …</p>
+                    <h4>Julian Herbst — Attio</h4>
+                    <p class="interview-p">Julian Herbst is a German product designer creating digital experiences and
+                        brand identities for startups and wide …</p>
                 </div>
+                <!-- box -->
                 <div class="interview-box">
                     <img src="https://spaces.is/media/pages/loversmagazine/interviews/alex-khomutov/a90f10c547-1749600107/img_3240-366x549-crop-q90.webp"
                         alt="">
-                        <h4>Alex Khomutov he/him — Ford Motor Company</h4>
-                        <p class="interview-p">Alex Khomutov is a Ukrainian Digital Product Designer currently living in Los Angeles and designing the future of …</p>
+                    <h4>Alex Khomutov he/him — Ford Motor Company</h4>
+                    <p class="interview-p">Alex Khomutov is a Ukrainian Digital Product Designer currently living in Los
+                        Angeles and designing the future of …</p>
                 </div>
+                <!-- box -->
                 <div class="interview-box">
                     <img src="https://spaces.is/media/pages/loversmagazine/interviews/rauno-freiberg/c2daab0494-1751662321/rauno2-366x549-crop-48-6-39-2-q90.webp"
                         alt="">
-                        <h4>Rauno Freiberg — Vercel</h4>
-                        <p class="interview-p">Rauno Freiberg is an Estonian interaction designer. He currently works as a Staff Design Engineer at Vercel and was …</p>
+                    <h4>Rauno Freiberg — Vercel</h4>
+                    <p class="interview-p">Rauno Freiberg is an Estonian interaction designer. He currently works as a
+                        Staff Design Engineer at Vercel and was …</p>
                 </div>
+                <!-- box -->
                 <div class="interview-box">
                     <img src="https://spaces.is/media/pages/loversmagazine/interviews/amelie-schluter/bd528b6d74-1751632298/2025-amelie-profile-closeup_v2-366x549-crop-q90.webp"
                         alt="">
-                        <h4>Amelie Schlüter — SPACING</h4>
-                        <p class="interview-p">Co-Founder of SPACING - a design venture studio creating a family of delightful AI software products and partnering …</p>
+                    <h4>Amelie Schlüter — SPACING</h4>
+                    <p class="interview-p">Co-Founder of SPACING - a design venture studio creating a family of
+                        delightful AI software products and partnering …</p>
                 </div>
+                <!-- box -->
                 <div class="interview-box">
                     <img src="https://spaces.is/media/pages/loversmagazine/interviews/benoit-lemoine/f104a690ab-1746402801/benoit-lemoine-area17-366x549-crop-49-6-34-9-q90.webp"
                         alt="">
-                        <h4>Benoit Lemoine — AREA 17</h4>
-                        <p class="interview-p">Benoit Lemoine is the Group Design Director at AREA 17 in New York. Over the course of his career, he has led …</p>
+                    <h4>Benoit Lemoine — AREA 17</h4>
+                    <p class="interview-p">Benoit Lemoine is the Group Design Director at AREA 17 in New York. Over the
+                        course of his career, he has led …</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-3">
+            <div class="scouts">
+                <h2 class="cont-3-h2">Scouts</h2>
+                <p class="cont-3-p">Connecting exceptional companies with exceptional talent.</p>
+            </div>
+            <div class="culture">
+                <h2 class="cont-3-h2">Culture</h2>
+                <p class="cont-3-p">The Glassdoor alternative. A platform that showcases the best companies.</p>
+            </div>
+            <div class="studios">
+                <h2 class="cont-3-h2">Studios</h2>
+                <p class="cont-3-p">Browse and hire the perfect design studio for your next project.</p>
+            </div>
+        </div>
+        <div class="container-4">
+            <h2>Product Designers</h2>
+            <div class="cards">
+                <div class="cont-4-box-1">
+                    <div class="item-1">
+                        <h1>RYAN <br> FAN</h1>
+                        <span class="cont-4-span">PRODUCT DESIGNER AT CODE AND THEORY</span>
+                        <span class="cont-4-span-2">Ryan Fan is a New York-based product designer and developer helping
+                            humans understand machines better. He currently designs at Code and Theory, and supports the
+                            design community as an Awwwards jury and AIGA NY mentor.</span>
+                    </div>
+                    <div class="item-2">
+                        <img class="cont-4-img"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/ryan-fan/de4e2c0830-1741470772/headshot-4x5-764x1528-crop-q90.webp">
+                    </div>
+                </div>
+                <div class="cont-4-box-2">
+                    <img class="box-2-img"
+                        src="https://spaces.is/media/pages/loversmagazine/interviews/ethan-chng/07e033d0d2-1745259721/portrait_main-366x366-crop-q90.webp">
+                        <span>PRODUCT DESIGNER</span>
+                        <h3>Ethan Chng - Instagram</h3>
+                        <p style="font-size: 17px;">Ethan Chng is a designer at Instagram focused on systems and interactions. He enjoys dreaming up ideas that solve …</p>
+                        <img class="box-2-img" src="https://spaces.is/media/pages/loversmagazine/interviews/andrey-rybin/30d46e50c3-1743313008/img_9639-kopija-366x366-crop-42-2-17-5-q90.webp">
+                        <span>PRODUCT DESIGNER</span>
+                        <h3>Andrey Rybin - Human</h3>
+                        <p style="font-size: 17px;">Andrei Rybin is a Product and Industrial Designer, born in Lipetsk and based in Yerevan, with a focus on minimalism and …</p>
+                </div>
+                <div class="cont-4-box-3">
+                    <img class="box-2-img" src="https://spaces.is/media/pages/loversmagazine/interviews/andrea-pacheco/229c4fbb03-1746055185/dedeialn-366x366-crop-q90.webp"
+                    >
+                    <span>PRODUCT DESIGNER</span>
+                    <h3>Andrea Pacheco - Instagram</h3>
+                    <p style="font-size: 17px;">Andrea Pacheco is a product designer passionate about building the future of social connection. With a background in …</p>
+                    <img class="box-2-img" src="https://spaces.is/media/pages/loversmagazine/interviews/barbara-lopez/7a3e970d3e-1743785370/barbara-366x366-crop-q90.webp" alt="">
+                    <span>PRODUCT DESIGNER</span>
+                    <h3>Barbara Lopez - Squarespace</h3>
+                    <p style="font-size: 17px;">Barbara is a Venezuelan Product Designer based in New York, currently working on the Frontsite team at Squarespace.</p>
                 </div>
             </div>
         </div>
