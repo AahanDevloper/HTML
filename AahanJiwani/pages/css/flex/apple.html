@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 800vh;
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .main-container{
+            width: 100%;
+            height: 100%;
+        }
+        header{
+            width: 100%;
+            height: 0.8%;
+            background-color: rgba(255, 255, 255, 0.901);
+            display: flex;
+            justify-content: center;
+        }
+        .container-1{
+            width: 83%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-weight: 100;
+        }
+        span{
+            font-size: 12.75px;
+        }
+        .container-2{
+            width: 100%;
+            height: 30%;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 12px;
+        }
+        .box-1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: linear-gradient(to bottom right,rgb(195, 223, 233),rgb(255, 255, 255));;
+        }
+        h1{
+            font-size: 53px;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+        .cont-2-span{
+            font-size: 25px;
+        }
+        .button-box{
+            width: 100%;
+            height: 7.5%;
+            display: flex;
+            justify-content: center;
+            margin-top: 25px;
+        }
+        button{
+            width: 11.3%;
+            height: 100%;
+            background-color: rgb(24, 101, 255);
+            color: white;
+            font-size: 18px;
+            font-weight: 100;
+            border-radius: 25px;
+            border: none;
+        }
+        .buy{
+            width: 6.1%;
+            background-color: transparent;
+            color: rgb(24, 101, 255);;
+            border-style: solid;
+            border-color: rgb(24, 101, 255);
+            border-width: 1.5px;
+            margin-left: 20px;
+        }
+        .buy:hover{
+            background-color: rgb(24, 101, 255);
+            color: white;
+        }
+        img{
+            width: 34%;
+            height: 40%;
+        }
+        .span-2{
+            font-size: 21px;
+            margin-top: 20px;
+        }
+        .box-2{
+            background-color: rgb(244, 244, 244);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .b-2-box-1{
+            width: 22%;
+            height: 28%;
+            background-color: rgb(24, 101, 255);
+            border-radius: 40px;
+        }
+        .b-2-box-2{
+            width: 22%;
+            height: 7%;
+            background-color: rgb(24, 101, 255);
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        .b-2-box-3{
+            width: 22%;
+            height: 40%;
+            background-color: rgb(24, 101, 255);
+            border-radius: 40px;
+            margin-top: 30px;
+        }
+        h2{
+            color: white;
+            font-size: 45px;
+            margin: 0;
+            font-weight: 500;
+            margin-left: 25px;
+        }
+        h3{
+            color: white;
+            font-size: 24px;
+            margin: 0;
+            font-weight: 500;
+            margin-left: 25px;
+        }
+        .box-3{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgb(244, 244, 244);
+        }
+        .blue-button{
+            width: 11.3%;
+            height: 100%;
+            background-color: rgb(24, 101, 255);
+            color: white;
+            font-size: 18px;
+            font-weight: 100;
+            border-radius: 25px;
+            border: none;
+        }
+        .white-button{
+            width: 11.3%;
+            height: 100%;
+            background-color: rgb(255, 255, 255);
+            color: rgb(24, 101, 255);
+            font-size: 18px;
+            font-weight: 100;
+            border-radius: 25px;
+            border: solid 1px  rgb(24, 101, 255);
+            margin-left: 20px;
+        }
+        .white-button:hover{
+            color: white;
+            background-color: rgb(24, 101, 255);
+        }
+        .iphone{
+            width: 80%;
+            height: 40%;
+        }
+    </style>
+</head>
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- header -->
+        <header>
+            <div class="container-1">
+                <!-- items -->
+                <span>Logo</span>
+                <span>Store</span>
+                <span>Mac</span>
+                <span>iPad</span>
+                <span>iPhone</span>
+                <span>Watch</span>
+                <span>Vision</span>
+                <span>Airpods</span>
+                <span>TV and Home</span>
+                <span>Entertainment</span>
+                <span>Accessories</span>
+                <span>Support</span>
+                <span>Search</span>
+                <span>Bag</span>
+            </div>
+        </header>
+        <!-- container 2 -->
+         <div class="container-2">
+            <div class="box-1">
+                <h1>MacBook Air</h1>
+                <span class="cont-2-span">Sky blue color.</span>
+                <span class="cont-2-span">Sky high performance with M4.</span>
+                <div class="button-box">
+                    <button>Learn more</button>
+                    <button class="buy">Buy</button>
+                </div>
+                <img src="https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/macbook-air-og-202503?wid=1200&hei=630&fmt=jpeg&qlt=95&.v=1739216814915" alt="">
+                <span class="span-2">Built for Apple Intelligence.</span>
+            </div>
+            <div class="box-2">
+                <div class="b-2-box-1"><h2>Buy Mac or iPad <br> for collage</h2></div>
+                <div class="b-2-box-2"><h3>with education savings</h2></div>
+                <div class="b-2-box-3"><h2>Choose AirPods or an eligible accessory</h2></div>
+                <!-- <button>Shop</button> -->
+            </div>
+            <div class="box-3">
+                <h1>iPhone</h1>
+                <span class="cont-2-span">Meet the iPhone 16 family.</span>
+                <div class="button-box">
+                    <button class="blue-button">Learn more</button>
+                    <button class="white-button">Shop iPhone</button>
+                </div>
+                <span class="span-2">Built for Apple Intelligence</span>
+                <img class="iphone" src="https://www.apple.com/in/iphone/home/images/overview/welcome/switch/welcome__n6xy87ib1gyu_xlarge.jpg" alt="">
+            </div>
+         </div>
+    </div>
+</body>
+</html>
