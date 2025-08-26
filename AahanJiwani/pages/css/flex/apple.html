@@ -8,7 +8,7 @@
     <style>
         body {
             width: 100vw;
-            height: 800vh;
+            height: 740vh;
             margin: 0;
             padding: 0;
             font-family: sans-serif;
@@ -17,6 +17,8 @@
         .main-container {
             width: 100%;
             height: 100%;
+            display: flex;
+            flex-direction: column;
         }
 
         header {
@@ -40,13 +42,16 @@
         span {
             font-size: 12.75px;
         }
-
+        .span-2{
+            font-size: 18px;
+        }
         .container-2 {
             width: 100%;
-            height: 30%;
+            height: 33%;
             display: grid;
             grid-template-rows: 1fr 1fr 1fr;
             gap: 12px;
+            margin-top: 40px;
         }
 
         .box-1 {
@@ -54,30 +59,32 @@
             flex-direction: column;
             align-items: center;
             background: linear-gradient(to bottom right, rgb(195, 223, 233), rgb(255, 255, 255));
-            ;
+            width: 100%;
+            height: 100%;
         }
 
         h1 {
             font-size: 53px;
             font-weight: 500;
             margin-bottom: 12px;
+            margin-top: 15px;
         }
 
         .cont-2-p {
             font-size: 25px;
+            margin: 10px;
         }
 
         .button-box {
             width: 100%;
-            height: 7.5%;
+            height: 8%;
             display: flex;
             justify-content: center;
-            margin-top: 25px;
         }
 
         button {
             width: 11.3%;
-            height: 100%;
+            height: 90%;
             background-color: rgb(24, 101, 255);
             color: white;
             font-size: 18px;
@@ -145,7 +152,7 @@
 
         h2 {
             color: white;
-            font-size: 45px;
+            font-size: 40px;
             margin: 0;
             font-weight: 500;
             margin-left: 25px;
@@ -201,7 +208,7 @@
 
         .container-3 {
             width: 100%;
-            height: 30%;
+            height: 35%;
             display: grid;
             grid-template-columns: 1fr 1fr;
         }
@@ -213,6 +220,7 @@
             flex-direction: column;
             justify-self: center;
             align-self: center;
+            align-items: center;
         }
         .cont-3-box-1,.cont-3-box-2,.cont-3-box-4{
             background-color: rgb(0, 0, 0);
@@ -221,18 +229,21 @@
             background-color: rgb(245, 245, 245);
         }
         .cont-3-h1 {
-            font-size: 45px;
+            font-size: 39px;
+            margin-top: 47px;
             color: white;
             text-align: center;
         }
 
         .cont-3-h1-2 {
-            font-size: 45px;
+            margin-top: 47px;
+            font-size: 39px;
             color: rgb(0, 0, 0);
             text-align: center;
         }
         .cont-3-p{
             font-size: 20px;
+            margin-top: 0;
             text-align: center;
             color: white;
         }
@@ -240,6 +251,45 @@
             font-size: 20px;
             text-align: center;
             color: rgb(0, 0, 0);
+        }
+        .cont-3-button-box{
+            width: 80%;
+            height: 6%;
+            display: flex;
+            justify-content: center;
+        }
+        .cont-3-button{
+            width: 21%;
+            height: 100%;
+            font-size: 15px;
+            font-weight: 100;
+        }
+        .cont-3-buy-button{
+            width: 21%;
+            height: 100%;
+            font-size: 15px;
+            font-weight: 100;
+            background-color: transparent;
+            border-style: solid;
+            border-width: 1px;
+            border-color: rgb(24, 101, 255);
+            color: rgb(24, 101, 255);
+            margin-left: 20px;
+        }
+        .cont-3-buy-button:hover{
+            background-color: rgb(24, 101, 255);
+            color: rgb(255, 255, 255);
+        }
+        .img-container{
+            width: 100%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cont-3-img{
+            width: 90%;
+            height: 90%;
         }
     </style>
 </head>
@@ -310,26 +360,67 @@
             <div class="cont-3-box-1">
                 <h1 class="cont-3-h1">iPad</h1>
                 <p class="cont-3-p">Touch, draw and type on one magical device.</p>
+                <div class="cont-3-button-box">
+                    <button class="cont-3-button">Learn more</button>
+                    <button class="cont-3-buy-button">Shop iPad</button>
+                </div>
+                <div class="img-container">
+                    <img class="cont-3-img" src="https://www.tomsguide.fr/content/uploads/sites/2/2024/02/iPad-Apple-Pro-Air-resultats-Q1-240x170.jpg" alt="">
+                </div>
             </div>
             <div class="cont-3-box-2">
                 <h1 class="cont-3-h1">MacBook Pro</h1>
                 <p class="cont-3-p">A work of smart.</p>
+                <div class="cont-3-button-box">
+                    <button class="cont-3-button">Learn more</button>
+                    <button class="cont-3-buy-button">Buy</button>
+                </div>
+                <div class="img-container">
+                    <img class="cont-3-img" src="" alt="">
+                </div>
             </div>
             <div class="cont-3-box-3">
                 <h1 class="cont-3-h1-2">Apple Watch</h1>
                 <p class="cont-3-p-2">Thinstant classic</p>
+                <div class="cont-3-button-box">
+                    <button class="cont-3-button">Learn more</button>
+                    <button class="cont-3-buy-button">Buy</button>
+                </div>
+                <div class="img-container">
+                    <img class="cont-3-img" src="https://www.apple.com/newsroom/images/2024/09/introducing-apple-watch-series-10/article/Apple-Watch-Series-10-hero-240909_big.jpg.large.jpg" alt="">
+                </div>
             </div>
             <div class="cont-3-box-4">
                 <h1 class="cont-3-h1">AirPods Pro 2</h1>
                 <p class="cont-3-p">Now with a Hearing Aid feature.</p>
+                <div class="cont-3-button-box">
+                    <button class="cont-3-button">Learn more</button>
+                    <button class="cont-3-buy-button">Buy</button>
+                </div>
+                <div class="img-container">
+                    <img class="cont-3-img" src="https://www.apple.com/v/airpods-pro/n/images/meta/og__eui2mpgzwyaa_hearing.png?202504221259" alt="">
+                </div>
             </div>
             <div class="cont-3-box-5">
                 <h1 class="cont-3-h1-2">Apple Trade In</h1>
                 <p class="cont-3-p-2">Get $160-$600 in credit when you trade in iPhone 12 or higher.</p>
+                <div class="cont-3-button-box">
+                    <button class="cont-3-button" style="width: 30%;">Get your estimate</button>
+                </div>
+                <div class="img-container">
+                    <img class="cont-3-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfHp5I1wMn5GFyr-yKx-soQnfJu8pFUouElg&s" alt="">
+                </div>
             </div>
             <div class="cont-3-box-6">
                 <h1 class="cont-3-h1-2">Apple Card</h1>
                 <p class="cont-3-p-2">Get up to 3% daily Cash Back with daily purchase.</p>
+                <div class="cont-3-button-box">
+                    <button class="cont-3-button">Learn more</button>
+                    <button class="cont-3-buy-button">Apply now</button>
+                </div>
+                <div class="img-container">
+                    <img class="cont-3-img" src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201903/Apple_Card.jpeg?VersionId=F1CHd8JvV_bvT2Ne5sw4e8aBL8glSQiP" alt="">
+                </div>
             </div>
         </div>
     </div>
