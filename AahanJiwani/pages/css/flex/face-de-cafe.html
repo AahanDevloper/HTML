@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face de Cafe</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            font-family: "Shadows Into Light", cursive;
+            font-weight: 400;
+            font-style: normal;
+        }
+
+        header {
+            width: 100%;
+            height: 10%;
+            background-color: black;
+            display: flex;
+        }
+
+        .box-1 {
+            width: 33.33%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 {
+            color: white;
+            font-size: 30px;
+            margin-left: 20px;
+        }
+
+        .box-2 {
+            width: 33.33%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        span {
+            color: white;
+        }
+
+        .new {
+            width: 12%;
+            height: 50%;
+            color: gold;
+            border: solid gold 0.4px;
+            background-color: black;
+        }
+
+        .box-3 {
+            width: 33.34%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        button {
+            margin-left: 10px;
+            width: 16%;
+            height: 50%;
+            background-color: gold;
+            color: black;
+            border: none;
+            border-radius: 7px;
+        }
+
+        .container-1 {
+            width: 100%;
+            height: 45%;
+        }
+
+        .cafe-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .container-2 {
+            width: 100%;
+            height: 45%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(242, 242, 242);
+        }
+
+        .cont-2-h2 {
+            font-size: 25px;
+            color: black;
+            text-align: center;
+            margin: 0;
+        }
+
+        .card-section {
+            width: 100%;
+            height: 70%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .best-seller-1,
+        .best-seller-2,
+        .best-seller-3,
+        .best-seller-4,
+        .best-seller-5,
+        .best-seller-6 {
+            width: 15%;
+            height: 95%;
+            background-color: white;
+            box-shadow: 1px 1px 5px rgb(18, 18, 18);
+            border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 65%;
+            border-radius: 5px;
+        }
+
+        .box-6-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 5px;
+        }
+        .dish-name{
+            text-align: center;
+            color: black;
+            font-size: 18px;
+            margin: 0;
+        }
+        .order{
+            width: 40%;
+            height: 14%;
+            background-color: white;
+            border: gold .5px solid;
+            color: gold;
+            margin-top: 5px;
+        }
+        .order:hover{
+            background-color: gold;
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="box-1">
+                <h2>FaceDe Cafe</h2>
+            </div>
+            <div class="box-2">
+                <span>Home</span>
+                <span>Reservation</span>
+                <span>About</span>
+                <span>Gallery</span>
+                <button class="new">New</button>
+            </div>
+            <div class="box-3">
+                <form>
+                    <input type="text" placeholder="Search menu">
+                </form>
+                <button>Search</button>
+            </div>
+        </header>
+        <div class="container-1">
+            <img class="cafe-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2C6gnO2t0jYBG3hfn7mCGH2f_vZZk3Arx2g&s" alt="">
+        </div>
+        <div class="container-2">
+            <h2 class="cont-2-h2">Best-selling</h2>
+            <div class="card-section">
+                <div class="best-seller-1">
+                    <img class="card-img"
+                        src="https://www.licious.in/blog/wp-content/uploads/2021/09/shutterstock_1650877375-750x750.jpg">
+                        <h2 class="dish-name">Manchurian</h2>
+                        <button class="order">Order Now</button>
+                </div>
+                <div class="best-seller-2">
+                    <img class="card-img"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCyPerPTmvf6pSWIP366tHZDBCwXHAjYnfNw&s">
+                        <h2 class="dish-name">Chaumin</h2>
+                        <button class="order">Order Now</button>
+                </div>
+                <div class="best-seller-3">
+                    <img class="card-img"
+                        src="https://vegecravings.com/wp-content/uploads/2018/06/White-Pasta-Sauce-Recipe-Step-By-Step-Instructions.jpg">
+                        <h2 class="dish-name">White pasta</h2>
+                        <button class="order">Order Now</button>
+                </div>
+                <div class="best-seller-4">
+                    <img class="card-img"
+                        src="https://img-global.cpcdn.com/recipes/45ae3bb32bb51596/1200x630cq80/photo.jpg">
+                        <h2 class="dish-name">Tari poha</h2>
+                        <button class="order">Order Now</button>
+                </div>
+                <div class="best-seller-5">
+                    <img class="card-img"
+                        src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Mumbai-Pav-Bhaji-Recipe.jpg">
+                        <h2 class="dish-name">Pav bhaji</h2>
+                        <button class="order">Order Now</button>
+                </div>
+                <div class="best-seller-6">
+                    <img class="box-6-img" src="https://m.media-amazon.com/images/I/61fnVjvcO4L.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
