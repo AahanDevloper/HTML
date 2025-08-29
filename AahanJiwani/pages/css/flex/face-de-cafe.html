@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
         }
-
+        /* main container */
         .main-container {
             width: 100%;
             height: 100%;
@@ -55,20 +55,32 @@
             color: white;
         }
 
-        .new {
+        .menu {
             width: 12%;
             height: 50%;
             color: gold;
             border: solid gold 0.4px;
             background-color: black;
+            font-family: "Shadows Into Light", cursive;
         }
+        .menu:hover{
+            background-color: gold;
+            color: white;
 
+        }
         .box-3 {
             width: 33.34%;
             height: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
+        }
+        form{
+            height: 40%;
+        }
+        input{
+            height: 100%;
+            font-family: "Shadows Into Light", cursive;
         }
 
         button {
@@ -79,8 +91,9 @@
             color: black;
             border: none;
             border-radius: 7px;
+            font-family: "Shadows Into Light", cursive;
         }
-
+        /* container 1 */
         .container-1 {
             width: 100%;
             height: 45%;
@@ -90,7 +103,7 @@
             width: 100%;
             height: 100%;
         }
-
+        /* container 2 (best selling) */
         .container-2 {
             width: 100%;
             height: 45%;
@@ -113,7 +126,7 @@
             justify-content: space-evenly;
             align-items: center;
         }
-
+        /* best selling cards */
         .best-seller-1,
         .best-seller-2,
         .best-seller-3,
@@ -151,9 +164,10 @@
             width: 40%;
             height: 14%;
             background-color: white;
-            border: gold .5px solid;
-            color: gold;
+            border: rgb(236, 201, 0) .5px solid;
+            color: rgb(237, 201, 0);
             margin-top: 5px;
+            font-family: "Shadows Into Light", cursive;
         }
         .order:hover{
             background-color: gold;
@@ -164,17 +178,21 @@
 </head>
 
 <body>
+    <!-- main container -->
     <div class="main-container">
+        <!-- header -->
         <header>
+            <!-- name -->
             <div class="box-1">
                 <h2>FaceDe Cafe</h2>
             </div>
+            <!-- nav bar -->
             <div class="box-2">
                 <span>Home</span>
                 <span>Reservation</span>
                 <span>About</span>
                 <span>Gallery</span>
-                <button class="new">New</button>
+                <button class="menu">Menu</button>
             </div>
             <div class="box-3">
                 <form>
@@ -183,36 +201,44 @@
                 <button>Search</button>
             </div>
         </header>
+        <!-- image container -->
         <div class="container-1">
-            <img class="cafe-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2C6gnO2t0jYBG3hfn7mCGH2f_vZZk3Arx2g&s" alt="">
+            <img class="cafe-img" src="https://assets.architecturaldigest.in/photos/66857a1ecb1ae9232c223165/16:9/w_2560%2Cc_limit/Untitled%2520design%2520-%25202024-07-03T214934.097.png" alt="">
         </div>
+        <!-- container 2 -->
         <div class="container-2">
             <h2 class="cont-2-h2">Best-selling</h2>
+            <!-- card section starts -->
             <div class="card-section">
+                <!-- card -->
                 <div class="best-seller-1">
                     <img class="card-img"
                         src="https://www.licious.in/blog/wp-content/uploads/2021/09/shutterstock_1650877375-750x750.jpg">
                         <h2 class="dish-name">Manchurian</h2>
                         <button class="order">Order Now</button>
                 </div>
+                <!-- card -->
                 <div class="best-seller-2">
                     <img class="card-img"
                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCyPerPTmvf6pSWIP366tHZDBCwXHAjYnfNw&s">
                         <h2 class="dish-name">Chaumin</h2>
                         <button class="order">Order Now</button>
                 </div>
+                <!-- card -->
                 <div class="best-seller-3">
                     <img class="card-img"
                         src="https://vegecravings.com/wp-content/uploads/2018/06/White-Pasta-Sauce-Recipe-Step-By-Step-Instructions.jpg">
                         <h2 class="dish-name">White pasta</h2>
                         <button class="order">Order Now</button>
                 </div>
+                <!-- card -->
                 <div class="best-seller-4">
                     <img class="card-img"
-                        src="https://img-global.cpcdn.com/recipes/45ae3bb32bb51596/1200x630cq80/photo.jpg">
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9HkORBhwEir2iZyHqsrd7gp0tJ70XQZVIwA&s">
                         <h2 class="dish-name">Tari poha</h2>
                         <button class="order">Order Now</button>
                 </div>
+                <!-- card -->
                 <div class="best-seller-5">
                     <img class="card-img"
                         src="https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Instant-Pot-Mumbai-Pav-Bhaji-Recipe.jpg">
@@ -222,9 +248,13 @@
                 <div class="best-seller-6">
                     <img class="box-6-img" src="https://m.media-amazon.com/images/I/61fnVjvcO4L.jpg">
                 </div>
+                <!-- card ends -->
             </div>
+            <!-- card section ends -->
         </div>
+        <!-- container 2 ends -->
     </div>
+    <!-- main container ends -->
 </body>
 
 </html>
