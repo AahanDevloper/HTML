@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid template areas</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        /* main container */
+        .main-container{
+            width: 100%;
+            height: 100%;
+            /* display grid */
+            display: grid;
+            grid-template-areas: 
+            "header header header"
+            "aside main main"
+            "footer footer footer";
+            gap: 15px;
+        }
+        /* header */
+        header{
+            grid-area: header;
+            background-color: rgb(34, 197, 188);
+        }
+        /* aside */
+        aside{
+            grid-area: aside;
+            background-color: hotpink;
+        }
+        /* main */
+        main{
+            grid-area: main;
+            background-color: lightsalmon;
+        }
+        /* footer */
+        footer{
+            grid-area: footer;
+            background-color: rgb(128, 152, 240);
+        }
+    </style>
+</head>
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- header -->
+        <header></header>
+        <!-- aside -->
+        <aside></aside>
+        <!-- main -->
+        <main></main>
+        <!-- footer -->
+        <footer></footer>
+    </div>
+</body>
+</html>
