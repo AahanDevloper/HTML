@@ -30,11 +30,13 @@
 
         header {
             width: 85%;
-            height: 13%;
-            background-color: rgb(255, 229, 229);
+            height: 12%;
+            background-color: rgb(255, 255, 255);
             position: fixed;
-            margin-top: 50px;
+            margin-top: 25px;
             display: flex;
+            box-shadow: 1px 1px 10px rgb(176, 176, 176);
+            border-radius: 6px;
 
         }
 
@@ -51,38 +53,142 @@
             justify-content: space-evenly;
             align-items: center;
             font-weight: 700;
-            color: rgb(183, 183, 183);
+            color: rgb(123, 123, 123);
         }
 
         .container-1 {
             width: 100%;
-            height: 90vh;
+            height: 66vh;
             display: flex;
             margin-top: 140px;
         }
 
-        .box-1{
-            width: 60%;
+        .box-1 {
+            width: 64%;
             height: 100%;
         }
-        .box-2{
-            width: 40%;
+
+        .box-2 {
+            width: 36%;
             height: 100%;
         }
+
         h1 {
             font-size: 55px;
             margin-left: 100px;
             color: rgb(51, 51, 51);
+        }
+
+        p {
+            margin-left: 100px;
+            font-size: 22.75px;
+            color: rgb(92, 92, 92);
+            font-weight: lighter;
+        }
+
+        .button-1,
+        .button-2 {
+            height: 10.5%;
+            border-radius: 30px;
+            border: none;
+            font-weight: 700;
+            color: white;
+            font-size: 17px;
+        }
+
+        .button-1 {
+            width: 22%;
+            margin-left: 100px;
+            background-color: rgb(8, 119, 99);
+        }
+
+        .button-2 {
+            margin-left: 10px;
+            width: 37%;
+            background-color: rgb(241, 97, 40);
+        }
+
+        .cont-1-img {
+            width: 90%;
+            height: 85%;
+        }
+        .container-2{
+            width: 100%;
+            height: 18vh;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .cont-2-img{
+            width: 14%;
+            height: 100%;
+        }
+        .container-3{
+            width: 100%;
+            height: 83vh;
+        }
+        .box-3{
+            width: 35%;
+            height: 3.5%;
+            background-color: rgb(8, 119, 99);
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-top: 200px;
+        }
+        h2{
+            text-align: center;
+            font-size: 33px;
+            color: rgb(84, 84, 84);
+        }
+        .cont-3-p{
+            margin: 350px;
+            margin-top: 0;
+            text-align: center;
+            font-size: 18px;
+        }
+        .container-4{
+            width: 100%;
+            height: 83vh; 
+            display: flex;
+        }
+        .box-4{
+            width: 50%;
+            height: 100%;
+        }
+        .b-4-box-1{
+            width: 11%;
+            height: 3.5%;
+            background-color: rgb(241, 97, 40);
+            margin-left: 100px;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .box-5{
+            width: 50%;
+            height: 100%;
+        }
+        .box-content-text{
+            color: white;
+            font-size: 14px;
+            font-weight: 600;
         }
     </style>
 </head>
 
 <body>
     <div class="main-container">
+        <!-- header -->
         <header>
+            <!-- logo -->
             <div class="logo">
-                <img src="https://brandcurb.com/wp-content/uploads/brandcurb-logo.webp" alt="">
+                <img src="https://assets.brandcurb.com/img/az/2019/12/brandcurb-social-share.jpg" alt="">
             </div>
+            <!-- navigation bar -->
             <nav>
                 <span>Website</span>
                 <span>SEO</span>
@@ -92,14 +198,47 @@
                 <span>Blog</span>
                 <span>Contact Us</span>
             </nav>
-    <div class="header-box"></div>
+            <div class="header-box"></div>
         </header>
+        <!-- container 1 -->
         <div class="container-1">
+            <!-- box 1 -->
             <div class="box-1">
                 <h1>COMPLETE WEB DESIGN & DEVELOPMENT</h1>
-                <p>Say goodbye to sleepless nights over counterproductive communications between service providers, and no more overbilling-related nightmares for services you’re not sure you need but you’re sure you have to pay for.</p>
+                <p>Say goodbye to sleepless nights over counterproductive communications between service providers, and
+                    no more overbilling-related nightmares for services you’re not sure you need but you’re sure you
+                    have to pay for.</p>
+                <button class="button-1">View Pricing</button>
+                <button class="button-2">Book a Free Cunsultation</button>
             </div>
-            <div class="box-2"></div>
+            <!-- box 2 -->
+            <div class="box-2">
+                <img class="cont-1-img" src="https://assets.brandcurb.com/img/az/web-design-development.webp">
+            </div>
+        </div>
+        <div class="container-2">
+            <img class="cont-2-img" src="https://assets.brandcurb.com/img/az/2016/04/mayor-aguinaldo.webp">
+            <img class="cont-2-img" src="https://assets.brandcurb.com/img/az/2016/04/hvitality.webp">
+            <img class="cont-2-img" src="https://assets.brandcurb.com/img/az/2016/04/lenikiko.webp">
+            <img class="cont-2-img" src="https://assets.brandcurb.com/img/az/2016/04/branreluaoandassociates.webp">
+            <img class="cont-2-img" src="https://assets.brandcurb.com/img/az/2016/04/protostarter.webp">
+        </div>
+        <div class="container-3">
+            <div class="box-3"><span class="box-content-text">Custom Web Design & Development Packages for Your Business</span></div>
+            <h2>Choose the Perfect <span style="text-decoration: underline rgb(8, 119, 99);">Website Solution</span> for Your Business</h2>
+            <p class="cont-3-p">At BrandCurb, we understand that every business is unique, which is why we offer custom web design and development packages that are tailored to your specific needs. Our team of experienced designers and developers work closely with you to create a website that is not only visually stunning but also functional and user-friendly. From e-commerce sites to custom CMS builds, our packages are designed to meet your specific requirements and budget.</p>
+        </div>
+        <div class="container-4">
+            <div class="box-4">
+                <div class="b-4-box-1">
+                    <span class="box-content-text">Prising</span>
+                </div>
+                <h2>Website Design & Development</h2>
+                <p style="font-size: 18px; margin-left: 80px;">We offer comprehensive web design and development services that are tailored to meet the unique needs of your business. Our team of experienced designers and developers work closely with you to create a website that not only looks great but also functions seamlessly. We focus on creating a user-friendly experience for your visitors, ensuring that your website is easy to navigate and optimized for conversions.At BrandCurb, we take a collaborative approach to every project, ensuring that we fully understand your business and your goals before we begin. Whether you're looking to launch a new website or redesign an existing one, we are here to help you achieve your online objectives. Contact us today to learn more about our web design and development services and how we can help your business succeed online.</p>
+            </div>
+            <div class="box-5">
+                
+            </div>
         </div>
     </div>
 </body>
