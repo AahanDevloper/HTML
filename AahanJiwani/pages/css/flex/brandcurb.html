@@ -12,7 +12,7 @@
             margin: 0;
             padding: 0;
             font-family: sans-serif;
-            background-color: rgb(244, 244, 244);
+            background-color: rgb(255, 255, 255);
         }
 
         .main-container {
@@ -44,6 +44,7 @@
             width: 12.5%;
             height: 100%;
             background-color: black;
+            border-radius: 5px;
         }
 
         nav {
@@ -112,22 +113,26 @@
             width: 90%;
             height: 85%;
         }
-        .container-2{
+
+        .container-2 {
             width: 100%;
             height: 18vh;
             display: flex;
             justify-content: center;
             gap: 20px;
         }
-        .cont-2-img{
+
+        .cont-2-img {
             width: 14%;
             height: 100%;
         }
-        .container-3{
+
+        .container-3 {
             width: 100%;
             height: 83vh;
         }
-        .box-3{
+
+        .box-3 {
             width: 35%;
             height: 3.5%;
             background-color: rgb(8, 119, 99);
@@ -138,27 +143,32 @@
             border-radius: 5px;
             margin-top: 200px;
         }
-        h2{
+
+        h2 {
             text-align: center;
             font-size: 33px;
             color: rgb(84, 84, 84);
         }
-        .cont-3-p{
+
+        .cont-3-p {
             margin: 350px;
             margin-top: 0;
             text-align: center;
             font-size: 18px;
         }
-        .container-4{
+
+        .container-4 {
             width: 100%;
-            height: 83vh; 
+            height: 83vh;
             display: flex;
         }
-        .box-4{
+
+        .box-4 {
             width: 50%;
             height: 100%;
         }
-        .b-4-box-1{
+
+        .b-4-box-1 {
             width: 11%;
             height: 3.5%;
             background-color: rgb(241, 97, 40);
@@ -168,14 +178,138 @@
             align-items: center;
             justify-content: center;
         }
-        .box-5{
+
+        .box-5 {
             width: 50%;
             height: 100%;
         }
-        .box-content-text{
+
+        .box-content-text {
             color: white;
             font-size: 14px;
             font-weight: 600;
+        }
+
+        h3 {
+            color: rgb(84, 84, 84);
+            font-size: 18px;
+            margin-left: 35px;
+        }
+
+        .b-5-sub-box {
+            width: 82%;
+            height: 80%;
+            box-shadow: 1px 1px 10px rgb(213, 213, 213);
+            margin-left: 10px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .selection-box {
+            width: 100%;
+            height: 10%;
+            display: flex;
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        select {
+            width: 40%;
+            height: 80%;
+            margin-left: 80px;
+            border-radius: 4px;
+            border: none;
+            box-shadow: 1px 1px 7px rgb(149, 149, 149);
+        }
+
+        .button-section {
+            width: 90%;
+            height: 14%;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+        }
+
+        .sign-up {
+            width: 23%;
+            height: 70%;
+            border: none;
+            background-color: rgb(161, 161, 161);
+            color: white;
+            border-radius: 3.5px;
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .green-box {
+            width: 50%;
+            height: 5%;
+            background-color: rgb(3, 114, 94);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+
+        .share-this {
+            width: 80%;
+            height: 10%;
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+            margin-left: 30px;
+        }
+
+        .container-5 {
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .box-6 {
+            width: 45%;
+            height: 88%;
+            background-color: rgb(255, 91, 91);
+            border-radius: 14px;
+        }
+
+        .box-6-h1 {
+            color: white;
+            font-size: 35px;
+            margin-left: 20px;
+            margin-top: 360px;
+        }
+
+        pre {
+            font-family: sans-serif;
+            font-size: 22px;
+            margin-left: 20px;
+            color: white;
+        }
+
+        .box-7 {
+            width: 45%;
+            height: 93%;
+            border: 3px solid rgb(204, 204, 204);
+            border-radius: 14px;
+        }
+        .box-6-button{
+            width: 55%;
+            height: 8%;
+            background-color: rgb(14, 132, 110);
+            border-radius: 50px;
+            border: none;
+            margin-left: 50px;
+            color: white;
+            font-size: 18px;
+            font-weight: 900;
         }
     </style>
 </head>
@@ -186,7 +320,7 @@
         <header>
             <!-- logo -->
             <div class="logo">
-                <img src="https://assets.brandcurb.com/img/az/2019/12/brandcurb-social-share.jpg" alt="">
+                <img style="border-radius: 4px;" src="https://assets.brandcurb.com/img/az/2019/12/brandcurb-social-share.jpg">
             </div>
             <!-- navigation bar -->
             <nav>
@@ -224,9 +358,15 @@
             <img class="cont-2-img" src="https://assets.brandcurb.com/img/az/2016/04/protostarter.webp">
         </div>
         <div class="container-3">
-            <div class="box-3"><span class="box-content-text">Custom Web Design & Development Packages for Your Business</span></div>
-            <h2>Choose the Perfect <span style="text-decoration: underline rgb(8, 119, 99);">Website Solution</span> for Your Business</h2>
-            <p class="cont-3-p">At BrandCurb, we understand that every business is unique, which is why we offer custom web design and development packages that are tailored to your specific needs. Our team of experienced designers and developers work closely with you to create a website that is not only visually stunning but also functional and user-friendly. From e-commerce sites to custom CMS builds, our packages are designed to meet your specific requirements and budget.</p>
+            <div class="box-3"><span class="box-content-text">Custom Web Design & Development Packages for Your
+                    Business</span></div>
+            <h2>Choose the Perfect <span style="text-decoration: underline rgb(8, 119, 99);">Website Solution</span> for
+                Your Business</h2>
+            <p class="cont-3-p">At BrandCurb, we understand that every business is unique, which is why we offer custom
+                web design and development packages that are tailored to your specific needs. Our team of experienced
+                designers and developers work closely with you to create a website that is not only visually stunning
+                but also functional and user-friendly. From e-commerce sites to custom CMS builds, our packages are
+                designed to meet your specific requirements and budget.</p>
         </div>
         <div class="container-4">
             <div class="box-4">
@@ -234,10 +374,54 @@
                     <span class="box-content-text">Prising</span>
                 </div>
                 <h2>Website Design & Development</h2>
-                <p style="font-size: 18px; margin-left: 80px;">We offer comprehensive web design and development services that are tailored to meet the unique needs of your business. Our team of experienced designers and developers work closely with you to create a website that not only looks great but also functions seamlessly. We focus on creating a user-friendly experience for your visitors, ensuring that your website is easy to navigate and optimized for conversions.At BrandCurb, we take a collaborative approach to every project, ensuring that we fully understand your business and your goals before we begin. Whether you're looking to launch a new website or redesign an existing one, we are here to help you achieve your online objectives. Contact us today to learn more about our web design and development services and how we can help your business succeed online.</p>
+                <p style="font-size: 18px; margin-left: 80px;">We offer comprehensive web design and development
+                    services that are tailored to meet the unique needs of your business. Our team of experienced
+                    designers and developers work closely with you to create a website that not only looks great but
+                    also functions seamlessly. We focus on creating a user-friendly experience for your visitors,
+                    ensuring that your website is easy to navigate and optimized for conversions.At BrandCurb, we take a
+                    collaborative approach to every project, ensuring that we fully understand your business and your
+                    goals before we begin. Whether you're looking to launch a new website or redesign an existing one,
+                    we are here to help you achieve your online objectives. Contact us today to learn more about our web
+                    design and development services and how we can help your business succeed online.</p>
             </div>
             <div class="box-5">
-                
+                <div class="b-5-sub-box">
+                    <div class="selection-box">
+                        <h3>Package</h3>
+                        <select>
+                            <option>Choose an option</option>
+                            <option>Essential</option>
+                            <option>Premium</option>
+                            <option>Ultimate</option>
+                        </select>
+                    </div>
+                    <div class="button-section">
+                        <button class="sign-up">SIGN UP NOW</button>
+                    </div>
+                    <div class="green-box">
+                        <span class="box-content-text">Have Questions About Our Pricing?</span>
+                    </div>
+                    <p style="font-size: 16px; text-align: center; margin-left: 0;">We'll help you choose the package
+                        that's right for your business and answer any questions you may have. Don't wait, schedule your
+                        consultation now.</p>
+                    <div class="share-this">
+                        <p style="font-size: 18px; text-align: start; margin-left: 0;">Share this: ⓕ 𝕏 [in]</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-5">
+            <div class="box-6">
+                <h1 class="box-6-h1">Did you know?</h1>
+                <pre>38 percent of visitors will stop engaging with a
+website if the content or layout is unattractive.
+–Blue Corona</pre>
+                <button class="box-6-button">📞 Book a Free Consultation</button>
+            </div>
+            <div class="box-7">
+                <h2 style="font-size: 35px; margin-top: 70px;">Web Design-related Issues Resolved</h2>
+                <p style="font-size: 22px; margin-left: 50px;">The overall design is blah and generic. You don’t agree with the tabs, it’s kind of confusing. You don’t get how this site will help your business grow. To top everything off, you are overwhelmed by the number of designers and programmers pitching in to help you with specific areas of your website. Fret not, BrandCurb has arrived.</p>
+                <p style="font-size: 22px; margin-left: 50px;">With BrandCurb, you don’t need to look and pay for separate experts who can help you fix your page. We are known for helping businesses grow by ensuring that their WordPress and WooCommerce websites bring in actual revenues that increase the value of their businesses, and not merely design an online billboard, passively attracting mere visits and not engagements.</p>
             </div>
         </div>
     </div>
