@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Lovers</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 790vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            width: 100%;
+            height: 11%;
+            position: fixed;
+            display: flex;
+            background-color: white;
+        }
+
+        .name {
+            width: 70%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .head {
+            width: 25%;
+            height: 55%;
+            background-color: black;
+            border-radius: 100px;
+            margin-left: 25px;
+        }
+
+        h5 {
+            font-size: 20px;
+            font-family: fantasy;
+            margin-left: 20px;
+            margin-top: 10px;
+            color: white;
+        }
+
+        nav {
+            width: 30%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        /* container 1 */
+        .container-1 {
+            width: 100%;
+            height: 11%;
+            display: flex;
+            margin-top: 6%;
+        }
+
+        .box-1 {
+            width: 50%;
+            height: 100%;
+        }
+
+        h1 {
+            margin: 0;
+            font-weight: 500;
+            font-size: 125px;
+            font-family: sans-serif;
+            text-align: center;
+        }
+
+        .sub-box-1 {
+            width: 100%;
+            height: 66.66%;
+            background-color: rgb(184, 184, 184);
+        }
+
+        .sub-box-2 {
+            width: 100%;
+            height: 33.34%;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .intro {
+            font-size: 30px;
+            margin-left: 30px;
+            font-weight: 100;
+        }
+
+        .box-2 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .box-2-image {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* container 2 */
+        .container-2 {
+            width: 100%;
+            height: 11%;
+        }
+
+        h2 {
+            margin-left: 30px;
+        }
+
+        h4 {
+            font-size: 20px;
+        }
+
+        .recent-interviews {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .interview-box {
+            width: 18%;
+            height: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 60%;
+        }
+
+        /* container 3 */
+        .container-3 {
+            width: 100%;
+            height: 11%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .scouts {
+            width: 31%;
+            height: 72%;
+            background-color: rgb(165, 165, 165);
+            background-image: url(https://spaces.is/media/pages/loversmagazine/79b0b07b3e-1723031519/scout-796x995-crop-q90.webp);
+        }
+
+        .culture {
+            width: 31%;
+            height: 72%;
+            background-color: rgb(165, 165, 165);
+            background-image: url(https://spaces.is/media/pages/loversmagazine/8e1caa771f-1723031652/culture-ad-796x995-crop-q90.webp);
+        }
+
+        .studios {
+            width: 31%;
+            height: 72%;
+            background-color: rgb(165, 165, 165);
+            background-image: url(https://spaces.is/media/pages/loversmagazine/3a15143e02-1723031724/studios-ad-796x995-crop-q90.webp);
+        }
+
+        .cont-3-h2 {
+            font-size: 35px;
+            margin-top: 77%;
+            color: white;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .cont-3-p {
+            font-size: 22px;
+            color: white;
+            margin-left: 26px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        /* container 4 starts */
+        .container-4 {
+            width: 100%;
+            height: 17%;
+        }
+
+        .cards {
+            width: 100%;
+            height: 90%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cont-4-box-1 {
+            width: 55%;
+            height: 100%;
+            background-color: white;
+            display: flex;
+        }
+
+        .item-1 {
+            width: 50%;
+            height: 100%;
+            background-color: rgba(162, 116, 0, 0.92);
+        }
+
+        .item-2 {
+            width: 50%;
+            height: 100%;
+        }
+
+        .cont-4-box-2 {
+            width: 17%;
+            height: 100%;
+        }
+
+        .cont-4-box-3 {
+            width: 17%;
+            height: 100%;
+        }
+
+        .cont-4-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .cont-4-span {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 600;
+        }
+
+        .cont-4-span-2 {
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 500;
+            display: flex;
+        }
+
+        .box-2-img {
+            width: 100%;
+            height: 25%;
+        }
+
+        /* container 5 starts */
+        .container-5 {
+            width: 100%;
+            height: 11%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .cont-5-box {
+            width: 95%;
+            height: 90%;
+            display: flex;
+            border-style: solid;
+            border-width: .5px;
+            border-color: black;
+        }
+
+        .cont-5-box-1 {
+            width: 20%;
+            height: 100%;
+            border-style: solid;
+            border-width: .5px;
+            border-color: black;
+        }
+
+        .cont-5-box-2 {
+            width: 80%;
+            height: 100%;
+        }
+
+        .sub-cont-1 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+
+        .sub-cont-2 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+        }
+
+        .cont-5-item {
+            width: 25%;
+            height: 100%;
+            border-style: solid;
+            border-width: .5px;
+            border-color: black;
+        }
+
+        .cont-5-h1 {
+            font-size: 40px;
+            font-weight: 700;
+            text-align: start;
+            margin-left: 25px;
+            margin-top: 25px;
+        }
+
+        .cont-5-span {
+            margin-left: 10px;
+        }
+
+        .cont-5-span-2 {
+            margin-left: 60px;
+        }
+
+        .cont-5-span-3 {
+            margin-left: 10px;
+            font-weight: 600;
+        }
+
+        .img-box {
+            width: 220px;
+            height: 220px;
+            background-color: rgb(233, 233, 233);
+            display: flex;
+            justify-self: center;
+            margin-top: 15px;
+        }
+
+        .cont-5-img {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* container 6 */
+        .container-6 {
+            width: 100%;
+            height: 25%;
+        }
+
+        .cont-6-box-1 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .cont-6-box-2 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .cont-6-item {
+            width: 18%;
+            height: 90%;
+        }
+
+        .img-1 {
+            width: 100%;
+            height: 60%;
+        }
+
+        .img-2 {
+            width: 100%;
+            height: 40%;
+        }
+
+        .img-3 {
+            width: 100%;
+            height: 50%;
+        }
+
+        .cont-6-p {
+            font-size: 15px;
+        }
+
+        /* container 7 */
+        .container-7 {
+            width: 100%;
+            height: 13%;
+            background-color: black;
+        }
+
+        .cont-7-box-1 {
+            width: 100%;
+            height: 50%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .cont-7-item-1,
+        .cont-7-item-2,
+        .cont-7-item-3,
+        .cont-7-item-4 {
+            width: 15%;
+            height: 100%;
+
+        }
+
+        .cont-7-item-5 {
+            width: 25%;
+            height: 100%;
+        }
+
+        .cont-7-box-2 {
+            width: 100%;
+            height: 50%;
+        }
+
+        .spaces {
+            color: white;
+            font-size: 300px;
+            margin: 0;
+            cursor: default;
+        }
+
+        .cont-7-head {
+            color: rgb(167, 167, 167);
+            font-family: sans-serif;
+            font-size: 13px;
+            margin-left: 10px;
+        }
+
+        .cont-7-link {
+            font-size: 15px;
+            margin: 10px;
+            color: rgb(222, 222, 222);
+            list-style: none;
+            font-family: sans-serif;
+        }
+        .subscribe-head{
+            font-size: 37px;
+            font-family: sans-serif;
+            color: white;
+            text-align: start;
+        }
+        .subscribe-text{
+            color: rgb(167, 167, 167);
+            font-family: sans-serif;
+            font-size: 17px;
+            margin-left: 10px;
+        }
+        strong{
+            font-family: cursive;
+        }
+        button{
+            width: 100%;
+            height: 13%;
+            border-radius: 22px;
+            background-color: white;
+            border-style: solid;
+            border-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- main container -->
+    <div class="main-container">
+        <!-- header starts -->
+        <header>
+            <div class="name">
+                <div class="head">
+                    <h5>Lovers Magazine </h5>
+                </div>
+            </div>
+            <nav>
+                <span>Home</span>
+                <span>Interviews</span>
+                <span>Mixes</span>
+                <span>Search</span>
+            </nav>
+        </header>
+        <!-- container 1 -->
+        <div class="container-1">
+            <!-- box 1 -->
+            <div class="box-1">
+                <div class="sub-box-1">
+                    <h1>BRENNAN MCGRATH</h1>
+                </div>
+                <div class="sub-box-2">
+                    <p class="intro">Brennan McGrath is a Partner at Combo, an independent strategy, design, and
+                        creative office in New York City.
+                        <br> No. 609 ------------------------- Read Interview
+                    </p>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="box-2">
+                <img src="https://spaces.is/media/pages/loversmagazine/interviews/brennan-mcgrath/8a82b0dd01-1751989842/combo-headshots_0618250275-1-1146x1604.4-crop-q90.webp"
+                    class="box-2-image">
+            </div>
+        </div>
+        <!-- container 2 starts -->
+        <div class="container-2">
+            <h2>Recent Interviews</h2>
+            <!-- box  -->
+            <div class="recent-interviews">
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/julian-herbst/827399e440-1754692532/me_full-366x549-crop-q90.webp"
+                        alt="">
+                    <h4>Julian Herbst — Attio</h4>
+                    <p class="interview-p">Julian Herbst is a German product designer creating digital experiences and
+                        brand identities for startups and wide …</p>
+                </div>
+                <!-- box -->
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/alex-khomutov/a90f10c547-1749600107/img_3240-366x549-crop-q90.webp"
+                        alt="">
+                    <h4>Alex Khomutov he/him — Ford Motor Company</h4>
+                    <p class="interview-p">Alex Khomutov is a Ukrainian Digital Product Designer currently living in Los
+                        Angeles and designing the future of …</p>
+                </div>
+                <!-- box -->
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/rauno-freiberg/c2daab0494-1751662321/rauno2-366x549-crop-48-6-39-2-q90.webp"
+                        alt="">
+                    <h4>Rauno Freiberg — Vercel</h4>
+                    <p class="interview-p">Rauno Freiberg is an Estonian interaction designer. He currently works as a
+                        Staff Design Engineer at Vercel and was …</p>
+                </div>
+                <!-- box -->
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/amelie-schluter/bd528b6d74-1751632298/2025-amelie-profile-closeup_v2-366x549-crop-q90.webp"
+                        alt="">
+                    <h4>Amelie Schlüter — SPACING</h4>
+                    <p class="interview-p">Co-Founder of SPACING - a design venture studio creating a family of
+                        delightful AI software products and partnering …</p>
+                </div>
+                <!-- box -->
+                <div class="interview-box">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/benoit-lemoine/f104a690ab-1746402801/benoit-lemoine-area17-366x549-crop-49-6-34-9-q90.webp"
+                        alt="">
+                    <h4>Benoit Lemoine — AREA 17</h4>
+                    <p class="interview-p">Benoit Lemoine is the Group Design Director at AREA 17 in New York. Over the
+                        course of his career, he has led …</p>
+                </div>
+            </div>
+        </div>
+        <!-- container 3 -->
+        <div class="container-3">
+            <!-- scout sec -->
+            <div class="scouts">
+                <h2 class="cont-3-h2">Scouts</h2>
+                <p class="cont-3-p">Connecting exceptional companies with exceptional talent.</p>
+            </div>
+            <!-- culture sec -->
+            <div class="culture">
+                <h2 class="cont-3-h2">Culture</h2>
+                <p class="cont-3-p">The Glassdoor alternative. A platform that showcases the best companies.</p>
+            </div>
+            <!-- studio sec -->
+            <div class="studios">
+                <h2 class="cont-3-h2">Studios</h2>
+                <p class="cont-3-p">Browse and hire the perfect design studio for your next project.</p>
+            </div>
+        </div>
+        <!-- container 4 -->
+        <div class="container-4">
+            <h2>Product Designers</h2>
+            <!-- cards section -->
+            <div class="cards">
+                <div class="cont-4-box-1">
+                    <div class="item-1">
+                        <h1>RYAN <br> FAN</h1>
+                        <span class="cont-4-span">PRODUCT DESIGNER AT CODE AND THEORY</span>
+                        <span class="cont-4-span-2">Ryan Fan is a New York-based product designer and developer helping
+                            humans understand machines better. He currently designs at Code and Theory, and supports the
+                            design community as an Awwwards jury and AIGA NY mentor.</span>
+                    </div>
+                    <div class="item-2">
+                        <img class="cont-4-img"
+                            src="https://spaces.is/media/pages/loversmagazine/interviews/ryan-fan/de4e2c0830-1741470772/headshot-4x5-764x1528-crop-q90.webp">
+                    </div>
+                </div>
+                <!-- card -->
+                <div class="cont-4-box-2">
+                    <img class="box-2-img"
+                        src="https://spaces.is/media/pages/loversmagazine/interviews/ethan-chng/07e033d0d2-1745259721/portrait_main-366x366-crop-q90.webp">
+                    <span>PRODUCT DESIGNER</span>
+                    <h3>Ethan Chng - Instagram</h3>
+                    <p style="font-size: 17px;">Ethan Chng is a designer at Instagram focused on systems and
+                        interactions. He enjoys dreaming up ideas that solve …</p>
+                        <!-- card -->
+                    <img class="box-2-img"
+                        src="https://spaces.is/media/pages/loversmagazine/interviews/andrey-rybin/30d46e50c3-1743313008/img_9639-kopija-366x366-crop-42-2-17-5-q90.webp">
+                    <span>PRODUCT DESIGNER</span>
+                    <h3>Andrey Rybin - Human</h3>
+                    <p style="font-size: 17px;">Andrei Rybin is a Product and Industrial Designer, born in Lipetsk and
+                        based in Yerevan, with a focus on minimalism and …</p>
+                </div>
+                <!-- card -->
+                <div class="cont-4-box-3">
+                    <img class="box-2-img"
+                        src="https://spaces.is/media/pages/loversmagazine/interviews/andrea-pacheco/229c4fbb03-1746055185/dedeialn-366x366-crop-q90.webp">
+                    <span>PRODUCT DESIGNER</span>
+                    <h3>Andrea Pacheco - Instagram</h3>
+                    <p style="font-size: 17px;">Andrea Pacheco is a product designer passionate about building the
+                        future of social connection. With a background in …</p>
+                        <!-- card  -->
+                    <img class="box-2-img"
+                        src="https://spaces.is/media/pages/loversmagazine/interviews/barbara-lopez/7a3e970d3e-1743785370/barbara-366x366-crop-q90.webp"
+                        alt="">
+                    <span>PRODUCT DESIGNER</span>
+                    <h3>Barbara Lopez - Squarespace</h3>
+                    <p style="font-size: 17px;">Barbara is a Venezuelan Product Designer based in New York, currently
+                        working on the Frontsite team at Squarespace.</p>
+                </div>
+            </div>
+        </div>
+        <!-- container 5 -->
+        <div class="container-5">
+            <!-- box 1 starts -->
+            <div class="cont-5-box">
+                <div class="cont-5-box-1">
+                    <h1 class="cont-5-h1">Mixes put together by your favourite designers.</h1>
+                </div>
+                <div class="cont-5-box-2">
+                    <div class="sub-cont-1">
+                        <!-- item -->
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#609</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/brennan-mcgrath/6a5a7d204e-1754768360/603.brennan-mcgrath-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Brennan McGrath</span>
+                        </div>
+                        <!-- item -->
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#608</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/julian-herbst/3e2dab1186-1754691522/602.julian-herbst-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Julian Herbst</span>
+                        </div>
+                        <!-- item -->
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#607</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/alex-khomutov/1f14139277-1752068464/601.alex-khomutov-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Alex Khomutov</span>
+                        </div>
+                        <!-- item -->
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#606</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/rauno-freiberg/1b0fc4b625-1751999529/600.rauno-freiberg-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Rouno Freiberg</span>
+                        </div>
+                    </div>
+                    <!-- item -->
+                    <div class="sub-cont-2">
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#605</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/amelie-schluter/09648cc77d-1751632350/599.amelie-schluter-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Amelie Schlüter</span>
+                        </div>
+                        <!-- item -->
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#604</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/benoit-lemoine/ed9bd97e1e-1751625163/598.benoit-lemoine-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Benoit Lemoine</span>
+                        </div>
+                        <!-- item -->
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#603</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/ryan-fan/b1672c8ed8-1751479789/147192368864-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Ryan Fan</span>
+                        </div>
+                        <!-- item -->
+                        <div class="cont-5-item"><span class="cont-5-span">DESIGNER MIX</span> <span
+                                class="cont-5-span-2">#602</span>
+                            <div class="img-box">
+                                <img src="https://spaces.is/media/pages/loversmagazine/interviews/sergey-lisovskiy/6c095c4e7d-1749207122/597.sergey-lisovskiy-350x350-crop-q90.webp"
+                                    class="cont-5-img">
+                            </div>
+                            <span class="cont-5-span-3">Sergey Lisovskiy</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- container 5 ends -->
+        <!-- container 6 -->
+        <div class="container-6">
+            <h2>Popular Interviews</h2>
+            <!-- box-1 -->
+            <div class="cont-6-box-1">
+                <!-- card 1 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/drew-baker/86184f02d4-1704123838/drew-baker-672x1008-crop-x-0-5-y-0-5-q90.webp"
+                        class="img-1">
+                    <p class="cont-6-p">PRODUCT DESIGNER</p>
+                    <h4>Drew Baker — Funkhaus</h4>
+                    <p style="font-size: 17px;">Co-founder and technical director of Funkhaus, an LA-based creative
+                        agency. He is passionate about bringing a …</p>
+                </div>
+                <!-- card 2 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/casey-martin/ba308dcf13-1704123855/casey-martin-672x672-crop-q90.webp"
+                        class="img-2">
+                    <p class="cont-6-p">CREATIVE DIRECTOR</p>
+                    <h4>Casey Martin him/his — Play</h4>
+                    <p style="font-size: 17px;">Casey Martin is the Founder and Executive Creative Director of Play, a
+                        branding and design studio working with the …</p>
+                </div>
+                <!-- card 3 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/vladimir-stegantsov/0ce6aee49a-1704123840/vladimir-stegantsov-672x1008-crop-x-0-5-y-0-5-q90.webp"
+                        class="img-1">
+                    <p class="cont-6-p">PRODUCT DESIGNER</p>
+                    <h4>Vladimir Stegantsov — Revolut</h4>
+                    <p style="font-size: 17px;">Product designer from Russia, currently working in London focusing on
+                        simplifying complex things in fintech.</p>
+                </div>
+                <!-- card 4 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/mel-haasch/5518716523-1704123839/mel-haasch-672x672-crop-x-0-5-y-0-5-q90.webp"
+                        class="img-2">
+                    <p class="cont-6-p">BRAND DESIGNER</p>
+                    <h4>Mel Haasch — Slack</h4>
+                    <p style="font-size: 17px;">Human being, artist, and designer, in that order. They art-direct and
+                        design in ways that educate and highlight the …</p>
+                </div>
+                <!-- card 5 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/florian-kiem/4d029a1273-1739972911/florian-portrai-672x1008-crop-q90.webp"
+                        class="img-1">
+                    <p class="cont-6-p">SOFTWARE DEVELOPER</p>
+                    <h4>Florian Kiem — Freelance</h4>
+                    <p style="font-size: 17px;">Florian is a German design engineer with a passion for creating
+                        meaningful products. He enjoys reimagining existing …</p>
+                </div>
+            </div>
+            <!-- box 2 -->
+            <div class="cont-6-box-2">
+                <!-- card 1 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/sara-calls-clavera/22b0966ea2-1704123864/bourse-du-commerce-672x1008-crop-99-2-54-6-q90.webp"
+                        class="img-1">
+                    <p class="cont-6-p">UX Designer</p>
+                    <h4>Sara Calls Clavera She / her — N26</h4>
+                    <p style="font-size: 15px;">As a lead UX designer, right now I'm all about making finance easy to
+                        understand for everyone. After all, why should …</p>
+                </div>
+                <!-- card 2 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/brandon-levesque/f8b15614b5-1704123866/brandon-levesque-672x1008-crop-q90.webp"
+                        class="img-1">
+                    <p class="cont-6-p">Art Director</p>
+                    <h4>Brandon Levesque — CUSP°</h4>
+                    <p style="font-size: 15px;">Co-Founder and Art Director at CUSP°. Working in Visual Design, Creative
+                        Direction and Conceptualization to develop …</p>
+                </div>
+                <!-- card 3 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/clara-ujiie/7106e4b039-1712286233/clara-ujiie-portrait-lm-672x1008-crop-50-6-37-1-q90.webp"
+                        class="img-1">
+                    <p class="cont-6-p">Designer Advocate</p>
+                    <h4>Clara Ujiie — Figma</h4>
+                    <p style="font-size: 15px;">Clara is a designer, doodler, and noodler fascinated by the intersection
+                        of tooling and creative communities.</p>
+                </div>
+                <!-- card 4 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/cat-noone/3ce8d1c0d8-1704123840/cat-noone-672x672-crop-x-0-5-y-0-5-q90.webp"
+                        class="img-2">
+                    <p class="cont-6-p">Product Designer</p>
+                    <h4>Cat Noone — Iris</h4>
+                    <p style="font-size: 15px;">New Jersey-based designer, focused on building products with meaningful
+                        experiences and advocates for the little …</p>
+                </div>
+                <!-- card 5 -->
+                <div class="cont-6-item">
+                    <img src="https://spaces.is/media/pages/loversmagazine/interviews/aaron-poe/8ce6577914-1704123849/aaron-poe-672x896-crop-q90.webp"
+                        class="img-3">
+                    <p class="cont-6-p">Creative Director</p>
+                    <h4>Aaron Poe — Square</h4>
+                    <p style="font-size: 15px;">Multidisciplinary creative director and designer of brand identity
+                        systems. Architecture enthusiast. Born in LA. Reborn …</p>
+                </div>
+            </div>
+        </div>
+        <!-- container 7 -->
+        <div class="container-7">
+            <div class="cont-7-box-1">
+                <!-- section 1 -->
+                <div class="cont-7-item-1">
+                    <p class="cont-7-head">COMPANY</p>
+                    <p class="cont-7-link">Home</p>
+                    <p class="cont-7-link">About</p>
+                </div>
+                <!-- section 2 -->
+                <div class="cont-7-item-2">
+                    <p class="cont-7-head">ECOSYSTEM</p>
+                    <p class="cont-7-link">Culture</p>
+                    <p class="cont-7-link">Lovers Magazine</p>
+                    <p class="cont-7-link">Scout</p>
+                    <p class="cont-7-link">Studios</p>
+                </div>
+                <!-- section 3 -->
+                <div class="cont-7-item-3">
+                    <p class="cont-7-head">CONNECT</p>
+                    <p class="cont-7-link">Email</p>
+                    <p class="cont-7-link">Instagram</p>
+                    <p class="cont-7-link">X/Twitter</p>
+                </div>
+                <!-- section 4 -->
+                <div class="cont-7-item-4">
+                    <p class="cont-7-head">LEGAL</p>
+                    <p class="cont-7-link">Privacy</p>
+                    <p class="cont-7-link">Terms</p>
+                </div>
+                <!-- section 5 -->
+                <div class="cont-7-item-5">
+                    <p class="cont-7-head">SUBSCRIBE</p>
+                    <h1 class="subscribe-head">Keep your <strong>finger</strong> on <strong>the pulse.</strong></h1>
+                    <p class="subscribe-text">A newsletter to uncover bright opportunities, connect with standout creatives, and explore stories shaping culture, design, and tech.</p>
+                    <button>Subscribe to Pulse</button>
+                </div>
+            </div>
+            <!-- spaces section -->
+            <div class="cont-7-box-2">
+                <!-- h1 -->
+                <h1 class="spaces">SPACES</h1>
+
+            </div>
+        </div>
+    </div>
+    </div>
+</body>

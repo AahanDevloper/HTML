@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- use of align content in css -->
+        <title>Align Content</title>
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            .main-container{
+                width: 100%;
+                height: 100%;
+                background-color: aquamarine;
+                display: flex;
+                flex-direction: row;
+                align-content: center;
+                gap: 50px;
+                flex-wrap: wrap;
+            }
+            /* child box styling */
+            .box-1{
+                width: 200px;
+                height: 200px;
+                background-color: chocolate;
+            }
+            .box-2{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(25, 227, 25);
+            }
+            .box-3{
+                width: 200px;
+                height: 200px;
+                background-color: rgb(56, 56, 231);
+            }
+        </style>
+    </head>
+    <body>
+        <!-- main container -->
+        <div class="main-container">
+            <!-- child boxes -->
+            <div class="box-1"></div>
+            <div class="box-2"></div>
+            <div class="box-3"></div>
+        </div>
+    </body>
+</html>

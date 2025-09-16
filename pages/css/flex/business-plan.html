@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Business Plan</title>
+        <style>
+            body{
+                width: 100vw;
+                height: 100vh;
+                margin: 0;
+                padding: 0;
+            }
+            .main-container{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                font-family: sans-serif;
+            }
+            .container-1{
+                width: 100%;
+                height: 20%;
+            }
+            h1{
+                text-align: center;
+                font-weight: bold;
+                color: rgb(0, 40, 53);
+            }
+            h2{
+                font-size: 20px;
+                font-weight: 400;
+                text-align: center;
+                color: rgb(98, 114, 136);
+            }
+            .container-2{
+                width: 100%;
+                height: 80%;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .box-h2{
+                font-size: 30px;
+                font-weight: 700;
+                color: rgb(0, 40, 53);
+                font-weight: 800;
+            }
+            .price{
+                font-size: 45px;
+                color: rgb(0, 40, 53);
+                font-weight: 800;
+            }
+            span{
+                color: rgb(113, 116, 120);
+            }
+            .advantages{
+                width: 100%;
+                height: 50%;
+                margin-top: 20px;
+            }
+            p{
+                margin: 10px;
+                margin-left: 50px;
+                color: rgb(92, 92, 92);
+            }
+            button{
+                width: 70%;
+                height: 8%;
+                background-color: rgb(0, 123, 255);
+                border: none;
+                border-radius: 5px;
+                color: white;
+                font-weight: 500;
+                font-size: 15px;
+            }
+            button:hover{
+                background-color: rgb(0, 109, 225);
+            }
+            b{
+                font-size: 15px;
+                color: rgb(92, 92, 92);
+            }
+            /* boxes of plans  */
+            /* first box */
+            .box-1{
+                width: 27%;
+                height: 95%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            /* second box */
+            .box-2{
+                width: 100%;
+                height: 95%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+            }
+            /* feildset for most popular plan */
+            fieldset{
+                width: 27%;
+                height: 92%;
+                border-radius: 7px;
+                border-color: rgb(0, 145, 255);
+            }
+            .legend{
+                width: 140px;
+                height: 25px;
+                border-radius: 50px;
+                color: white;
+                font-weight: 700;
+                background-color: rgb(0, 145, 255);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            /* third box */
+            .box-3{
+                width: 27%;
+                height: 95%;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- main container -->
+        <div class="main-container">
+            <!-- container 1 -->
+            <div class="container-1">
+                <!-- heading -->
+                <h1>Choose Your Plan</h1>
+                <!-- sub heading -->
+                <h2>Select the perfect plan for your business needs</h2>
+            </div>
+            <!-- container 2 -->
+            <div class="container-2">
+                <!-- box 1 -->
+                <div class="box-1">
+                    <h2 class="box-h2">Basic</h2>
+                    <span class="price">$19 <b>/ month</b></span>
+                    <span>Perfect for individuals getting started</span>
+                    <!-- advantages -->
+                    <div class="advantages">
+                        <p>✅ 10 projects</p>
+                        <p>✅ 5 team members</p>
+                        <p>✅ 10 GB storage</p>
+                        <p>✅ Basic analytics</p>
+                        <p>✅ Email support</p>
+                    </div>
+                    <button>Get Started</button>
+                    </div>
+                    <!-- box 2 -->
+                    <fieldset>
+                        <legend><div class="legend">Most Popular</div></legend>
+                        <div class="box-2">
+                            <h2 class="box-h2">Professional</h2>
+                            <span class="price">$49 <b>/ month</b></span>
+                            <span>Ideal for growing businesses</span>
+                            <!-- advantages -->
+                            <div class="advantages">
+                                <p>✅ Unlimited projects</p>
+                                <p>✅ 20 team members</p>
+                                <p>✅ 50 GB storage</p>
+                                <p>✅ Advanced analytics</p>
+                                <p>✅ Priority email support</p>
+                                <p>✅ API access</p>
+                            </div>
+                            <button>Get Started</button>
+                        </div>
+                    </fieldset>
+                    <!-- box 3 -->
+                <div class="box-3">
+                    <h2 class="box-h2">Enterprise</h2>
+                    <span class="price">$99 <b>/ month</b></span>
+                    <span>For large scale businesses</span>
+                    <!-- advantages -->
+                    <div class="advantages">
+                        <p>✅ Unlimited projects</p>
+                        <p>✅ Unlimited team members</p>
+                        <p>✅ 500 GB storage</p>
+                        <p>✅ Advanced analytics</p>
+                        <p>✅ 24/7 phone support</p>
+                        <p>✅ API access</p>
+                        <p>✅ Dedicated account manager</p>
+                    </div>
+                    <button>Get Started</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
