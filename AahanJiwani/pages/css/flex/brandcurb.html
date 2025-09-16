@@ -14,7 +14,7 @@
             font-family: sans-serif;
             background-color: rgb(245, 245, 245);
         }
-
+        /* main container */
         .main-container {
             width: 100%;
             height: 100%;
@@ -24,10 +24,10 @@
         }
 
         img {
-            width: 100%;
-            height: 100%;
+            width: 90%;
+            height: 80%;
         }
-
+        /* header starts */
         header {
             width: 87%;
             height: 12%;
@@ -43,8 +43,11 @@
         .logo {
             width: 12.5%;
             height: 100%;
-            background-color: rgb(0, 0, 0);
+            background-color: rgb(255, 255, 255);
             border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         nav {
@@ -56,7 +59,7 @@
             font-weight: 700;
             color: rgb(123, 123, 123);
         }
-
+        /* container 1  */
         .container-1 {
             width: 100%;
             height: 66vh;
@@ -113,7 +116,7 @@
             width: 90%;
             height: 85%;
         }
-
+        /* container 2  */
         .container-2 {
             width: 100%;
             height: 18vh;
@@ -126,7 +129,7 @@
             width: 14%;
             height: 100%;
         }
-
+        /* container 3 */
         .container-3 {
             width: 100%;
             height: 83vh;
@@ -156,7 +159,7 @@
             text-align: center;
             font-size: 18px;
         }
-
+        /* container 4 */
         .container-4 {
             width: 100%;
             height: 83vh;
@@ -399,7 +402,50 @@
         .container-9{
             width: 100%;
             height: 83vh;
-            background-color: red;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .cont-9-box-1{
+            width: 43%;
+            height: 88%;
+            margin-top: 10px;
+            border-radius: 10px;
+            border: 3px rgb(238, 238, 238) solid;
+        }
+        .cont-9-subbox{
+            width: 35%;
+            height: 6%;
+            background-color: rgb(238, 238, 238);
+            display: flex;
+            justify-self: center;
+            justify-content: center;
+            align-items: center;
+            font-weight: 800;
+            color: rgb(154, 154, 154);
+            border-radius: 5px;
+        }
+        .cont-9-box-2{
+            width: 42%;
+            height: 65%;
+            box-shadow: 1px 1px 18px rgb(190, 190, 190);
+            margin-top: 75px;
+            border-radius: 10px;
+        }
+        q,cite{
+            font-size: 17px;
+            color: rgb(92, 92, 92);
+            font-weight: lighter;
+            line-height: 30px;
+        }
+        cite{
+            margin-left: 45px;
+        }
+        .cont-9-sub-box-2{
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            background-color: rgb(216, 216, 216);
         }
     </style>
 </head>
@@ -410,7 +456,7 @@
         <header>
             <!-- logo -->
             <div class="logo">
-                <img style="border-radius: 4px;" src="https://assets.brandcurb.com/img/az/2019/12/brandcurb-social-share.jpg">
+                <img src="https://assets.brandcurb.com/img/az/2019/12/brandcurb-social-share.jpg">
             </div>
             <!-- navigation bar -->
             <nav>
@@ -556,9 +602,22 @@ website if the content or layout is unattractive.
         </div>
         <div class="container-9">
             <div class="cont-9-box-1">
-                <h2>SMES Web Design</h2>
+                <div class="cont-9-subbox">
+                    <span>Unlimited Possibilities</span>
+                </div>
+                <h2 style="margin-top: 65px;">SMES Web Design</h2>
+                <p style="font-size: 18px; margin-left: 30px;">It is for these reasons that 90% of our clients from all over the world keep coming back! Just ask them!</p>
+                <p style="font-size: 18px; margin-left: 30px;">Being a one-stop shop hub for digital communication and marketing isn’t BrandCurb’s claim to fame because we simply aren’t. However, we are known worldwide because our one-stop shop hub actually generates measurable results in branding, digital marketing, and website development, enabling effective, efficient, and sustainable growth in our clients’ businesses. Just look at the exponential growth in our current target markets in Toronto, the Philippines, and Japan!</p>
             </div>
-            <div class="cont-9-box-2"></div>
+            <div class="cont-9-box-2">
+                <div class="cont-9-subbox-2">
+                    <div class="sub-box-item">59%</div>
+                </div>
+                <blockquote>
+                    <q>Given 15 minutes of time, 59 percent of people will read or browse through something beautifully designed rather than something plain and boring.</q>
+                </blockquote>
+                <cite>-Adobe</cite>
+            </div>
         </div>
     </div>
 </body>
