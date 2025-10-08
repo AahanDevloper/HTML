@@ -22,7 +22,7 @@
         /* header */
         header {
             width: 100%;
-            height: 7.5%;
+            height: 8%;
             background-color: rgb(0, 67, 134);
         }
 
@@ -62,8 +62,7 @@
         /* home section */
         .home{
             width: 100%;
-            height: 42.5%;
-
+            height: 42%;
         }
         .home-box-one{
             width: 100%;
@@ -113,6 +112,9 @@
             justify-content: center;
             align-items: center;
         }
+        .category-1:hover{
+            background-color: rgb(255, 165, 165);
+        }
         .category-2{
             width: 17%;
             height: 75%;
@@ -121,6 +123,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        .category-2:hover{
+            background-color: rgb(110, 185, 255);
         }
         .category-3{
             width: 17%;
@@ -131,6 +136,9 @@
             justify-content: center;
             align-items: center;
         }
+        .category-3:hover{
+            background-color: rgb(28, 221, 21);
+        }
         .category-4{
             width: 17%;
             height: 75%;
@@ -140,6 +148,9 @@
             justify-content: center;
             align-items: center;
         }
+        .category-4:hover{
+            background-color: rgb(235, 160, 255);
+        }
         .category-5{
             width: 17%;
             height: 75%;
@@ -148,6 +159,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
+        }
+        .category-5:hover{
+            background-color: rgb(255, 221, 120);
         }
         /* icons */
         .icon{
@@ -159,8 +173,101 @@
             height: 50%;
         }
         h2{
-            margin: 0;
             color: white;
+        }
+        /* book card section 1 */
+        .book-section-1{
+            width: 100%;
+            height: 46%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-top: 20px;
+        }
+        /* cards */
+        .card-1{
+            width: 36%;
+            height: 87%;
+            background-color: rgb(223, 223, 223);
+            display: flex;
+        }
+        .card-2{
+            width: 36%;
+            height: 87%;
+            background-color: rgb(223, 223, 223);
+            display: flex;
+        }
+        .card-text{
+            width: 50%;
+            height: 100%;
+        }
+        .card-p{
+            font-size: 30px;
+            color: black;
+            font-weight: 600;
+            text-align: start;
+            margin-left: 30px;
+        }
+        .card-image{
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        /* book card section 2 */
+        .book-section-2{
+            width: 100%;
+            height: 47%;
+        }
+        button{
+            width: 60%;
+            height: 16%;
+            background-color: rgb(0, 128, 255);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 9px;
+            border: none;
+            margin-left: 30px;
+            font-size: 25px;
+        }
+        button:hover{
+            background-color: rgb(31, 143, 255);
+        }
+        /* book card section 2 */
+        .book-section-2{
+            width: 100%;
+            height: 46%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        /* cards */
+        .card-3,.card-4,.card-5,.card-6{
+            width: 16%;
+            height: 93%;
+        }
+        .card-p-2{
+            font-size: 15px;
+            color: rgb(0, 0, 0);
+            font-weight: 600;
+            margin-left: 30px;
+            text-align: start;
+        }
+        .button-2{
+            width: 60%;
+            height: 12%;
+            font-size: 20px;
+            border-radius: 8px;
+        }
+        .book-image{
+            width: 65%;
+            height: 55%;
+            display: flex;
+            justify-self: center;
+            margin-top: 10px;
         }
     </style>
 </head>
@@ -201,23 +308,23 @@
                 <div class="categories">
                     <div class="category-1">
                         <p class="icon">💭</p>
-                        <h2>Novels</h2>
+                        <h2 style="margin: 0;">Novels</h2>
                     </div>
                     <div class="category-2">
                         <p class="icon">📝</p>
-                        <h2>Biographies</h2>
+                        <h2 style="margin: 0;">Biographies</h2>
                     </div>
                     <div class="category-3">
                         <p class="icon">⚽</p>
-                        <h2>Sports</h2>
+                        <h2 style="margin: 0;">Sports</h2>
                     </div>
                     <div class="category-4">
                         <p class="icon">🎓</p>
-                        <h2>School</h2>
+                        <h2 style="margin: 0;">School</h2>
                     </div>
                     <div class="category-5">
                         <p class="icon">🔎</p>
-                        <h2>Suspense</h2>
+                        <h2 style="margin: 0;">Suspense</h2>
                     </div>
                 </div>
             </div>
@@ -225,11 +332,61 @@
         <!-- container 2 -->
         <div class="books">
             <h1>Books</h1>
+            <!-- book card section 1 -->
             <div class="book-section-1">
-                <div class="card-1"></div>
-                <div class="card-2"></div>
+                <!-- cards -->
+                <div class="card-1">
+                    <!-- text section -->
+                    <div class="card-text">
+                        <p class="card-p">Thinking, <br>Fast and Slow</p>
+                        <p class="card-p">₹511</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <!-- image section -->
+                    <div class="card-image">
+                        <img src="https://m.media-amazon.com/images/I/71f6DceqZAL._UF1000,1000_QL80_.jpg" width="73%" height="80%">
+                    </div>
+                </div>
+                <div class="card-2">
+                    <!-- text section -->
+                    <div class="card-text">
+                        <p class="card-p">Olympiad<br>Prep-Guide</p>
+                        <p class="card-p">₹400</p>
+                        <button>Buy Now</button>
+                    </div>
+                    <!-- image section -->
+                    <div class="card-image">
+                        <img src="https://m.media-amazon.com/images/I/71Fdwl0tg3L._UF1000,1000_QL80_.jpg" width="73%" height="80%">
+                    </div>
+                </div>
             </div>
-            <div class="book-section-2"></div>
+            <!-- book card section 2 -->
+            <div class="book-section-2">
+                <div class="card-3">
+                    <img class="book-image" src="https://m.media-amazon.com/images/I/41WIhqNiPdL.jpg">
+                    <p class="card-p-2">Science NCERT</p>
+                    <p class="card-p-2">₹65</p>
+                    <button class="button-2">Buy Now</button>
+                </div>
+                <div class="card-4">
+                    <img class="book-image" src="https://rukminim2.flixcart.com/image/480/640/xif0q/regionalbooks/j/z/w/our-pasts-3-part-1-history-textbook-for-8-class-ncert-books-original-imagmwzfaycphhme.jpeg?q=90">
+                    <p class="card-p-2">History NCERT</p>
+                    <p class="card-p-2">₹65</p>
+                    <button class="button-2">Buy Now</button>
+                </div>
+                <div class="card-5">
+                    <img class="book-image" src="https://ncert.nic.in/textbook/pdf/hess3cc.jpg">
+                    <p class="card-p-2">Civics NCERT</p>
+                    <p class="card-p-2">₹65</p>
+                    <button class="button-2">Buy Now</button>
+                </div>
+                <div class="card-6">
+                    <img class="book-image" src="https://m.media-amazon.com/images/I/51hP-ssFFoL._UF1000,1000_QL80_.jpg">
+                    <p class="card-p-2">Geography NCERT</p>
+                    <p class="card-p-2">₹68</p>
+                    <button class="button-2">Buy Now</button>
+                </div>
+            </div>
         </div>
         <!-- container 3 -->
         <div class="about"></div>
