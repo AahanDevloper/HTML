@@ -70,57 +70,29 @@
         <div class="container">
             <!-- input area -->
             <div class="input-area">
-                <input type="" id="input-one" class="input-box" placeholder="Type x">
-                <input type="" id="input-two" class="input-box" placeholder="Type y">
+                <input id="input-one" class="input-box" placeholder="Type x">
+                <input id="input-two" class="input-box" placeholder="Type y">
             </div>
-
             <!-- button -->
-            <button onclick="showOutputA()">Add</button>
-            <button onclick="showOutputB()">Subtract</button>
-            <button onclick="showOutputC()">Divide</button>
-            <button onclick="showOutputD()">Multiply</button>
-
+            <button onclick="showOutput()">Show Output</button>
             <!-- display area -->
             <div class="display-area" id="display"></div>
         </div>
     </div>
 </body>
 <script>
-    function showOutputA(){
+    function showOutput(){
         // input
         let x = Number(document.getElementById("input-one").value);
         let y = Number(document.getElementById("input-two").value);
         // process
         let a = x + y;
-        // output
-        document.getElementById("display").innerHTML = a;
-    }
-    function showOutputB(){
-        // input
-        let x = Number(document.getElementById("input-one").value);
-        let y = Number(document.getElementById("input-two").value);
-        // process
         let b = x - y;
+        let c = x * y;
+        let d = x / y;
+        let e =  "Addition = " + a + "<br> Subtraction = " + b +"<br> Multiplication = " + c + "<br> Division = " + d;
         // output
-        document.getElementById("display").innerHTML = b;
-    }
-    function showOutputC(){
-        // input
-        let x = Number(document.getElementById("input-one").value);
-        let y = Number(document.getElementById("input-two").value);
-        // process
-        let c = x / y;
-        // output
-        document.getElementById("display").innerHTML = c;
-    }
-    function showOutputD(){
-        // input
-        let x = Number(document.getElementById("input-one").value);
-        let y = Number(document.getElementById("input-two").value);
-        // process
-        let d = x * y;
-        // output
-        document.getElementById("display").innerHTML = d;
+        document.getElementById("display").innerHTML =e;
     }
 </script>
 </html>
