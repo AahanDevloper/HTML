@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Assignment: Complete HTML Form</title>
+        <style>
+            body{
+                width: 100vw;
+                height: 150vh;
+                margin: 0;
+                padding: 0;
+            }
+            .main-container{
+                width: 100%;
+                height: 100%;
+
+            }
+            .display{
+                width: 100%;
+                height: 30%;
+                background-color: rgb(234, 234, 234);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="main-container">
+
+        <h1>Admission Form</h1>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label>Full name:</label>
+                <!-- input type text  -->
+                <input id="input-1" type="text" placeholder="Enter your full name">
+                <br><br>
+                <label>Email:</label>
+                <!-- input type email  -->
+                <input type="email" placeholder="Enter your Email ID">
+                <br><br>
+                <!-- input type age  -->
+                <label>Age</label>
+                <input type="number">
+                <!-- blood group -->
+                 <br><br>
+                 <label>Blood group:</label>
+                 <select>
+                    <option>Select your blood group</option>
+                    <option>O+ve</option>
+                    <option>A+ve</option>
+                    <option>B+ve</option>
+                    <option>AB+ve</option>
+                    <option>O-ve</option>
+                    <option>A-ve</option>
+                    <option>B-ve</option>
+                    <option>AB-ve</option>
+                 </select>
+            </fieldset>
+            <br>
+            <!-- contact details -->
+            <fieldset>
+                <legend>Contact details</legend>
+                <label>Phone no.</label> 
+                <!-- input type number  -->
+                <input type="number" placeholder="123-456-7890">
+                <br><br>
+                <label>Address:</label>
+                <br><br>
+                <!-- textarea -->
+                <textarea placeholder="Enter your address here..."></textarea>
+            </fieldset>
+            <fieldset>
+                <legend>Preferences</legend>
+                <label>Preffered Contact method:</label>
+                <br>
+    
+                <!-- input type radio  -->
+                <input type="radio"><label>Email</label>
+                <input type="radio"><label>Phone</label>
+                <br><br>
+                <label>Hobbies</label>
+                <br>
+                <!-- input type checkbox  -->
+                <input type="checkbox"><label>Dancing</label>
+                <input type="checkbox"><label>Studying</label>
+                <input type="checkbox"><label>Listening to music</label>
+            </fieldset>
+            <fieldset>
+                <legend>Additional information</legend>
+                <label>Country:</label>
+                <select>
+                    <option>Select your country:</option>
+                    <option>India</option>
+                    <option>UK</option>
+                    <option>USA</option>
+                    <option>Australia</option>
+                </select>
+                <br><br>
+                <!-- input type file  -->
+                <label>Upload resume:</label>
+                <input type="file">
+                <br><br>
+                <!-- input type date  -->
+                <label>Date of birth:</label>
+                <input type="date">
+                <br><br>
+                <!-- input type color  -->
+                <label>Favourite color</label>
+                <input type="color">
+                <br><br>
+                <!-- input type range  -->
+                <label>Arrange your satisfaction level</label>
+                <input type="range">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Submit your details</legend>
+                <!-- input type submit and reset  -->
+                <input type="submit" onclick="showOutput()">
+                <input type="reset">
+            </fieldset>
+        </form>
+        <div class="display"></div>
+        </div>
+    </body>
+    <script>
+        function showOutput(){
+            let a = document.getElementById("input-1").value;
+            let b = document.getElementById()
+        }
+    </script>
+</html>
