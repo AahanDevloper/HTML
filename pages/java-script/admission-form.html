@@ -1,27 +1,35 @@
 <html>
-    <head>
-        <title>Assignment: Complete HTML Form</title>
-        <style>
-            body{
-                width: 100vw;
-                height: 150vh;
-                margin: 0;
-                padding: 0;
-            }
-            .main-container{
-                width: 100%;
-                height: 100%;
+<!DOCTYPE html>
+<html lang="en">
 
-            }
-            .display{
-                width: 100%;
-                height: 30%;
-                background-color: rgb(234, 234, 234);
-            }
-        </style>
-    </head>
-    <body>
-        <div class="main-container">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 150vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .display {
+            width: 100%;
+            height: 22%;
+            background-color: rgb(234, 234, 234);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
 
         <h1>Admission Form</h1>
         <form>
@@ -33,15 +41,15 @@
                 <br><br>
                 <label>Email:</label>
                 <!-- input type email  -->
-                <input type="email" placeholder="Enter your Email ID">
+                <input type="email" placeholder="Enter your Email ID" id="input-2">
                 <br><br>
                 <!-- input type age  -->
                 <label>Age</label>
-                <input type="number">
+                <input type="number" id="input-3">
                 <!-- blood group -->
-                 <br><br>
-                 <label>Blood group:</label>
-                 <select>
+                <br><br>
+                <label>Blood group:</label>
+                <select id="input-4">
                     <option>Select your blood group</option>
                     <option>O+ve</option>
                     <option>A+ve</option>
@@ -51,41 +59,41 @@
                     <option>A-ve</option>
                     <option>B-ve</option>
                     <option>AB-ve</option>
-                 </select>
+                </select>
             </fieldset>
             <br>
             <!-- contact details -->
             <fieldset>
                 <legend>Contact details</legend>
-                <label>Phone no.</label> 
+                <label>Phone no.</label>
                 <!-- input type number  -->
-                <input type="number" placeholder="123-456-7890">
+                <input type="number" placeholder="123-456-7890" id="input-5">
                 <br><br>
                 <label>Address:</label>
                 <br><br>
                 <!-- textarea -->
-                <textarea placeholder="Enter your address here..."></textarea>
+                <textarea placeholder="Enter your address here..." id="input-6"></textarea>
             </fieldset>
             <fieldset>
                 <legend>Preferences</legend>
                 <label>Preffered Contact method:</label>
                 <br>
-    
+
                 <!-- input type radio  -->
-                <input type="radio"><label>Email</label>
-                <input type="radio"><label>Phone</label>
+                <input type="radio" id="input-7"><label>Email</label>
+                <input type="radio" id="input-7"><label>Phone</label>
                 <br><br>
                 <label>Hobbies</label>
                 <br>
                 <!-- input type checkbox  -->
-                <input type="checkbox"><label>Dancing</label>
-                <input type="checkbox"><label>Studying</label>
-                <input type="checkbox"><label>Listening to music</label>
+                <input type="checkbox" id="input-8"><label>Dancing</label>
+                <input type="checkbox" id="input-8"><label>Studying</label>
+                <input type="checkbox" id="input-8"><label>Listening to music</label>
             </fieldset>
-            <fieldset>
+            <fieldset>           
                 <legend>Additional information</legend>
                 <label>Country:</label>
-                <select>
+                <select id="input-9">
                     <option>Select your country:</option>
                     <option>India</option>
                     <option>UK</option>
@@ -95,35 +103,61 @@
                 <br><br>
                 <!-- input type file  -->
                 <label>Upload resume:</label>
-                <input type="file">
+                <input type="file" id="input-10">
                 <br><br>
                 <!-- input type date  -->
                 <label>Date of birth:</label>
-                <input type="date">
+                <input type="date" id="input-11">
                 <br><br>
                 <!-- input type color  -->
                 <label>Favourite color</label>
-                <input type="color">
+                <input type="color" id="input-12">
                 <br><br>
                 <!-- input type range  -->
                 <label>Arrange your satisfaction level</label>
-                <input type="range">
+                <input type="range" id="input-13">
             </fieldset>
             <br>
             <fieldset>
                 <legend>Submit your details</legend>
                 <!-- input type submit and reset  -->
-                <input type="submit" onclick="showOutput()">
                 <input type="reset">
             </fieldset>
         </form>
-        <div class="display"></div>
-        </div>
-    </body>
-    <script>
-        function showOutput(){
-            let a = document.getElementById("input-1").value;
-            let b = document.getElementById()
-        }
-    </script>
+        <button onclick="showOutput()">Submit</button>
+        <div class="display" id="display"></div>
+    </div>
+</body>
+<script>
+    function showOutput() {
+        // name
+        let a = document.getElementById("input-1").value;
+        // email
+        let b = document.getElementById("input-2").value;
+        // age
+        let c = Number(document.getElementById("input-3").value);
+        // blood group 
+        let d = document.getElementById("input-4").value;
+        // phone number
+        let e = Number(document.getElementById("input-5").value);
+        // radio
+        let f = document.getElementById("input-6").value;
+        // textarea
+        let g = document.getElementById("input-7").value;
+        // adress
+        let h = document.getElementById("input-8").value;
+        // country
+        let i = document.getElementById("input-9").value;
+        // resume
+        let j = document.getElementById("input-10").value;
+        // dob
+        let k = document.getElementById("input-11").value;
+        // color
+        let l = document.getElementById("input-12").value;
+        // range
+        let m = document.getElementById("input-13").value;
+        document.getElementById("display").innerHTML = "Full name: " + a + "<br> Email: " + b + "<br> Age: " + c + "<br> Blood group: " + d+"<br> Phone no.: "+ e + "<br> Adress: "+f+"<br> Preffered contact method: "+g + "<br> Hobbies: "+h+ "<br> Country:" + i+"<br> Resume: "+ j +"<br> Date of Birth: "+k+"<br> Favourite color: "+ l+"<br> Satisfaction: "+m;
+    }
+</script>
+
 </html>
