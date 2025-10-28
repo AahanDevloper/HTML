@@ -44,7 +44,7 @@
             display: flex;
             justify-content: space-evenly;
         }
-        .input-box{
+        .input-box-1,.input-box-2{
             width: 40%;
             height: 100%;
             text-align: center;
@@ -70,8 +70,8 @@
         <div class="container">
             <!-- input area -->
             <div class="input-area">
-                <input id="input-one" class="input-box" placeholder="Type x">
-                <input id="input-two" class="input-box" placeholder="Type y">
+                <input id="input-one" class="input-box-2" placeholder="Type x">
+                <input id="input-two" class="input-box-2" placeholder="Type y">
             </div>
             <!-- button -->
             <button onclick="showOutput()">Show Output</button>
@@ -83,8 +83,8 @@
 <script>
     function showOutput(){
         // input
-        let x = Number(document.getElementById("input-one").value);
-        let y = Number(document.getElementById("input-two").value);
+        let x = Number(document.getElementsByClassName("input-box-1").value);
+        let y = Number(document.getElementsByClassName("input-box-2").value);
         // process
         let a = x + y;
         let b = x - y;
@@ -92,7 +92,7 @@
         let d = x / y;
         let e =  "Addition = " + a + "<br> Subtraction = " + b +"<br> Multiplication = " + c + "<br> Division = " + d;
         // output
-        document.getElementById("display").innerHTML =e;
+        document.getElementsByClassName("display-area").innerHTML =e;
     }
 </script>
 </html>

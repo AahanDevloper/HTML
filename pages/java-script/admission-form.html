@@ -74,27 +74,11 @@
                 <!-- textarea -->
                 <textarea placeholder="Enter your address here..." id="input-6"></textarea>
             </fieldset>
-            <fieldset>
-                <legend>Preferences</legend>
-                <label>Preffered Contact method:</label>
-                <br>
-
-                <!-- input type radio  -->
-                <input type="radio" id="input-7"><label>Email</label>
-                <input type="radio" id="input-7"><label>Phone</label>
-                <br><br>
-                <label>Hobbies</label>
-                <br>
-                <!-- input type checkbox  -->
-                <input type="checkbox" id="input-8"><label>Dancing</label>
-                <input type="checkbox" id="input-8"><label>Studying</label>
-                <input type="checkbox" id="input-8"><label>Listening to music</label>
-            </fieldset>
             <fieldset>           
                 <legend>Additional information</legend>
                 <label>Country:</label>
-                <select id="input-9">
-                    <option>Select your country:</option>
+                <select id="input-7">
+                    <option>Select your country</option>
                     <option>India</option>
                     <option>UK</option>
                     <option>USA</option>
@@ -103,19 +87,19 @@
                 <br><br>
                 <!-- input type file  -->
                 <label>Upload resume:</label>
-                <input type="file" id="input-10">
+                <input type="file" id="input-8">
                 <br><br>
                 <!-- input type date  -->
                 <label>Date of birth:</label>
-                <input type="date" id="input-11">
+                <input type="date" id="input-9">
                 <br><br>
                 <!-- input type color  -->
                 <label>Favourite color</label>
-                <input type="color" id="input-12">
+                <input type="color" id="input-10">
                 <br><br>
                 <!-- input type range  -->
                 <label>Arrange your satisfaction level</label>
-                <input type="range" id="input-13">
+                <input type="range" id="input-11">
             </fieldset>
             <br>
             <fieldset>
@@ -130,33 +114,20 @@
 </body>
 <script>
     function showOutput() {
-        // name
         let a = document.getElementById("input-1").value;
-        // email
         let b = document.getElementById("input-2").value;
-        // age
         let c = Number(document.getElementById("input-3").value);
-        // blood group 
         let d = document.getElementById("input-4").value;
-        // phone number
         let e = Number(document.getElementById("input-5").value);
-        // radio
         let f = document.getElementById("input-6").value;
-        // textarea
         let g = document.getElementById("input-7").value;
-        // adress
         let h = document.getElementById("input-8").value;
-        // country
         let i = document.getElementById("input-9").value;
-        // resume
         let j = document.getElementById("input-10").value;
-        // dob
         let k = document.getElementById("input-11").value;
-        // color
-        let l = document.getElementById("input-12").value;
-        // range
-        let m = document.getElementById("input-13").value;
-        document.getElementById("display").innerHTML = "Full name: " + a + "<br> Email: " + b + "<br> Age: " + c + "<br> Blood group: " + d+"<br> Phone no.: "+ e + "<br> Adress: "+f+"<br> Preffered contact method: "+g + "<br> Hobbies: "+h+ "<br> Country:" + i+"<br> Resume: "+ j +"<br> Date of Birth: "+k+"<br> Favourite color: "+ l+"<br> Satisfaction: "+m;
+        alert("Your name is "+a);
+
+        document.getElementById("display").innerHTML = "Full name: " + a + "<br> Email: " + b + "<br> Age: " + c + "<br> Blood group: " + d+"<br> Phone no.: "+ e + "<br> Adress: "+f+"<br> country: "+g + "<br> Resume: "+h+ "<br> Date of birth:" + i+"<br> Favourite color: "+ j +"<br> Satisfaction: "+k;
     }
 </script>
 
