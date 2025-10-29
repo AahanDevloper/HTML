@@ -83,16 +83,16 @@
 <script>
     function showOutput(){
         // input
-        let x = Number(document.getElementsByClassName("input-box-1").value);
-        let y = Number(document.getElementsByClassName("input-box-2").value);
+        let x = Number(document.getElementById("input-one").value);
+        let y = Number(document.getElementById("input-two").value);
         // process
         let a = x + y;
         let b = x - y;
         let c = x * y;
-        let d = x / y;
-        let e =  "Addition = " + a + "<br> Subtraction = " + b +"<br> Multiplication = " + c + "<br> Division = " + d;
+        let d = x*(y/100);
+        let e =  "Addition = " + a + "<br> Subtraction = " + b +"<br> Multiplication = " + c + "<br> y percent of x = " + d;
         // output
-        document.getElementsByClassName("display-area").innerHTML =e;
+        document.getElementById("display").innerHTML =e;
     }
 </script>
 </html>
