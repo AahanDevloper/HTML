@@ -106,6 +106,7 @@
                 <legend>Submit your details</legend>
                 <!-- input type submit and reset  -->
                 <input type="reset">
+                <input type="submit" onclick="showOutput()">
             </fieldset>
         </form>
         <button onclick="showOutput()">Submit</button>
@@ -125,7 +126,6 @@
         let i = document.getElementById("input-9").value;
         let j = document.getElementById("input-10").value;
         let k = document.getElementById("input-11").value;
-        alert("Your name is "+a);
 
         document.getElementById("display").innerHTML = "Full name: " + a + "<br> Email: " + b + "<br> Age: " + c + "<br> Blood group: " + d+"<br> Phone no.: "+ e + "<br> Adress: "+f+"<br> country: "+g + "<br> Resume: "+h+ "<br> Date of birth:" + i+"<br> Favourite color: "+ j +"<br> Satisfaction: "+k;
     }
