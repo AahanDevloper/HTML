@@ -42,6 +42,7 @@
         }
         .button-2{
             background-color: red;
+            display: none;
         }
         img{
             width: 250px;
@@ -62,21 +63,21 @@
     </div>
 </body>
 <script>
+    // to switch on
     function bulbOn(){
-        // document.getElementById("button-1").style.display ="none";
-        // document.getElementById("button-2").style.display ="block";
+        // buttons 
         document.getElementById("button-1").hidden=true;
         document.getElementById("button-2").style.display="block";
-
+    // images
         document.getElementById("img-1").style.display="block";
         document.getElementById("img-2").hidden=true;
     }
+    // to switch off
     function bulbOff(){
-        // document.getElementById("button-1").style.display ="block";
-        // document.getElementById("button-2").style.display ="none";
-        document.getElementById("button-1").style.display="block";
-        document.getElementById("button-2").hidden=true;
-
+        // buttons
+        document.getElementById("button-1").hidden= false;
+        document.getElementById("button-2").style.display="none";
+        // images
         document.getElementById("img-1").style.display="none";
         document.getElementById("img-2").hidden=false;
     }
