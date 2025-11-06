@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calender</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+        h1{
+            text-align: center;
+        }
+        .box-1{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(255, 208, 0);
+        }
+        .box-2{
+            width: 100%;
+            height: 50%;
+            background-color: rgb(0, 76, 255);
+            display: flex;
+            align-items: center;
+        }
+        .button-area{
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        button{
+            width: 12%;
+            height: 100%;
+            background-color: rgb(0, 191, 255);
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="box-1">
+            <h1>Welcome to my calender</h1>
+            <h1 id="h1"></h1>
+        </div>
+        <div class="box-2">
+            <div class="button-area">
+                <button id="a" onclick="monday()">Monday</button>
+                <button id="b" onclick="tuesday()">Tuesday</button>
+                <button id="c" onclick="wednesday()">Wednesday</button>
+                <button id="d" onclick="thursday()">Thursday</button>
+                <button id="e" onclick="friday()">Friday</button>
+                <button id="f" onclick="saturday()">Saturday</button>
+                <button id="g" onclick="sunday()">Sunday</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function monday(){
+        document.getElementById("Today is Monday");
+        document.getElementById("a").style.bac
+    }
+</script>
+
+</html>
