@@ -44,23 +44,12 @@
         margin-left: 20px;
         font-family: 'Times New Roman', Times, serif;
     }
-
-    .name-h1 {
-        font-size: 35px;
-        color: white;
-        margin: 0;
-    }
-
     nav {
         width: 50%;
         height: 100%;
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    }
-
-    .nav-bar-content {
-        font-size: 25px;
     }
     hr {
         width: 90%;
@@ -69,9 +58,6 @@
         text-decoration: none;
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
     .nav-a {
         text-decoration: none;
@@ -85,7 +71,7 @@
     /* container 1 styling */
     .container-1 {
         width: 100%;
-        height: 21%;
+        height: 90vh;
         display: flex;
         margin-top: 100px;
     }
@@ -95,50 +81,52 @@
         height: 100%;
         margin-left: 50px;
     }
+    .home-h1{
+        font-size: 50px;
+        color: rgb(0, 158, 137);
+    }
     strong{
         font-family: cursive;
     }
-    .home-h1 {
-        font-size: 50px;
-        color: rgb(43, 180, 134);
-    }
-
-    .home-span {
+    .home-p {
         color: white;
         font-size: 25px;
     }
-
+    /* button for resume */
     button {
         width: 25%;
-        height: 10%;
+        height: 8%;
         padding: 10px;
-        border-radius: 200px;
-        margin-top: 90px;
-        background-color: transparent;
-        border-style: solid;
-        border-color: rgb(43, 180, 134);
+        border-radius: 10px;
+        margin-top: 70px;
+        border: none;
+        background-color: rgb(39, 166, 124);
         font-size: 21px;
         display: flex;
         justify-content: center;
+        align-items: center;
     }
     button:hover {
-        background-color: rgb(43, 180, 134);
-        color: white;
+        background-color: rgb(30, 144, 106);
     }
-
     .button-a{
         color: white;
     }
-
     .box-2 {
         width: 40%;
         height: 100%;
+        display: flex;
+        justify-content: center;
     }
-
+    .img{
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+    }
     /* container 2 starts */
     .container-2 {
         width: 100%;
-        height: 22%;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -151,12 +139,7 @@
         justify-content: center;
         align-items: center;
     }
-    .about-h1{
-        margin: 0;
-    }
-    .about-h1,
-    .projects-h1,
-    .contact-h1 {
+    .page-head{
         color: rgb(43, 180, 134);
         font-size: 35px;
         text-align: center;
@@ -169,7 +152,7 @@
         align-items: center;
     }
 
-    .box-3 {
+    .about-text {
         width: 50%;
         height: 90%;
         margin-left: 50px;
@@ -180,13 +163,12 @@
         font-size: 35px;
     }
 
-    .about-span {
-        font-size: 20px;
+    .about-p {
+        font-size: 25px;
         color: white;
-        font-weight: 600;
     }
 
-    .box-4 {
+    .about-image {
         width: 50%;
         height: 90%;
         display: flex;
@@ -197,7 +179,7 @@
     /* container 3 */
     .container-3 {
         width: 100%;
-        height: 25%;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -221,9 +203,6 @@
         background-color: rgb(23, 99, 147);
         box-shadow: .5px .5px 25px rgb(28, 28, 28);
         border-radius: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .project-card:hover {
@@ -234,16 +213,20 @@
     .project-img {
         border-radius: 15px;
         margin-top: 10px;
+        display: flex;
+        justify-self: center;
+    
     }
 
     .project-h2 {
         color: white;
         font-size: 30px;
+        text-align: center;
     }
     /* container 4 */
     .container-4 {
         width: 100%;
-        height: 27%;
+        height: 90vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -258,7 +241,7 @@
         border-radius: 15px;
     }
 
-    .contact-row-1 {
+    .contact-row {
         width: 100%;
         height: 50%;
         display: flex;
@@ -290,7 +273,7 @@
     }
 
     .contact-h3 {
-        color: rgb(0, 255, 0);
+        color: rgb(33, 164, 107);
         text-align: center;
         margin: 0;
         margin-top: 10px;
@@ -304,340 +287,107 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        justify-self: center;
+        align-self: center;
         background-color: rgb(14, 67, 100);
         margin-top: 10px;
     }
-    @media (max-width:375px) {
-        .header {
-            flex-direction: column;
-            height: 8%;
-        }
-
-        .name {
-            width: 100%;
-            height: 50%;
-            display: flex;
-            justify-content: center;
-        }
-
-        .name-h1 {
-            font-size: 30px;
-        }
-
-        nav {
-            width: 100%;
-            height: 50%;
-        }
-
-        .nav-bar-content {
-            font-size: 20px;
-        }
-
-        .container-1 {
-            margin-top: 70px;
-            height: 17%;
-            flex-direction: column;
-        }
-
-        .home-h1 {
-            font-size: 25.5px;
-            text-align: center;
-            margin: 0;
-            margin-top: 17px;
-        }
-
-        .home-span {
-            font-size: 12px;
-            text-align: center;
-            margin-top: 10px;
-        }
-
-        button {
-            width: 40%;
-            height: 20%;
-            font-size: 20px;
-            margin-top: 0;
-        }
-        .box-1 {
-            width: 100%;
-            height: 50%;
-            margin-left: 5px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .box-2 {
-            width: 100%;
-            height: 50%;
-        }
-
-        .container-2 {
-            height: 22%;
-        }
-
-        .about-body {
-            flex-direction: column;
-        }
-
-        .box-3 {
-            width: 100%;
-            height: 50%;
-            margin-left: 10px;
-        }
-
-        .about-h2 {
-            font-size: 20px;
-        }
-
-        .about-span {
-            font-size: 12px;
-        }
-
-        .box-4 {
-            width: 100%;
-            height: 50%;
-            margin: 0;
-        }
-
-        .about-img {
-            margin-top: 10px;
-        }
-
-        .projects {
-            width: 80%;
-            height: 70%;
-            flex-direction: column;
-        }
-
-        .project-card {
-            width: 75%;
-            height: 40%;
-        }
-
-        .project-h2 {
-            margin: 0;
-            margin-top: 20px;
-        }
-
-        .container-4 {
-            height: 22%;
-        }
-
-        .contact-box {
-            width: 90%;
-            height: 85%;
-        }
-        .icon{
-            width: 70px;
-            height: 200px;
-        }
-        .button-a{
-            margin-top: 0px;
-        }
+    .button-a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-
-    /* for 375 to 768px */
-    @media (min-width:376px) and (max-width:767px) {
-
+    @media (max-width:768px) {
         /* header */
-        .header {
+        .header{
             flex-direction: column;
-            height: 7%;
         }
-
-        .name {
+        .name{
             width: 100%;
             height: 50%;
-            display: flex;
             justify-content: center;
         }
-
-        .name-h1 {
-            font-size: 30px;
-        }
-
-        nav {
+        nav{
             width: 100%;
             height: 50%;
         }
-
-        .nav-bar-content {
-            font-size: 20px;
-        }
-
-        /* container 1 */
-        .container-1 {
-            height: 17%;
+        /* home */
+        .container-1{
+            height: 80vh;
             flex-direction: column;
-            margin-top: 60px;
         }
-
-        .home-h1 {
-            font-size: 25.5px;
-            text-align: center;
-        }
-
-        .home-span {
-            font-size: 13px;
-            text-align: center;
-        }
-
-        button {
-            width: 50%;
-            height: 18%;
-            font-size: 20px;
-        }
-
-        .box-1 {
+        .box-1,.box-2{
             width: 100%;
             height: 50%;
-            margin-left: 5px;
+            margin: 0;
+        }
+        .box-2{
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
         }
-
-        .box-2 {
-            width: 100%;
-            height: 50%;
+        .home-h1{
+            font-size: 30px;
+            margin-left: 20px;
         }
-
-        /* container 2 */
-        .container-2 {
-            height: 23%;
-        }
-
-        .about-body {
-            flex-direction: column;
-        }
-
-        .box-3 {
-            width: 100%;
-            height: 50%;
-            margin-left: 10px;
-        }
-
-        .about-h2 {
+        .home-p{
             font-size: 20px;
+            margin-left: 20px;
         }
-
-        .about-span {
-            font-size: 12px;
+        .img{
+            width: 250px;
+            height: 250px;
         }
-
-        .box-4 {
-            width: 100%;
-            height: 50%;
-            margin: 0;
-        }
-
-        .about-img {
-            margin-top: 10px;
-        }
-
-        /* container 3 (project section) */
-        .projects {
-            width: 80%;
-            height: 70%;
-            flex-direction: column;
-        }
-
-        .project-card {
-            width: 75%;
-            height: 40%;
-        }
-
-        .project-h2 {
-            margin: 0;
+        .detail-button{
+            width: 40%;
+            display: flex;
+            justify-self: center;
             margin-top: 20px;
         }
-
-        /* contact section */
-        .container-4 {
-            height: 22%;
+        /* about section */
+        .container-2{
+            height: 80vh;
         }
-
-        .contact-box {
-            width: 90%;
-            height: 80%;
-        }
-    }
-
-    @media (min-width:768px) and (max-width:1024px) {
-        body {
-            height: 290vh;
-        }
-
-        .header {
+        .about-body{
             flex-direction: column;
-            height: 7.5%;
         }
-
-        .name {
+        .about-text{
             width: 100%;
             height: 50%;
-            justify-content: center;
+            margin: 0;
         }
-
-        nav {
-            width: 100%;
-            height: 50%;
+        .about-p{
+            font-size: 18px;
+            margin-left: 20px;
         }
-
-        .container-1 {
-            flex-direction: column;
-            height: 20%;
-        }
-        .box-1 {
-            width: 100%;
-            height: 50%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            margin-left: 0;
-        }
-
-        .home-span {
+        .about-h2{
             text-align: center;
+            font-size: 30px;
         }
-
-        .box-2 {
+        .about-img{
             width: 100%;
             height: 50%;
         }
-
-        .button-a {
-            margin-top: 5px;
-            display: flex;
-            align-items: center;
+        /* projects */
+        .container-3{
+            height: 80vh;
         }
-
-        .container-2 {
-            height: 17%;
-        }
-
-        .container-3 {
-            height: 20%;
-        }
-
-        .projects {
-            width: 70%;
+        .projects{
+            height: 80%;
             flex-direction: column;
         }
-
-        .project-card {
-            width: 75%;
-            height: 43%;
+        .project-card{
+            width: 80%;
+            height: 40%;
         }
-
-        .container-4 {
-            height: 25%;
+        /* contact */
+        .container-4{
+            height: 80vh;
         }
-        .contact-box{
-            height: 65%;
+        .contact-row{
+            flex-direction: column;
         }
-    }
+        }
 </style>
 </head>
 <body>
@@ -646,13 +396,13 @@
         <!-- header -->
         <div class="header">
             <div class="name">
-                <h1 class="name-h1">Aahan Jiwani</h1>
+                <h1 style="color: white;">Aahan Jiwani</h1>
             </div>
             <nav>
-                <span class="nav-bar-content"><a class="nav-a" href="#home">Home</a></span>
-                <span class="nav-bar-content"><a class="nav-a" href="#about">About</a></span>
-                <span class="nav-bar-content"><a class="nav-a" href="#project">Projects</a></span>
-                <span class="nav-bar-content"><a class="nav-a" href="#contact">Contact</a></span>
+                <span style="font-size: 25px;"><a class="nav-a" href="#home">Home</a></span>
+                <span style="font-size: 25px;"><a class="nav-a" href="#about">About</a></span>
+                <span style="font-size: 25px;"><a class="nav-a" href="#project">Projects</a></span>
+                <span style="font-size: 25px;"><a class="nav-a" href="#contact">Contact</a></span>
             </nav>
         </div>
         <!-- container 1 -->
@@ -660,19 +410,19 @@
             <!-- box 1 -->
             <div class="box-1">
                 <h1 class="home-h1">Welcome to My Portfolio</h1>
-                <span class="home-span">I'm Passionate about creating user-friendly and visually appealing websites.
+                <p class="home-p">I'm Passionate about creating user-friendly and visually appealing websites.
                     <br>
-                    I Love coding and coffee ! ! <br> I am skillfull at HTML and CSS <br>and I can write attractive codes.
-                </span>
+                    I Love coding !! <br> I am skillfull at HTML, CSS and Javascript<br>and I can write attractive codes.
+                </p>
                 <br>
-                <button>
-                    <a class="button-a" href="./pages/html/text-formatting-tags/resume.html">My Details</a>
+                <button class="detail-button">
+                    <a class="button-a" href="./pages/java-script/resume.html">My Details</a>
                 </button>
             </div>
             <!-- box 1 ends -->
             <!-- box 2 -->
             <div class="box-2">
-                <img src="" alt="My image">
+                <img class="img" src="./assets/images/profile-image.jpg" alt="My image">
             </div>
             <!-- box 2 ends -->
         </div>
@@ -681,23 +431,21 @@
         <div class="container-2">
             <!-- about head -->
             <div class="about-head">
-                <h1 class="about-h1">ABOUT ME</h1>
+                <h1 class="page-head">ABOUT ME</h1>
             </div>
             <!-- about body -->
             <div class="about-body">
                 <!-- box 3 -->
-                <div class="box-3">
+                <div class="about-text">
                     <h2 class="about-h2">Hello! <br> My name is <strong>Aahan Adil Jiwani</strong></h2>
-                    <span class="about-span">I am a computer developer and will soon be a <b>Junior Hat Engineer</b>. <br> I study in
-                        Orchid Public School, Katol. <br> I am currently in Class 8th. I am good at studies. <br> I can
-                        beat you in
-                        chess.</span>
+                    <p class="about-p">I am a coder and will soon be a <b>Junior Hat Engineer</b>. I study in
+                        Orchid Public School, Katol. I am currently in Class 8th. I am good at studies. Playing chess is my Skill and Hobby...</p>
                 </div>
                 <!-- box 3 ends -->
                 <!-- box 4 -->
-                <div class="box-4">
+                <div class="about-image">
                     <img src="https://img.freepik.com/free-photo/computer-program-coding-screen_53876-138060.jpg?semt=ais_hybrid&w=740"
-                        alt="" class="about-img" width="70%" height="70%" style="border-radius: 10px;">
+                        class="about-img" width="70%" height="70%" style="border-radius: 10px;">
                 </div>
             </div>
         </div>
@@ -705,7 +453,7 @@
         <hr id="project">
         <!-- container 3 -->
         <div class="container-3">
-            <h1 class="projects-h1">MY PROJECTS</h1>
+            <h1 class="page-head">MY PROJECTS</h1>
             <!-- project box -->
             <div class="projects">
                 <!-- html card -->
@@ -735,9 +483,9 @@
         <hr>
         <!-- container 4 starts -->
         <div class="container-4" id="contact">
-            <h1 class="contact-h1">CONTACT ME BY :</h1>
+            <h1 class="page-head">CONTACT ME BY :</h1>
             <div class="contact-box">
-                <div class="contact-row-1">
+                <div class="contact-row">
                     <div class="contact-card">
                         <a href="tel:9822210786">
                             <div class="icon">📞</div>
@@ -753,7 +501,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="contact-row-1">
+                <div class="contact-row">
                     <div class="contact-card">
                         <a href="">
                             <div class="icon">📍</div>
@@ -771,7 +519,7 @@
                 </div>
             </div>
         </div>
-    </div></code>
+    </div>
 </body>
 
 </html>
