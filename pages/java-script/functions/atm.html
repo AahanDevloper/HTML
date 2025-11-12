@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ATM Machine</title>
     <style>
         body {
             width: 100vw;
@@ -22,34 +22,35 @@
             font-family: sans-serif;
         }
         .container{
-            width: 35%;
-            height: 50%;
+            width: 40%;
+            height: 68%;
             border-radius: 10px;
             background-color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
         }
         .input-area{
             width: 100%;
-            height: 10%;
-            display: flex;
-            justify-content: center;
-            margin-top: 50px;
+            height: 14%;
         }
         input{
-            width: 40%;
+            width: 89%;
             height: 100%;
-            text-align: center;
             font-size: 21px;
+            margin-left: 20px;
         }
         .button-area{
             width: 100%;
             height: 12%;
             display: flex;
             justify-content: center;
-            margin-top: 50px;
         }
         button{
+            width: 60%;
+            height: 100%;
             border: none;
-            border-radius: 10px;
+            border-radius: 6px;
             background-color: green;
             color: white;
             font-size: 20px;
@@ -62,15 +63,46 @@
             color: rgb(0, 0, 0);
 
         }
+        h2{
+            text-align: center;
+            color: rgb(0, 0, 0);
+            margin: 10px;
+        }
+        h3{
+            text-align: center;
+            color: rgb(17, 208, 0);
+            margin: 10px;
+            font-size: 35px;
+        }
         .display-area{
             width: 92%;
-            height: 24%;
+            height: 27%;
             border-radius: 10px;
-            background-color: rgb(229, 229, 229);
+            background-color: rgb(240, 240, 240);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-self: center;
+            align-self: center;
         }
         .display{
             text-align: center;
             color: white;
+        }
+        .hidden-box{
+            width: 70%;
+            height: 11%;
+            background-color: rgb(111, 210, 111);
+            border-radius: 7px;
+            display: none;
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            text-align: center;
+            margin: 0;
+            color: rgb(0, 110, 0);
         }
     </style>
 </head>
@@ -80,13 +112,17 @@
         <div class="container">
             <h1>ATM Withdrawal</h1>
             <div class="display-area">
-                <h1 class="display" id="display">Account balance is ₹0</h1>
+                <h2>Current Balance</h1>
+                <h3 id="display">₹1000</h2>
             </div>
             <div class="input-area">
-                <input type="number" id="input" placeholder="Enter a value to add">
+                <input type="number" id="input" placeholder="Enter amount to Withdraw">
             </div>
             <div class="button-area">
-                <button onclick="showBalance()">Click to see Balance</button>
+                <button onclick="showBalance()">Withdraw</button>
+            </div>
+            <div class="hidden-box" id="hidden-box">
+                <p>Withdrawal Successful</p>
             </div>
         </div>
     </div>
@@ -94,13 +130,14 @@
 
 <script>
     // function
+        let account = 1000;
     function showBalance() {
         // input box content
-        let amount = Number(document.getElementById("input").value);
-        let account = 0;
-        account = account+ amount;
-        let balance = "Account balance is ₹" + account;
+        let amount = document.getElementById("input").value;
+        account = account- Number(amount);
+        let balance = "₹" + account;
         document.getElementById("display").innerHTML = balance;
+        document.getElementById("hidden-box").style.display="flex";
     }
 </script>
 
