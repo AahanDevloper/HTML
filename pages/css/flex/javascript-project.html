@@ -55,7 +55,7 @@
             align-items: center;
         }
 
-        a {
+        .nav-a {
             font-size: 25px;
             color: rgb(203, 203, 203);
             text-decoration: none;
@@ -64,11 +64,13 @@
         a:hover {
             color: white;
         }
-        .container{
+
+        .container {
             width: 100%;
             height: 89vh;
             margin-top: 11vh;
         }
+
         h2 {
             font-size: 30px;
             text-align: center;
@@ -76,44 +78,76 @@
             margin: 0;
             margin-top: 17px;
         }
-        .projects{
+
+        .projects {
             width: 100%;
             height: 87%;
             margin-top: 25px;
         }
-        .box-1{
+
+        .box-1 {
             width: 100%;
             height: 50%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
         }
-        .box-2{
+
+        .box-2 {
             width: 100%;
             height: 50%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
         }
-        .project-card{
-            width: 19%;
+
+        .project-card {
+            width: 18%;
             height: 86%;
             background-color: rgb(19, 90, 134);
             border-radius: 15px;
         }
-        img{
+
+        img {
             border-radius: 15px;
-            width: 85%;
+            width: 87%;
             height: 50%;
             display: flex;
             justify-self: center;
             margin-top: 10px;
         }
-        h3{
+
+        h3 {
             text-align: center;
             color: white;
-            font-size: 23px;
+            font-size: 21px;
             margin: 10px;
+        }
+
+        .button-area {
+            width: 100%;
+            height: 24%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        button {
+            width: 40%;
+            height: 83%;
+            border-radius: 9px;
+            border: none;
+            background-color: transparent;
+            border: solid rgb(0, 149, 134) 2px;
+        }
+
+        button:hover {
+            background-color: rgb(0, 149, 134);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
         }
     </style>
 </head>
@@ -125,38 +159,130 @@
                 <h1>Aahan Jiwani</h1>
             </div>
             <nav>
-                <a href="../../../index.html#home">Home</a>
-                <a href="../../../index.html#about">About</a>
-                <a href="../../../index.html#project">Projects</a>
-                <a href="../../../index.html#contact">Contact</a>
+                <a class="nav-a" href="../../../index.html#home">Home</a>
+                <a class="nav-a" href="../../../index.html#about">About</a>
+                <a class="nav-a" href="../../../index.html#project">Projects</a>
+                <a class="nav-a" href="../../../index.html#contact">Contact</a>
             </nav>
         </header>
         <div class="container">
             <h2>My Javascript Projects</h2>
             <div class="projects">
                 <div class="box-1">
+                    <!-- project card -->
                     <div class="project-card">
-                        <img src="https://static.vecteezy.com/system/resources/previews/054/406/605/non_2x/a-flat-illustration-of-atm-cartoon-drawing-isolated-on-background-free-vector.jpg">
+                        <!-- image -->
+                        <img
+                            src="https://static.vecteezy.com/system/resources/previews/054/406/605/non_2x/a-flat-illustration-of-atm-cartoon-drawing-isolated-on-background-free-vector.jpg">
+                        <!-- heading -->
                         <h3>ATM Withdrawal</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/functions/atm.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/atm.html">View
+                                    Code</a></button>
+                        </div>
                     </div>
                     <div class="project-card">
                         <img src="https://sbcstore.in/wp-content/uploads/2022/04/71VJdcqxtkL._SL1500_.jpg">
                         <h3>Calculator</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/functions/calculator.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/calculator.html">View
+                                    Code</a></button>
+                        </div>
                     </div>
                     <div class="project-card">
                         <img src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg">
                         <h3>My Bulb</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/functions/my-bulb.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/my-bulb.html">View
+                                    Code</a></button>
+                        </div>
                     </div>
                     <div class="project-card">
-                        <img src="">
-                        <h3>Mean calculator</h3>
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHh2pfLDIU7_GWY_XbIMwi3Nes90sU8sGFOQ&s">
+                        <h3>Mean Calculator</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/functions/mean.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/mean.html">View
+                                    Code</a></button>
+                        </div>
                     </div>
                 </div>
                 <div class="box-2">
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
-                    <div class="project-card"></div>
+                    <div class="project-card">
+                        <img
+                            src="https://cdnsecakmi.kaltura.com/p/684682/sp/68468200/thumbnail/entry_id/0_ezc4co72/width/1280">
+                        <h3>Time Convertor</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/functions/time-conversion.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/time-conversion.html">View
+                                    Code</a></button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://i.ytimg.com/vi/nEtWvHpXWD0/maxresdefault.jpg">
+                        <h3>Area Calculator</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/functions/area-calculator.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/area-calculator.html">View
+                                    Code</a></button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img
+                            src="https://www.orchidsinternationalschool.com/_next/image?url=https%3A%2F%2Fcdn-cms.orchidsinternationalschool.com%2Fmedia%2Fdesktop_converter%2Ftemperature-converter.jpg&w=1920&q=75">
+                        <h3>Temperature convertor</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/functions/temperature.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/temperature.html">View
+                                    Code</a></button>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img
+                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbJQTUnmcCuR5Dyu7QEmbnT4BZwD8zAJIAA&s">
+                        <h3>Name Combiner</h3>
+                        <!-- button area -->
+                        <div class="button-area">
+                            <!-- project -->
+                            <button><a href="../../java-script/variables/name-combiner.html">View Project</a></button>
+                            <!-- code -->
+                            <button><a
+                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/variables/name-combiner.html">View
+                                    Code</a></button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
