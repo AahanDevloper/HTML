@@ -33,26 +33,26 @@
         }
         .input-area{
             width: 100%;
-            height: 15%;
+            height: 12%;
             display: flex;
             justify-content: space-evenly;
             margin-top: 40px;
         }
-        .input-1,.input-2,.input-3,.input-4,.input-5{
-            width: 16%;
+        .input-1,.input-2{
+            width: 30%;
             height: 80%;
             text-align: center;
             font-size: 15px;
         }
         .button-area{
             width: 100%;
-            height: 22%;
+            height: 10%;
             margin-top: 25px;
             display: flex;
             justify-content: center;
         }
         button{
-            width: 40%;
+            width: 35%;
             height: 100%;
             background-color: green;
             border: none;
@@ -66,7 +66,7 @@
         .display-area{
             width: 60%;
             height: 30%;
-            margin-top: 15px;
+            margin-top: 55px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -80,14 +80,11 @@
         <div class="container">
         <h1>Average Calculator</h1>
             <div class="input-area">
-                <input id="input-one" class="input-1" placeholder="Type a">
-                <input id="input-two" class="input-2" placeholder="Type b">
-                <input id="input-three" class="input-3" placeholder="Type c">
-                <input id="input-four" class="input-4" placeholder="Type d">
-                <input id="input-five" class="input-5" placeholder="Type e">
+                <input id="input-one" class="input-1" placeholder="Type a number.">
+                <input id="input-two" class="input-2" placeholder="Type a number.">
             </div>
             <div class="button-area">
-                <button onclick="showOutput()">Click to calculate Average of (Average of a, b and c) and (Average of d and e)</button>
+                <button onclick="showOutput()">Click to calculate Average</button>
             </div>
             <div class="display-area" id="display"></div>
         </div>
@@ -97,14 +94,9 @@
     function showOutput(){
         let a = Number(document.getElementById("input-one").value)
         let b = Number(document.getElementById("input-two").value)
-        let c = Number(document.getElementById("input-three").value)
-        let d = Number(document.getElementById("input-four").value)
-        let e = Number(document.getElementById("input-five").value)
-        let f = (a+b+c)/3
-        let g = (d+e)/2
-        let h = f+g
-        let i = h/2
-        document.getElementById("display").innerHTML=i;
+        let c = a + b;
+        let d = c/2;
+        document.getElementById("display").innerHTML=d;
     }
 </script>
 </html>
