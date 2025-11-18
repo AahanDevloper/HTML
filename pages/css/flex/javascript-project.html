@@ -82,30 +82,22 @@
         .projects {
             width: 100%;
             height: 87%;
-            margin-top: 25px;
+            margin-top: 5px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            background-color: red;
         }
-
-        .box-1 {
-            width: 100%;
-            height: 50%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
-        .box-2 {
-            width: 100%;
-            height: 50%;
-            display: flex;
-            justify-content: space-evenly;
-            align-items: center;
-        }
-
         .project-card {
-            width: 18%;
-            height: 86%;
+            width: 70%;
+            height: 90%;                                      
             background-color: rgb(19, 90, 134);
             border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
         }
 
         img {
@@ -120,13 +112,13 @@
         h3 {
             text-align: center;
             color: white;
-            font-size: 21px;
+            font-size: 18px;
             margin: 10px;
         }
 
         .button-area {
             width: 100%;
-            height: 24%;
+            height: 20%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -149,6 +141,24 @@
             color: white;
             text-decoration: none;
         }
+
+        @media (max-width:400px) {
+            header {
+                flex-direction: column;
+            }
+
+            .name {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav {
+                width: 100%;
+                height: 50%;
+            }
+        }
     </style>
 </head>
 
@@ -168,120 +178,116 @@
         <div class="container">
             <h2>My Javascript Projects</h2>
             <div class="projects">
-                <div class="box-1">
-                    <!-- project card -->
-                    <div class="project-card">
-                        <!-- image -->
-                        <img
-                            src="https://static.vecteezy.com/system/resources/previews/054/406/605/non_2x/a-flat-illustration-of-atm-cartoon-drawing-isolated-on-background-free-vector.jpg">
-                        <!-- heading -->
-                        <h3>ATM Withdrawal</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/functions/atm.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/atm.html">View
-                                    Code</a></button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://sbcstore.in/wp-content/uploads/2022/04/71VJdcqxtkL._SL1500_.jpg">
-                        <h3>Calculator</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/functions/calculator.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/calculator.html">View
-                                    Code</a></button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg">
-                        <h3>My Bulb</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/functions/my-bulb.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/my-bulb.html">View
-                                    Code</a></button>
-                        </div>
-                    </div>
-                    <div class="project-card">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHh2pfLDIU7_GWY_XbIMwi3Nes90sU8sGFOQ&s">
-                        <h3>Mean Calculator</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/functions/mean.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/mean.html">View
-                                    Code</a></button>
-                        </div>
+                <!-- project card -->
+                <div class="project-card">
+                    <!-- image -->
+                    <img
+                        src="https://static.vecteezy.com/system/resources/previews/054/406/605/non_2x/a-flat-illustration-of-atm-cartoon-drawing-isolated-on-background-free-vector.jpg">
+                    <!-- heading -->
+                    <h3>ATM Withdrawal</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/functions/atm.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/atm.html">View
+                                Code</a></button>
                     </div>
                 </div>
-                <div class="box-2">
-                    <div class="project-card">
-                        <img
-                            src="https://cdnsecakmi.kaltura.com/p/684682/sp/68468200/thumbnail/entry_id/0_ezc4co72/width/1280">
-                        <h3>Time Convertor</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/functions/time-conversion.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/time-conversion.html">View
-                                    Code</a></button>
-                        </div>
+                <div class="project-card">
+                    <img src="https://sbcstore.in/wp-content/uploads/2022/04/71VJdcqxtkL._SL1500_.jpg">
+                    <h3>Calculator</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/functions/calculator.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/calculator.html">View
+                                Code</a></button>
                     </div>
-                    <div class="project-card">
-                        <img src="https://i.ytimg.com/vi/nEtWvHpXWD0/maxresdefault.jpg">
-                        <h3>Area Calculator</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/functions/area-calculator.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/area-calculator.html">View
-                                    Code</a></button>
-                        </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg">
+                    <h3>My Bulb</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/functions/my-bulb.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/my-bulb.html">View
+                                Code</a></button>
                     </div>
-                    <div class="project-card">
-                        <img
-                            src="https://www.orchidsinternationalschool.com/_next/image?url=https%3A%2F%2Fcdn-cms.orchidsinternationalschool.com%2Fmedia%2Fdesktop_converter%2Ftemperature-converter.jpg&w=1920&q=75">
-                        <h3>Temperature convertor</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/functions/temperature.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/temperature.html">View
-                                    Code</a></button>
-                        </div>
+                </div>
+                <div class="project-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHh2pfLDIU7_GWY_XbIMwi3Nes90sU8sGFOQ&s">
+                    <h3>Mean Calculator</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/functions/mean.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/mean.html">View
+                                Code</a></button>
                     </div>
-                    <div class="project-card">
-                        <img
-                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbJQTUnmcCuR5Dyu7QEmbnT4BZwD8zAJIAA&s">
-                        <h3>Name Combiner</h3>
-                        <!-- button area -->
-                        <div class="button-area">
-                            <!-- project -->
-                            <button><a href="../../java-script/variables/name-combiner.html">View Project</a></button>
-                            <!-- code -->
-                            <button><a
-                                    href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/variables/name-combiner.html">View
-                                    Code</a></button>
-                        </div>
+                </div>
+                <div class="project-card">
+                    <img
+                        src="https://cdnsecakmi.kaltura.com/p/684682/sp/68468200/thumbnail/entry_id/0_ezc4co72/width/1280">
+                    <h3>Time Convertor</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/functions/time-conversion.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/time-conversion.html">View
+                                Code</a></button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://i.ytimg.com/vi/nEtWvHpXWD0/maxresdefault.jpg">
+                    <h3>Area Calculator</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/functions/area-calculator.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/area-calculator.html">View
+                                Code</a></button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img
+                        src="https://www.orchidsinternationalschool.com/_next/image?url=https%3A%2F%2Fcdn-cms.orchidsinternationalschool.com%2Fmedia%2Fdesktop_converter%2Ftemperature-converter.jpg&w=1920&q=75">
+                    <h3>Temperature convertor</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/functions/temperature.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/temperature.html">View
+                                Code</a></button>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbJQTUnmcCuR5Dyu7QEmbnT4BZwD8zAJIAA&s">
+                    <h3>Name Combiner</h3>
+                    <!-- button area -->
+                    <div class="button-area">
+                        <!-- project -->
+                        <button><a href="../../java-script/variables/name-combiner.html">View Project</a></button>
+                        <!-- code -->
+                        <button><a
+                                href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/variables/name-combiner.html">View
+                                Code</a></button>
                     </div>
                 </div>
             </div>
