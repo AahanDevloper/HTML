@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decriment</title>
+</head>
+
+<body>
+    <button onclick="showOutput()">Subtract</button>
+    <h1 id="display">100</h1>
+    <script>
+        let number = 100;
+        function showOutput() {
+            number--;
+            document.getElementById("display").innerHTML=number;
+        }
+    </script>
+</body>
+
+</html>

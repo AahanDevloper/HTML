@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Example 1</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Student Marks Calculator</h1>
+            <h2>Math marks: 80</h2>
+            <h2>Science marks to add: 78</h2>
+            <button onclick="add()">Add science marks</button>
+            <h2 id="display"></h2>
+        </div>
+    </div>
+    <script>
+        function add(){
+            let mathMark = 80;
+            let scienceMark = 78;
+            mathMark+= scienceMark; 
+            document.getElementById("display").innerHTML=mathMark;
+        }
+    </script>
+</body>
+
+</html>

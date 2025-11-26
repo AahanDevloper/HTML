@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+</head>
+<body>
+    <h1>Employee Salary Deduction</h1>
+    <h2>Original Salary: ₹5000</h2>
+    <h2>Deduction amount: ₹500</h2>
+    <button onclick="deduct()">Apply Deduction</button>
+    <h2 id="display"></h2>
+    <script>
+        function deduct(){
+        let salary = 5000;
+        let amount = 500;
+        salary-= amount;
+        document.getElementById("display").innerHTML="₹"+salary;
+        }
+    </script>
+</body>
+</html>
