@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            width: 20%;
+            height: 10%;
+            background-color: green;
+            border: none;
+            border-radius: 9px;
+            color: white;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <h1>Favourite Programming Language</h1>
+        <button onclick="showOutput()">Tell Your Favourite language</button>
+        <h1 id="display"></h1>
+    </div>
+</body>
+<script>
+    let a =prompt("Which is your favourite programming language.");
+    function showOutput(){
+        
+        document.getElementById("display").innerHTML="Your favourite programming language is "+a;
+    }
+</script>
+</html>
