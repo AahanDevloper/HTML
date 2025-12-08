@@ -21,6 +21,7 @@
             flex-direction: column;
             background-color: rgb(23, 96, 141);
         }
+
         header {
             width: 100%;
             height: 11vh;
@@ -29,6 +30,7 @@
             display: flex;
             position: fixed;
         }
+
         h1 {
             color: white;
             margin: 0;
@@ -37,12 +39,14 @@
             align-self: center;
             font-family: 'Times New Roman', Times, serif;
         }
+
         .name {
             width: 50%;
             height: 100%;
             display: flex;
             align-items: center;
         }
+
         nav {
             width: 50%;
             height: 100%;
@@ -50,19 +54,23 @@
             justify-content: space-evenly;
             align-items: center;
         }
+
         .nav-a {
             font-size: 25px;
             color: rgb(203, 203, 203);
             text-decoration: none;
         }
+
         a:hover {
             color: white;
         }
+
         .container {
             width: 100%;
             height: 89vh;
             margin-top: 11vh;
         }
+
         h2 {
             font-size: 30px;
             text-align: center;
@@ -70,6 +78,7 @@
             margin: 0;
             margin-top: 17px;
         }
+
         .projects {
             width: 100%;
             height: 100vh;
@@ -77,18 +86,21 @@
             display: flex;
             flex-direction: column;
         }
+
         .card-container {
             width: 100%;
             height: 33.33%;
             display: flex;
         }
-        .box{
+
+        .box {
             width: 50%;
             height: 100%;
             display: flex;
             justify-content: space-evenly;
             align-items: center;
         }
+
         .project-card {
             width: 40%;
             height: 90%;
@@ -100,6 +112,7 @@
             align-self: center;
             align-items: center;
         }
+
         img {
             border-radius: 15px;
             width: 87%;
@@ -108,12 +121,14 @@
             justify-self: center;
             margin-top: 10px;
         }
+
         h3 {
             text-align: center;
             color: white;
             font-size: 18px;
             margin: 10px;
         }
+
         .button-area {
             width: 100%;
             height: 20%;
@@ -121,6 +136,7 @@
             justify-content: space-evenly;
             align-items: center;
         }
+
         button {
             width: 40%;
             height: 83%;
@@ -129,18 +145,21 @@
             background-color: transparent;
             border: solid rgb(0, 149, 134) 2px;
         }
+
         button:hover {
             background-color: rgb(0, 149, 134);
         }
+
         a {
             color: white;
             text-decoration: none;
         }
 
-        @media (max-width:767px) {
-            body{
-                height: 146vh;
+        @media (max-width:376px) {
+            body {
+                height: 176vh;
             }
+
             /* header */
             header {
                 flex-direction: column;
@@ -157,65 +176,168 @@
                 width: 100%;
                 height: 50%;
             }
+
+            .nav-a {
+                font-size: 22px;
+            }
+
             /* container */
-            .container{
-                height: 123vh;
+            .container {
+                height: 163vh;
             }
-            .projects{
-                height: 82%;
+
+            .projects {
+                height: 92%;
             }
-            .card-container{
+
+            .card-container {
                 flex-direction: column;
             }
-            .box{
+
+            .box {
                 width: 100%;
                 height: 50%;
             }
-            .project-card{
+
+            .project-card {
                 width: 45%;
                 height: 97%;
             }
-            h3{
-                font-size: 14px;
+
+            h3 {
+                margin: 10px;
+                font-size: 13px;
             }
-            button{
+
+            h2 {
+                font-size: 26px;
+            }
+
+            button {
                 height: 90%;
                 width: 45%;
                 font-size: 10px;
             }
+
+            a {
+                font-size: 10px;
+            }
         }
 
-@media (min-width:768px) and (max-width:1025px) {
-    body{
-        height: 137vh;
-    }
-    header{
-        height: 7vh;
-    }
-    /* container */
-    .container{
-        height: 120vh;
-        margin-top: 7vh;
-    }
-    .projects{
-        height: 72%;
-    }
-    .card-container{
-        flex-direction: column;
-    }
-    .box{
-        width: 100%;
-        height: 50%;
-    }
-    .project-card{
-        width: 35%;
-        height: 95%;
-    }
-    button{
-        height: 85%;
-        width: 43%;
-    }
-}
+        @media (min-width:376px) and (max-width:768px) {
+            body {
+                height: 176vh;
+            }
+
+            /* header */
+            header {
+                flex-direction: column;
+            }
+
+            .name {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav {
+                width: 100%;
+                height: 50%;
+            }
+
+            .nav-a {
+                font-size: 22px;
+            }
+
+            /* container */
+            .container {
+                height: 163vh;
+            }
+
+            .projects {
+                height: 92%;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+                height: 50%;
+            }
+
+            .project-card {
+                width: 45%;
+                height: 97%;
+            }
+
+            h3 {
+                margin: 10px;
+                font-size: 17px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            button {
+                height: 90%;
+                width: 45%;
+            }
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:1025px) {
+            body {
+                height: 137vh;
+            }
+
+            header {
+                height: 7vh;
+            }
+
+            /* container */
+            .container {
+                height: 129vh;
+                margin-top: 7vh;
+            }
+
+            h2 {
+                font-size: 38px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .projects {
+                height: 94%;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+                height: 50%;
+            }
+
+            .project-card {
+                width: 35%;
+                height: 95%;
+            }
+
+            button {
+                height: 85%;
+                width: 43%;
+            }
+        }
     </style>
 </head>
 
@@ -250,7 +372,7 @@
                                 <button><a href="../../java-script/assignments/atm.html">View Project</a></button>
                                 <!-- code -->
                                 <button><a
-                                        href="">View
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/atm.html">View
                                         Code</a></button>
                             </div>
                         </div>
@@ -279,7 +401,7 @@
                                 <button><a href="../../java-script/functions/my-bulb.html">View Project</a></button>
                                 <!-- code -->
                                 <button><a
-                                        href="">View
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/my-bulb.html">View
                                         Code</a></button>
                             </div>
                         </div>
@@ -293,7 +415,7 @@
                                 <button><a href="../../java-script/assignments/mean.html">View Project</a></button>
                                 <!-- code -->
                                 <button><a
-                                        href="">View
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/mean.html">View
                                         Code</a></button>
                             </div>
                         </div>
@@ -304,7 +426,7 @@
                         <div class="project-card">
                             <img
                                 src="https://ecdn.teacherspayteachers.com/thumbitem/Large-Comparing-Symbols-1285250-1657292047/original-1285250-1.jpg">
-                            <h3>Number Comparison</h3>
+                            <h3>Number Comparator</h3>
                             <!-- button area -->
                             <div class="button-area">
                                 <!-- project -->
@@ -312,7 +434,7 @@
                                         Project</a></button>
                                 <!-- code -->
                                 <button><a
-                                        href="">View
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/number-conparison.html">View
                                         Code</a></button>
                             </div>
                         </div>
@@ -347,6 +469,27 @@
                                         Code</a></button>
                             </div>
                         </div>
+                        <!-- project card -->
+                        <div class="project-card">
+                            <!-- image -->
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIK3WBT8ZtHowQZ6q_WQOCDHxsbBwFLcGixTVlcl0jE5M7lw9XnfdO8bsU02RluK7hU3E&usqp=CAU">
+                            <!-- heading -->
+                            <h3>Math Quiz</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/math-quiz.html">View Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/math-quiz.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="box">
                         <div class="project-card">
                             <img
                                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbJQTUnmcCuR5Dyu7QEmbnT4BZwD8zAJIAA&s">
@@ -358,71 +501,46 @@
                                         Project</a></button>
                                 <!-- code -->
                                 <button><a
-                                        href="">View
-                                        Code</a></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="card-container">
-                    <div class="box">
-                        <!-- project card -->
-                        <div class="project-card">
-                            <!-- image -->
-                            <img
-                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIK3WBT8ZtHowQZ6q_WQOCDHxsbBwFLcGixTVlcl0jE5M7lw9XnfdO8bsU02RluK7hU3E&usqp=CAU">
-                            <!-- heading -->
-                            <h3>Math Quiz</h3>
-                            <!-- button area -->
-                            <div class="button-area">
-                                <!-- project -->
-                                <button><a href="../../java-script/assignments/multiplication-quiz.html">View Project</a></button>
-                                <!-- code -->
-                                <button><a
-                                        href="">View
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/name-combiner.html">View
                                         Code</a></button>
                             </div>
                         </div>
                         <div class="project-card">
-                            <img src="">
-                            <h3></h3>
+                            <img src="https://previews.123rf.com/images/enterline/enterline1712/enterline171200664/92392766-the-word-score-concept-and-theme-painted-in-colorful-watercolors-on-a-white-paper-background.jpg">
+                            <h3>Score Comparator</h3>
                             <!-- button area -->
                             <div class="button-area">
                                 <!-- project -->
-                                <button><a href="">View
+                                <button><a href="../../java-script/assignments/score-comparison.html">View
                                         Project</a></button>
                                 <!-- code -->
-                                <button><a
-                                        href="">View
+                                <button><a href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/score-comparison.html">View
                                         Code</a></button>
                             </div>
                         </div>
                     </div>
                     <div class="box">
                         <div class="project-card">
-                            <img src="">
-                            <h3></h3>
+                            <img src="https://i.sstatic.net/afBRx.png">
+                            <h3>Circle Calculator</h3>
                             <!-- button area -->
                             <div class="button-area">
                                 <!-- project -->
-                                <button><a href="">View Project</a></button>
+                                <button><a href="../../java-script/datatypes/number/circle.html">View Project</a></button>
                                 <!-- code -->
-                                <button><a
-                                        href="">View
+                                <button><a href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/datatypes/number/circle.html">View
                                         Code</a></button>
                             </div>
                         </div>
                         <div class="project-card">
-                            <img
-                                src="">
-                            <h3></h3>
+                            <img src="https://i0.wp.com/geographicbook.com/wp-content/uploads/2023/11/temperature.png?fit=512%2C351&ssl=1">
+                            <h3>Temperature Checker</h3>
                             <!-- button area -->
                             <div class="button-area">
                                 <!-- project -->
-                                <button><a href="">View Project</a></button>
+                                <button><a href="../../java-script/operators/comparison-operator/temperature-checker.html">View Project</a></button>
                                 <!-- code -->
-                                <button><a
-                                        href="">View
+                                <button><a href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/operators/comparison-operator/temperature-checker.html">View
                                         Code</a></button>
                             </div>
                         </div>
@@ -432,4 +550,5 @@
         </div>
     </div>
 </body>
+
 </html>
