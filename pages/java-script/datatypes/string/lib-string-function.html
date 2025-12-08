@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Functions</title>
+</head>
+
+<body>
+
+    <script>
+        // concat function
+        let string1 = "Java";
+        let string2 = "Script";
+        let string3= string1.concat(string2);
+        console.log("Concated string is ".concat(string3));
+
+        // uppercase function
+        let upperCase = string3.toUpperCase();
+        console.log("Upper case is ".concat(upperCase));
+
+        // lowercase function
+        let lowerCase = upperCase.toLowerCase()
+        console.log("Lower case is ".concat(lowerCase));
+
+        // length function
+        let stringLength = string3.length;
+        console.log("Length is ".concat(stringLength));
+
+        // charAt function
+        let letter = string3.charAt(0)
+        console.log("Letter is ".concat(letter));
+
+        // split function
+        let split = lowerCase.split("");
+        console.log(split)
+    </script>
+</body>
+
+</html>
