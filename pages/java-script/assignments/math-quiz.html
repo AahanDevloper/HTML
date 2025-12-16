@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiplication Quiz</title>
     <style>
         body {
@@ -44,6 +45,22 @@
             font-size: 20px;
             border: none;
         }
+        @media (max-width:768px) {
+            .container{
+                width: 90%;
+            }
+            h1{
+                font-size: 27px;
+            }
+        }
+        @media (min-width:768px) and (max-width:1025px) {
+            .container{
+                width: 90%;
+            }
+            h1{
+                font-size: 45px;
+            }
+        }
     </style>
 </head>
 
@@ -64,9 +81,17 @@
         let product = num1 * num2;
         document.getElementById("display").innerHTML = "What is " + num1 + " x " + num2+"?";
         function userInput() {
+            // input
             let userAns = document.getElementById("input").value;
-            let result = userAns == product;
-            document.getElementById("result").innerHTML = result;
+            if(userAns==product){
+            document.getElementById("result").innerHTML = "✅ Correct";
+            document.getElementById("result").style.color="green";
+            }
+            else{
+                document.getElementById("result").innerHTML = "❌ Wrong";
+                document.getElementById("result").style.color="red";
+                
+            }
         }
         function reload() {
             location.reload()
