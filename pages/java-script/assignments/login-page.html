@@ -67,6 +67,27 @@
         .display{
             font-size: 20px;
         }
+        @media (max-width:768px) {
+            .container{
+                width: 94%;
+                height: 50%;
+            }
+            input{
+                font-size: 17px;
+            }
+        }
+        @media (min-width:768px) and (max-width:1024px){
+            .container{
+                width: 94%;
+                height: 55%;
+            }
+            label{
+                font-size: 25px;
+            }
+            h1{
+                font-size: 35px;
+            }
+        }
     </style>
 </head>
 
@@ -84,11 +105,12 @@
     </div>
     <script>
         function logIn() {
-            let username = "AahanJiwani";
+            let username = "A";
+            let email = "B";
             let password = "1234";
             let userInput = document.getElementById("input-1").value;
             let userPassword = document.getElementById("input-2").value;
-            if ((username == userInput) && (password == userPassword)) {
+            if ((username == userInput || email == userInput) && (password == userPassword)) {
                 document.getElementById("display").innerHTML = "Login Successful";
                 document.getElementById("display").style.color="green";
             }
