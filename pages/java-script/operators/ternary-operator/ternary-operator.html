@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary Operator</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <input type="number" placeholder="Type a number" id="input">
+            <button onclick="check()">Check</button>
+            <h1 id="display"></h1>
+        </div>
+    </div>
+    <script>
+        function check(){
+            let number = document.getElementById("input").value;
+            let result = (number%2)==0 ? "It is an even number" : "It is an odd number" ;
+            document.getElementById("display").innerHTML=result;
+        }
+    </script>
+</body>
+</html>
