@@ -4,16 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Divisibility checker</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(247, 247, 247);
+            font-family: sans-serif;
+        }
+        .container{
+            width: 50%;
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 15px rgb(66, 66, 66);
+            border-radius: 8px;
+        }
+        input{
+            width: 90%;
+            height: 10%;
+            font-size: 20px;
+        }
+        button{
+            width: 50%;
+            height: 10%;
+            font-size: 22px;
+            background-color: rgb(0, 162, 255);
+            color: white;
+            border: none;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Divisibility</h1>
+            <input type="number" id="input" placeholder="Enter a number">
+            <button onclick="check()">Check divisibility</button>
+            <h1 id="display"></h1>
+        </div>
+    </div>
     <script>
-        let number = prompt("Enter a number");
+        function check(){
+        let number = document.getElementById("input").value;
         if(number%2==0 && number%3==0 && number%5==0){
-            alert("Divisible by all 2,3 and 5")
+            document.getElementById("display").innerHTML="Divisible by all 2, 3 and 5";
         }
         else{
-            alert("Not divisible by all 2,3 and 5")
+            document.getElementById("display").innerHTML="Not d ivisible by all 2, 3 and 5";
         }
+    }
     </script>
 </body>
 </html>
