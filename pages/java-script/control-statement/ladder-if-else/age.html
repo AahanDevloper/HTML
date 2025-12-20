@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let age = prompt("Enter your age");
+        if(age<0){
+            x = "Invalid age";
+        }
+        else if(age<1){
+            x = "Infant";
+        }
+        else if(age<13){
+            x = "child";
+        }
+        else if(age<20){
+            x = "Teenager";
+        }
+        else if(age<60){
+            x = "adult";
+        }
+        else if(age>=60){
+            x = "Senior";
+        }
+        alert(x)
+    </script>
+</body>
+</html>
