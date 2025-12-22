@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Electricity bill </title>
+</head>
+
+<body>
+    <script>
+        let units = prompt("Enter total units");
+        if (units <= 50) {
+            bill = units * 7;
+        }
+        else if (units <= 150) {
+            bill = (50 * 7) + ((units - 50) * 8)
+        }
+        else if (units <= 250) {
+            bill = ((50 * 7) + (100 * 8)) + (units - 100) * 12;
+        }
+        else {
+            bill = ((50 * 7) + (100 * 8) + (100 * 12)) + (units - 250) * 15;
+        }
+        let surcharge = bill * (20 / 100);
+        let total = bill + surcharge;
+        alert("₹" + total)
+    </script>
+</body>
+
+</html>
