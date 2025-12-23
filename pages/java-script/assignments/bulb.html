@@ -18,10 +18,11 @@
             justify-content: center;
             align-items: center;
             background-color: rgb(227, 227, 227);
+            font-family: sans-serif;
         }
         .container{
             width: 40%;
-            height: 70%;
+            height: 75%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -29,11 +30,9 @@
             background-color: rgb(255, 255, 255);
             border-radius: 8px;
         }
-        .bulb{
-            width: 250px;
-            height: 250px;
-            border-radius: 50%;
-            background-color: rgb(255, 238, 0);
+        img{
+            width: 60%;
+            height: 55%;
         }
         .button-section{
             width: 100%;
@@ -42,9 +41,33 @@
             justify-content: space-evenly;
         }
         button{
-            width: 45%;
+            width: 39%;
+            height: 100%;
+            border-radius: 23px;
+            border: none;
+            background-color: rgb(0, 67, 183);
+            color: white;
+            font-size: 20px;
+        }
+        .button-2{
+            display: none;
+        }
+        .display{
+            width: 39%;
             height: 100%;
             border-radius: 25px;
+            background-color: rgb(220, 242, 255);
+            color: rgb(0, 94, 255);
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        p{
+            font-size: 19px;
+            margin-left: 25px;
+            margin-right: 25px;
+            text-align: center;
         }
     </style>
 </head>
@@ -53,13 +76,44 @@
         <div class="container" id="container">
             <h1 id="heading">Light ON / OFF Toggle</h1>
             <p id="p">A clean, interractive demonstration of light state switching</p>
-            <div class="bulb" id="bulb"></div>
+            <img id="bulb" src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg">
             <div class="button-section">
-                <button onclick="turnOff()" id="button">Turn OFF</button>
-                <button onclick="turnOn()" id="button-2">Turn OFF</button>
-                <div class="display"></div>
+                <button onclick="turnOff()" id="button-1">Turn OFF</button>
+                <button class="button-2" onclick="turnOn()" id="button-2">Turn ON</button>
+                <div class="display" id="display">Light is currently ON</div>
             </div>
         </div>
     </div>
+    <script>
+        function turnOff(){
+            document.getElementById("button-1").style.display="none";
+            document.getElementById("button-2").style.display="block";
+            document.getElementById("main-container").style.backgroundColor="#11224E";
+            document.getElementById("container").style.backgroundColor="#1B3C53";
+            document.getElementById("heading").style.color="rgb(255, 255, 255)";
+            document.getElementById("p").style.color="rgb(255, 255, 255)";
+            document.getElementById("bulb").src="https://purepng.com/public/uploads/thumbnail//purepng.com-bulbbulblightenergy-bulbbright-lightclipart-14215264853833i09j.png";
+            document.getElementById("button-2").style.color="rgb(255, 255, 255)";
+            document.getElementById("button-2").style.backgroundColor="rgb(71, 71, 71)";
+            document.getElementById("display").style.color="rgb(255, 255, 255)";
+            document.getElementById("display").style.backgroundColor="rgb(71, 71, 71)";
+            document.getElementById("display").innerHTML="Light is cuttently OFF";
+            alert(alert("hi"))
+        }
+        function turnOn(){
+            document.getElementById("button-1").style.display="block";
+            document.getElementById("button-2").style.display="none";
+            document.getElementById("main-container").style.backgroundColor="rgb(227, 227, 227)";
+            document.getElementById("container").style.backgroundColor="rgb(255, 255, 255)";
+            document.getElementById("heading").style.color="rgb(0, 0, 0)";
+            document.getElementById("p").style.color="rgb(0, 0, 0)";
+            document.getElementById("bulb").src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg";
+            document.getElementById("button-1").style.color="rgb(255, 255, 255)";
+            document.getElementById("button-1").style.backgroundColor="rgb(0, 67, 183)";
+            document.getElementById("display").style.color="rgb(0, 94, 255)";
+            document.getElementById("display").style.backgroundColor="rgb(220, 242, 255)";
+            document.getElementById("display").innerHTML="Light is cuttently ON";
+        }
+    </script>
 </body>
 </html>
