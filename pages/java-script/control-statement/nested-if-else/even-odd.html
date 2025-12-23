@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Even Odd</title>
+</head>
+
+<body>
+    <script>
+        let number = prompt("Enter a number");
+        if (number !== "") {
+            if (number == 0) {
+                alert("0 is neither Even nor Odd")
+            }
+            else {
+                if (number % 2 == 0) {
+                    alert(number + " is an even number")
+                }
+                else {
+                    alert(number + " is an odd number")
+                }
+            }
+        }
+        else {
+            if (number == "") {
+                alert("Enter something")
+            }
+            else if (typeof (number) == "string") {
+                alert("You entered a string")
+            } 
+        }
+    </script>
+</body>
+
+</html>
