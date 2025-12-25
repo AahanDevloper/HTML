@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time based greeting</title>
+</head>
+<body>
+    <script>
+        let time = prompt("Enter time: (0-23)")
+        switch(true){
+            case (time<12):
+                greeting = "Good Morning";
+                break;
+            case (time<16):
+                greeting = "Good Afternoon";
+                break;
+            default:
+                greeting = "Good Evening";
+                break;
+        }
+        alert(greeting)
+    </script>
+</body>
+</html>
