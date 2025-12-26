@@ -21,8 +21,8 @@
             font-family: sans-serif;
         }
         .container{
-            width: 40%;
-            height: 75%;
+            width: 43%;
+            height: 82%;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -40,10 +40,11 @@
             display: flex;
             justify-content: space-evenly;
         }
+        /* button */
         button{
             width: 39%;
             height: 100%;
-            border-radius: 23px;
+            border-radius: 28px;
             border: none;
             background-color: rgb(0, 67, 183);
             color: white;
@@ -52,10 +53,11 @@
         .button-2{
             display: none;
         }
+        /* display box */
         .display{
             width: 39%;
             height: 100%;
-            border-radius: 25px;
+            border-radius: 28px;
             background-color: rgb(220, 242, 255);
             color: rgb(0, 94, 255);
             font-size: 18px;
@@ -69,38 +71,93 @@
             margin-right: 25px;
             text-align: center;
         }
+        @media (max-width:767px) {
+            .container{
+                width: 90%;
+                height: 75%;
+            }
+            h1{
+                font-size: 27px;
+            }
+            p{
+                font-size: 17px;
+                margin: 0;
+                font-weight: 600;
+            }
+            h1{
+                margin: 0;
+            }
+            img{
+                width: 85%;
+                height: 50%;
+            }
+            button{
+                width: 45%;
+                height: 90%;
+            }
+            .display{
+                width: 45%;
+                height: 90%;
+                text-align: center;
+                font-size: 15px;
+            }
+        }
+        @media (min-width:767px) and (max-width:1024px) {
+            .container{
+                width: 90%;
+            }
+            p{
+                font-size: 30px;
+            }
+            img{
+                width: 70%;
+
+            }
+            button, .display{
+                border-radius: 56px;
+                font-size: 27px;
+                text-align: center;
+                color: #111825;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="main-container" id="main-container">
         <div class="container" id="container">
+            <!-- heading -->
             <h1 id="heading">Light ON / OFF Toggle</h1>
             <p id="p">A clean, interractive demonstration of light state switching</p>
             <img id="bulb" src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg">
+            <!-- button -->
             <div class="button-section">
                 <button onclick="turnOff()" id="button-1">Turn OFF</button>
+                <!-- button with display none -->
                 <button class="button-2" onclick="turnOn()" id="button-2">Turn ON</button>
+                <!-- cuttent status -->
                 <div class="display" id="display">Light is currently ON</div>
             </div>
         </div>
     </div>
     <script>
+        // when light turns off
         function turnOff(){
             document.getElementById("button-1").style.display="none";
             document.getElementById("button-2").style.display="block";
             document.getElementById("main-container").style.backgroundColor="#11224E";
-            document.getElementById("container").style.backgroundColor="#1B3C53";
+            document.getElementById("container").style.backgroundColor="#0B192C";
             document.getElementById("heading").style.color="rgb(255, 255, 255)";
             document.getElementById("p").style.color="rgb(255, 255, 255)";
             document.getElementById("bulb").src="https://purepng.com/public/uploads/thumbnail//purepng.com-bulbbulblightenergy-bulbbright-lightclipart-14215264853833i09j.png";
             document.getElementById("button-2").style.color="rgb(255, 255, 255)";
-            document.getElementById("button-2").style.backgroundColor="rgb(71, 71, 71)";
+            document.getElementById("button-2").style.backgroundColor="rgb(47, 47, 47)";
             document.getElementById("display").style.color="rgb(255, 255, 255)";
-            document.getElementById("display").style.backgroundColor="rgb(71, 71, 71)";
+            document.getElementById("display").style.backgroundColor="rgb(47, 47, 47)";
             document.getElementById("display").innerHTML="Light is cuttently OFF";
-            alert(alert("hi"))
         }
+        // when light turns on
         function turnOn(){
+            // button
             document.getElementById("button-1").style.display="block";
             document.getElementById("button-2").style.display="none";
             document.getElementById("main-container").style.backgroundColor="rgb(227, 227, 227)";
