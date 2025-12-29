@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie ticket pricing</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Movie Ticket Pricing</h1>
+            <input type="number" placeholder="Enter your age." id="input">
+            <button onclick="check()">Check Ticket Price</button>
+            <h1 id="display"></h1>
+        </div>
+    </div>
+    <script>
+        function check(){
+            let age = document.getElementById("input").value;
+            let text ="";
+            switch(true){
+                case(age<0):
+                text = "Invalid age";
+                break;
+                case(age<=12):
+                text = "Child ("+age+" years)<br>Ticket Price: ₹100";
+                break;
+                case(age<=19):
+                text = "Teenager ("+age+" years)<br>Ticket Price: ₹150";
+                break;
+                case(age<=59):
+                text = "Adult ("+age+" years)<br>Ticket Price: ₹200";
+                break;
+                default: 
+                text = "Senior ("+age+" years)<br>Ticket Price: ₹120";
+            }
+            document.getElementById("display").innerHTML=text;
+        }
+    </script>
+</body>
+</html>
