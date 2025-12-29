@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connection status</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+        .main-container{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: sans-serif;
+            background-color: rgb(238, 238, 238);
+        }
+        .container{
+            width: 45%;
+            height: 87%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 1px 1px 15px rgb(68, 68, 68);
+            border-radius: 9px;
+        }
+        img{
+            width: 150px;
+            height: 150px;
+        }
+        .box-1{
+            width: 85%;
+            height: 40%;
+            background-color: rgb(238, 238, 238);
+            border: 2px rgb(221, 221, 221) solid;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        h2{
+            font-size: 30px;
+            margin: 0;
+            color: rgb(0, 187, 128);
+        }
+        b{
+            color: rgb(0, 187, 128);
+        }
+        button{
+            width: 47%;
+            height: 8.5%;
+            border-radius: 27px;
+            border: none;
+            color: white;
+            background-color: rgb(0, 89, 255);
+            font-size: 20px;
+        }
+        .box-2{
+            width: 90%;
+            height: 20%;
+            background-color: rgb(238, 238, 238);
+            border: 2px rgb(221, 221, 221) solid;
+            border-radius: 15px;
+        }
+        p{
+            margin: 6px;
+        }
+        h3{
+            margin: 13px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <h1>Connection Status</h1>
+            <p>Toogle between online and offline modes to see the visual changes</p>
+            <div class="box-1">
+                <img src="https://www.saveoneeurope.org/wp-content/uploads/2020/05/SaveOne-Europe-Symbol.svg">
+                <h2 id="display">Online</h2>
+                <b id="bold">Connected to Internet</b>
+            </div>
+            <button onclick="offline()">Switch to offline</button>
+            <div class="box-2">
+                <h3>ⓘ Current Status Details</h3>
+                <p id="p-1">✪ Active internet connection</p>
+                <p id="p-2">✪ Real-time updates available</p>
+                <p id="p-3">✪ Cloud sync enabled</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        function offline(){
+            
+        }
+    </script>
+</body>
+</html>
