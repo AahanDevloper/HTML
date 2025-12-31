@@ -84,11 +84,11 @@
             <h1>Connection Status</h1>
             <p>Toogle between online and offline modes to see the visual changes</p>
             <div class="box-1">
-                <img src="https://www.saveoneeurope.org/wp-content/uploads/2020/05/SaveOne-Europe-Symbol.svg">
+                <img id="img" src="../../../assets/images/online.webp">
                 <h2 id="display">Online</h2>
                 <b id="bold">Connected to Internet</b>
             </div>
-            <button onclick="offline()">Switch to offline</button>
+            <button id="button" onclick="showOutput()">Switch to offline</button>
             <div class="box-2">
                 <h3>ⓘ Current Status Details</h3>
                 <p id="p-1">✪ Active internet connection</p>
@@ -98,8 +98,14 @@
         </div>
     </div>
     <script>
-        function offline(){
-            
+        function showOutput(){
+            if (document.getElementById("button").innerHTML="Switch to offline"){
+                document.getElementById("button").innerHTML="Switch to online";
+                document.getElementById("img").src="../../../assets/images/offline.png";
+            }
+            else{
+                document.getElementById("img").src="../../../assets/images/online.webp";
+            }
         }
     </script>
 </body>
