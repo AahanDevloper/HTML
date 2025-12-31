@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="number" id="input">
+    <button onclick="showOutput()">Click</button>
+    <script>
+        function showOutput() {
+            let number = Number(document.getElementById("input").value);
+            let a = 0;
+            let row = "";
+            let factorial = 1;
+            while (a+1 <= number) {
+                row = row + (a+1) + "x";
+                factorial = factorial * a;
+                a++;
+            }
+            console.log("Factorial: "+row)
+            console.log(factorial)
+        }
+    </script>
+</body>
+
+</html>

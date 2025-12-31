@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="number" id="input" placeholder="Enter a number">
+    <button onclick="check()">Check sum</button>
+    <h1 id="display"></h1>
+    <script>
+        function check(){
+        let sum=0;
+        let a = 0;
+        let number = document.getElementById("input").value;
+        while(a<=number){
+            sum = sum + a;
+            a++
+        }
+        document.getElementById("display").innerHTML="Sum of 1 to "+number+" is "+sum;
+    }
+    </script>
+</body>
+</html>
