@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="container">
+            <input type="number" placeholder="Enter a number" id="input">
+            <button onclick="check()">Click here</button>
+            <div id="display"></div>
+        </div>
+    </div>
+    <script>
+        function check() {
+            let a = 0;
+            let number = document.getElementById("input").value;
+            let sum = 0;
+            while(a<=number){
+                sum+=a/(a+1);
+                a++;
+            }
+            document.getElementById("display").innerHTML=sum;
+        }
+    </script>
+</body>
+</html>
