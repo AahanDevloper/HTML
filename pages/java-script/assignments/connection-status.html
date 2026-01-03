@@ -72,6 +72,7 @@
         }
         p{
             margin: 6px;
+            margin-left: 13px;
         }
         h3{
             margin: 13px;
@@ -84,11 +85,11 @@
             <h1>Connection Status</h1>
             <p>Toogle between online and offline modes to see the visual changes</p>
             <div class="box-1">
-                <img id="img" src="../../../assets/images/online.webp">
+                <img id="img" src="../../../assets/images/online.svg">
                 <h2 id="display">Online</h2>
                 <b id="bold">Connected to Internet</b>
             </div>
-            <button id="button" onclick="showOutput()">Switch to offline</button>
+            <button id="button" onclick="showOutput()">Switch  to offline</button>
             <div class="box-2">
                 <h3>ⓘ Current Status Details</h3>
                 <p id="p-1">✪ Active internet connection</p>
@@ -98,13 +99,40 @@
         </div>
     </div>
     <script>
+            let x = 0;
         function showOutput(){
-            if (document.getElementById("button").innerHTML="Switch to offline"){
+            if (x==0){
+                x = 1
+                // button
                 document.getElementById("button").innerHTML="Switch to online";
-                document.getElementById("img").src="../../../assets/images/offline.png";
+                document.getElementById("button").style.backgroundColor="rgb(107, 107, 107)";
+                // display
+                document.getElementById("display").innerHTML="Offline";
+                document.getElementById("bold").style.color="red";
+                document.getElementById("bold").innerHTML="No internet connection";
+                document.getElementById("display").style.color="red";
+                // image change
+                document.getElementById("img").src="../../../assets/images/offline.avif";
+                // paragraph
+                document.getElementById("p-1").innerHTML="Limited or no internet access";
+                document.getElementById("p-2").innerHTML="Updates will sync when back online";
+                document.getElementById("p-3").innerHTML="Working in local mode";
             }
             else{
-                document.getElementById("img").src="../../../assets/images/online.webp";
+                x = 0
+                // button
+                document.getElementById("button").innerHTML="Switch to offline";
+                document.getElementById("button").style.backgroundColor="rgb(0, 89, 255)";
+                document.getElementById("display").innerHTML="Online";
+                document.getElementById("bold").style.color="rgb(0, 187, 128)";
+                document.getElementById("bold").innerHTML="Connected to internet";
+                document.getElementById("display").style.color="rgb(0, 187, 128)";
+                // image change
+                document.getElementById("img").src="../../../assets/images/online.svg";
+                // paragraph
+                document.getElementById("p-1").innerHTML="✪ Active internet connection";
+                document.getElementById("p-2").innerHTML="✪ Real-time updates available";
+                document.getElementById("p-3").innerHTML="✪ Cloud sync enabled";
             }
         }
     </script>
