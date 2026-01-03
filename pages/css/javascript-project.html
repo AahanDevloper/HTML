@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript projects</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 155vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(23, 96, 141);
+        }
+        /* header */
+        header {
+            width: 100%;
+            height: 11vh;
+            background-color: rgb(0, 126, 124);
+            box-shadow: 2px 4px 20px black;
+            display: flex;
+            position: fixed;
+        }
+
+        h1 {
+            color: white;
+            margin: 0;
+            margin-left: 10px;
+            display: flex;
+            align-self: center;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .name {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        nav {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .nav-a {
+            font-size: 25px;
+            color: rgb(203, 203, 203);
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+        /* container */
+        .container {
+            width: 100%;
+            height: 144vh;
+            margin-top: 11vh;
+        }
+
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            color: white;
+            margin: 0;
+            margin-top: 17px;
+        }
+
+        .projects {
+            width: 100%;
+            height: 100vh;
+            margin-top: 5px;
+            display: flex;
+            flex-direction: column;
+        }
+        /* card containers */
+        .card-container {
+            width: 100%;
+            height: 33.33%;
+            display: flex;
+        }
+
+        .box {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .project-card {
+            width: 40%;
+            height: 90%;
+            background-color: rgb(19, 90, 134);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            align-self: center;
+            align-items: center;
+        }
+
+        img {
+            border-radius: 15px;
+            width: 87%;
+            height: 50%;
+            display: flex;
+            justify-self: center;
+            margin-top: 10px;
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-size: 18px;
+            margin: 10px;
+        }
+
+        .button-area {
+            width: 100%;
+            height: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        button {
+            width: 40%;
+            height: 83%;
+            border-radius: 9px;
+            border: none;
+            background-color: transparent;
+            border: solid rgb(0, 149, 134) 2px;
+        }
+
+        button:hover {
+            background-color: rgb(0, 149, 134);
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        @media (max-width:376px) {
+            body {
+                height: 280vh;
+            }
+
+            /* header */
+            header {
+                flex-direction: column;
+            }
+
+            .name {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav {
+                width: 100%;
+                height: 50%;
+            }
+
+            .nav-a {
+                font-size: 22px;
+            }
+
+            /* container */
+            .container {
+                height: 265vh;
+            }
+
+            .projects {
+                height: 92%;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+                height: 50%;
+            }
+
+            .project-card {
+                width: 45%;
+                height: 97%;
+            }
+
+            h3 {
+                margin: 10px;
+                font-size: 13px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            button {
+                height: 90%;
+                width: 45%;
+                font-size: 10px;
+            }
+
+            a {
+                font-size: 10px;
+            }
+        }
+
+        @media (min-width:376px) and (max-width:768px) {
+            body {
+                height: 196vh;
+            }
+
+            /* header */
+            header {
+                flex-direction: column;
+            }
+
+            .name {
+                width: 100%;
+                height: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            nav {
+                width: 100%;
+                height: 50%;
+            }
+
+            .nav-a {
+                font-size: 22px;
+            }
+
+            /* container */
+            .container {
+                height: 183vh;
+            }
+
+            .projects {
+                height: 92%;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+                height: 50%;
+            }
+
+            .project-card {
+                width: 45%;
+                height: 97%;
+            }
+
+            h3 {
+                margin: 10px;
+                font-size: 17px;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+
+            button {
+                height: 90%;
+                width: 45%;
+            }
+
+            a {
+                font-size: 12px;
+            }
+        }
+
+        @media (min-width:768px) and (max-width:1025px) {
+            body {
+                height: 137vh;
+            }
+
+            header {
+                height: 10vh;
+            }
+
+            /* container */
+            .container {
+                height: 126vh;
+                margin-top: 10vh;
+            }
+
+            h2 {
+                font-size: 38px;
+            }
+
+            h3 {
+                font-size: 20px;
+            }
+
+            .projects {
+                height: 94%;
+            }
+
+            .card-container {
+                flex-direction: column;
+            }
+
+            .box {
+                width: 100%;
+                height: 50%;
+            }
+
+            .project-card {
+                width: 35%;
+                height: 95%;
+            }
+
+            button {
+                height: 85%;
+                width: 43%;
+            }
+
+            a {
+                font-size: 14px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <header>
+            <div class="name">
+                <h1>Aahan Jiwani</h1>
+            </div>
+            <nav>
+                <a class="nav-a" href="../../../index.html#home">Home</a>
+                <a class="nav-a" href="../../../index.html#about">About</a>
+                <a class="nav-a" href="../../../index.html#project">Projects</a>
+                <a class="nav-a" href="../../../index.html#contact">Contact</a>
+            </nav>
+        </header>
+        <div class="container">
+            <h2>My Javascript Projects</h2>
+            <div class="projects">
+                <!-- card container 1 -->
+                <div class="card-container">
+                    <div class="box">
+                        <!-- project card -->
+                        <div class="project-card">
+                            <!-- image -->
+                            <img
+                                src="https://static.vecteezy.com/system/resources/previews/054/406/605/non_2x/a-flat-illustration-of-atm-cartoon-drawing-isolated-on-background-free-vector.jpg">
+                            <!-- heading -->
+                            <h3>ATM Withdrawal</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/atm.html">View Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/atm.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="https://sbcstore.in/wp-content/uploads/2022/04/71VJdcqxtkL._SL1500_.jpg">
+                            <h3>Calculator</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/calculator.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/calculator.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="project-card">
+                            <img src="https://5.imimg.com/data5/WL/SG/MY-8835990/10w-gls-light-bulb.jpg">
+                            <h3>My Bulb</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/bulb.html">View Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/bulb.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHh2pfLDIU7_GWY_XbIMwi3Nes90sU8sGFOQ&s">
+                            <h3>Mean Calculator</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/mean.html">View Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/mean.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card container 2 -->
+                <div class="card-container">
+                    <div class="box">
+                        <div class="project-card">
+                            <img
+                                src="https://ecdn.teacherspayteachers.com/thumbitem/Large-Comparing-Symbols-1285250-1657292047/original-1285250-1.jpg">
+                            <h3>Number Comparator</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/number-conparison.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/number-conparison.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img src="https://i.ytimg.com/vi/nEtWvHpXWD0/maxresdefault.jpg">
+                            <h3>Area Calculator</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/datatypes/number/area-calculator.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/area-calculator.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="project-card">
+                            <img
+                                src="https://www.orchidsinternationalschool.com/_next/image?url=https%3A%2F%2Fcdn-cms.orchidsinternationalschool.com%2Fmedia%2Fdesktop_converter%2Ftemperature-converter.jpg&w=1920&q=75">
+                            <h3>Temperature convertor</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/datatypes/number/temperature.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/functions/temperature.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <!-- project card -->
+                        <div class="project-card">
+                            <!-- image -->
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIK3WBT8ZtHowQZ6q_WQOCDHxsbBwFLcGixTVlcl0jE5M7lw9XnfdO8bsU02RluK7hU3E&usqp=CAU">
+                            <!-- heading -->
+                            <h3>Math Quiz</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/math-quiz.html">View Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/math-quiz.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card container 3 -->
+                <div class="card-container">
+                    <div class="box">
+                        <div class="project-card">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDbJQTUnmcCuR5Dyu7QEmbnT4BZwD8zAJIAA&s">
+                            <h3>Name Combiner</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/name-combiner.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/name-combiner.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img
+                                src="https://previews.123rf.com/images/enterline/enterline1712/enterline171200664/92392766-the-word-score-concept-and-theme-painted-in-colorful-watercolors-on-a-white-paper-background.jpg">
+                            <h3>Score Comparator</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/score-comparison.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/score-comparison.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="project-card">
+                            <img src="https://i.sstatic.net/afBRx.png">
+                            <h3>Circle Calculator</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/datatypes/number/circle.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/datatypes/number/circle.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img
+                                src="https://i0.wp.com/geographicbook.com/wp-content/uploads/2023/11/temperature.png?fit=512%2C351&ssl=1">
+                            <h3>Temperature Checker</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a
+                                        href="../../java-script/operators/comparison-operator/temperature-checker.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/operators/comparison-operator/temperature-checker.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- card container 4 -->
+                <div class="card-container">
+                    <div class="box">
+                        <div class="project-card">
+                            <img
+                                src="https://img.freepik.com/free-vector/log-concept-landing-page_23-2148269085.jpg?semt=ais_hybrid&w=740&q=80">
+                            <h3>Login Page</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/assignments/login-page.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/assignments/login-page.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <img
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9I3Zn57LfftlTpceqNHbF9EkO37lhxe2fpg&s">
+                            <h3>Leap year checker</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/operators/ternary-operator/leap-year.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/operators/ternary-operator/leap-year.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="project-card">
+                            <img
+                                src="https://static.vecteezy.com/system/resources/previews/026/754/067/non_2x/wi-fi-technology-wi-fi-is-a-technology-that-transmits-wireless-internet-signals-to-electronic-devices-to-access-the-internet-n-the-wifi-icon-is-on-the-earth-map-with-connection-lines-vector.jpg">
+                            <h3>Connection status</h3>
+                            <!-- button area -->
+                            <div class="button-area">
+                                <!-- project -->
+                                <button><a href="../../java-script/operators/ternary-operator/leap-year.html">View
+                                        Project</a></button>
+                                <!-- code -->
+                                <button><a
+                                        href="https://github.com/AahanDevloper/HTML/blob/main/pages/java-script/operators/ternary-operator/leap-year.html">View
+                                        Code</a></button>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
