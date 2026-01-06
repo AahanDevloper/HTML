@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time</title>
+</head>
+
+<body>
+    <script>
+        let i = 1;
+        let j;
+        let k;
+        let l;
+        let a = 365;
+        let b = 24;
+        let c = 60;
+        let d = 60;
+        let count = 0;
+        while (i <= a) {
+            j = 1
+            console.log(i + " days");
+            while (j <= b) {
+                k = 1;
+                console.log(j + " hours")
+                while (k <= c) {
+                    console.log(k + " minute");
+                    while (l <= d) {
+                        console.log(l + " Seconds");
+                        l++;
+                        count++;
+                    }
+                    k++;
+                }
+                j++;
+            }
+            i++;
+        }
+        console.log(count)
+    </script>
+</body>
+
+</html>
