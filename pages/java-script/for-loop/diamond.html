@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="display"></p>
+    <script>
+        let i = 1;
+        let row = "";
+        while (i <= 7) {
+            let j = i;
+            if (j <= 4) {
+                while (j <= i) {
+                    row += "*  "
+                    j++
+                }
+                console.log(row)
+            }
+            else {
+                let b = 3;
+                let rowA = "";
+                while (b >= 1) {
+                    rowA += "*  "
+                    b--;
+                }
+                console.log(rowA)
+            }
+            i++;
+        }
+    </script>
+</body>
+
+</html>
