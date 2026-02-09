@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abacus</title>
+    <link rel="stylesheet" href="./model.css">
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Mental Maths</h1>
+        <div class="display" id="color">
+            <h2 id="number"></h2>
+        </div>
+        <select class="dropdown" id="dropdown">
+            <option value="none">Manual</option>
+            <option value="1">Very easy</option>
+            <option value="2">Easy</option>
+            <option value="3">Medium</option>
+            <option value="4">Hard</option>
+            <option value="5">Extreme</option>
+        </select>
+        <div class="input-box">
+            <input type="number" placeholder="Quantity of numbers" id="rows">
+            <input type="number" placeholder="Time gap" id="time">
+            <input type="number" placeholder="Digits" id="digit">
+            <button onclick="start()">Start</button>
+        </div>
+        <div class="input-box">
+            <input type="number" placeholder="Enter your answer." id="answer">
+            <button onclick="check()">Check</button>
+        </div>
+        <div class="result-box" id="result-box">
+            <h3>Result :</h3>
+            <h3 id="display"></h3>
+            <h3 id="win-streak"></h3>
+        </div>
+
+    </div>
+    <script src="./model.js"></script>
+</body>
+
+</html>
