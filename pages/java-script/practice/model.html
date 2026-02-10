@@ -11,9 +11,11 @@
 <body>
     <div class="main-container">
         <h1>Mental Maths</h1>
+        <!-- dispay box -->
         <div class="display" id="color">
             <h2 id="number"></h2>
         </div>
+        <!-- levels -->
         <select class="dropdown" id="dropdown">
             <option value="none">Manual</option>
             <option value="1">Very easy</option>
@@ -23,8 +25,11 @@
             <option value="5">Extreme</option>
         </select>
         <div class="input-box">
+            <!-- total rows -->
             <input type="number" placeholder="Quantity of numbers" id="rows">
+            <!-- time gap -->
             <input type="number" placeholder="Time gap" id="time">
+            <!-- digits -->
             <input type="number" placeholder="Digits" id="digit">
             <button onclick="start()">Start</button>
         </div>
@@ -34,7 +39,9 @@
         </div>
         <div class="result-box" id="result-box">
             <h3>Result :</h3>
+            <!-- result -->
             <h3 id="display"></h3>
+            <!-- streak -->
             <h3 id="win-streak"></h3>
         </div>
 

@@ -12,6 +12,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* linear gradient */
     background: linear-gradient(to bottom right, 
             #00f0ff,
             #8a2be2,
@@ -25,7 +26,7 @@ h1 {
     margin-bottom: 0;
     color: white;
 }
-
+/* display of random numbers */
 .display {
     width: 13vw;
     height: 13vw;
@@ -40,7 +41,7 @@ h1 {
     font-size: 38px;
     margin-top: 13px;
 }
-
+/* dropdown for levels */
 .dropdown {
     width: 16%;
     height: 40px;
