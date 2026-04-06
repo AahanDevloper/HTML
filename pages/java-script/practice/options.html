@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Options</title>
+    <style>
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(0, 56, 102);
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+            color: rgb(0, 225, 158);
+        }
+
+        .inputs {
+            margin-top: 40px;
+            width: 28%;
+            height: 49%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+
+        input {
+            width: 90%;
+            height: 11%;
+            text-align: center;
+            border-radius: 9px;
+            font-size: 18px;
+            border: 2px solid rgb(0, 225, 158);
+        }
+
+        select {
+            width: 90%;
+            height: 14%;
+            text-align: center;
+            border-radius: 9px;
+            border: 2px solid rgb(0, 225, 158);
+        }
+
+        button {
+            width: 90%;
+            height: 14%;
+            border: none;
+            border-radius: 9px;
+            color: white;
+            background-color: rgb(0, 225, 158);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <h1>Option Details Calculator</h1>
+        <div class="inputs">
+            <select>
+                <option value="">Select Option</option>
+                <option value="">Long Call</option>
+                <option value="">Short Call</option>
+                <option value="">Long Put</option>
+                <option value="">Short Put</option>
+            </select>
+            <input placeholder="Enter Spot Price" type="number" id="spot-price">
+            <input placeholder="Enter Strike Price" type="number" id="strike-price">
+            <input placeholder="Enter Premium" type="number" id="premium">
+            <input placeholder="Enter Closing Price" type="number" id="closing-price">
+            <button onclick="showDetails()">Show Details</button>
+        </div>
+        <h2 id="profit"></h2>
+        <h2 id="bep"></h2>
+        <h2 id="max-profit"></h2>
+        <h2 id="max-loss"></h2>
+        <h2 id="pay-off"></h2>
+    </div>
+    <script>
+        function showDetails() {
+            let spot = document.getElementById("spot-price").value;
+            let strike = document.getElementById("strike-price").value;
+            let premium = document.getElementById("premium").value;
+            let closing = document.getElementById("closing-price").value;
+            if(closing >= strike){
+                let profit = (closing - strike)-premium;
+            }
+            else{
+                let profit = -premium
+            }
+            let maxProfit = "Unlimited";
+            let maxLoss = premium;
+            let BEP = strike+premium;
+            if(spot > strike){
+                payOff = spot - strike;
+            }
+            else {
+                payOff = 0;
+            }
+
+            // profit
+            if(profit>0){
+                document.getElementById("profit").style.color="green"
+                document.getElementById("profit").innerHTML="Your profit is: "+profit;
+            }
+            else if(profit<0){
+                document.getElementById("profit").style.color="red"
+                document.getElementById("profit").innerHTML="Your profit is: "+profit;
+            }
+            else{
+                document.getElementById("profit").style.color="rgb(86, 86, 86)"
+                document.getElementById("profit").innerHTML="No profit, No loss";
+            }
+
+            // brake even point
+            document.getElementById("bep").innerHTML="Brake even point is: "+BEP;
+
+            // max profit
+            document.getElementById("max-profit").innerHTML="Max profit can be: "+maxProfit;
+
+            // max loss
+            document.getElementById("max-loss").innerHTML="Max loss can be: "+maxLoss;
+
+            // max loss
+            document.getElementById("pay-off").innerHTML="Pay off: "+payOff;
+        }
+    </script>
+</body>
+
+</html>
