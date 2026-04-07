@@ -23,13 +23,17 @@
             align-items: center;
         }
 
+        h2 {
+            margin: 5px;
+            color: rgb(0, 225, 158);
+        }
+
         h1 {
             margin-top: 40px;
             color: rgb(0, 225, 158);
         }
 
         .inputs {
-            margin-top: 40px;
             width: 28%;
             height: 49%;
             display: flex;
@@ -70,12 +74,12 @@
     <div class="main-container">
         <h1>Option Details Calculator</h1>
         <div class="inputs">
-            <select>
-                <option value="">Select Option</option>
-                <option value="">Long Call</option>
-                <option value="">Short Call</option>
-                <option value="">Long Put</option>
-                <option value="">Short Put</option>
+            <select id="drop-down">
+                <option value="0">Select Option</option>
+                <option value="1">Long Call</option>
+                <option value="2">Short Call</option>
+                <option value="3">Long Put</option>
+                <option value="4">Short Put</option>
             </select>
             <input placeholder="Enter Spot Price" type="number" id="spot-price">
             <input placeholder="Enter Strike Price" type="number" id="strike-price">
@@ -91,51 +95,82 @@
     </div>
     <script>
         function showDetails() {
-            let spot = document.getElementById("spot-price").value;
-            let strike = document.getElementById("strike-price").value;
-            let premium = document.getElementById("premium").value;
-            let closing = document.getElementById("closing-price").value;
-            if(closing >= strike){
-                let profit = (closing - strike)-premium;
+            let profit;
+            let payOff;
+            let spot = Number(document.getElementById("spot-price").value);
+            let strike = Number(document.getElementById("strike-price").value);
+            let premium = Number(document.getElementById("premium").value);
+            let closing = Number(document.getElementById("closing-price").value);
+            let option = Number(document.getElementById("drop-down").value);
+            if (option == 0) {
+                alert("Choose type of Options")
             }
-            else{
-                let profit = -premium
+            else if (option == 1) {
+                // for long call
+                if (closing >= strike) {
+                    profit = (closing - strike) - premium;
+                }
+                else {
+                    profit = -premium
+                }
+                let maxProfit = "Unlimited";
+                let maxLoss = premium;
+                let BEP = strike + premium;
+                if (closing > strike) {
+                    payOff = closing - strike;
+                }
+                else {
+                    payOff = 0;
+                }
+
             }
-            let maxProfit = "Unlimited";
-            let maxLoss = premium;
-            let BEP = strike+premium;
-            if(spot > strike){
-                payOff = spot - strike;
+            else if (option == 2) {
+                // for short call
+                if (closing <= strike) {
+                    if(strike - closing <=premium){
+                        profit = premium-closing
+                    }
+                    else{
+                        profit = premium
+                        // profit = -((closing-strike)-premium);
+                    }
+                }
+                else {
+                    profit = -((closing-strike)-premium);
+                }
+                let maxProfit = premium;
+                let maxLoss = strike-premium;
+                let BEP = strike + premium;
+                if (closing > strike) {
+                    payOff = closing - strike;
+                }
+                else {
+                    payOff = 0;
+                }
+
+            }
+            // profit
+            if (profit > 0) {
+                document.getElementById("profit").innerHTML = "Your profit is: " + profit;
+            }
+            else if (profit < 0) {
+                document.getElementById("profit").innerHTML = "Your profit is: " + profit;
             }
             else {
-                payOff = 0;
-            }
-
-            // profit
-            if(profit>0){
-                document.getElementById("profit").style.color="green"
-                document.getElementById("profit").innerHTML="Your profit is: "+profit;
-            }
-            else if(profit<0){
-                document.getElementById("profit").style.color="red"
-                document.getElementById("profit").innerHTML="Your profit is: "+profit;
-            }
-            else{
-                document.getElementById("profit").style.color="rgb(86, 86, 86)"
-                document.getElementById("profit").innerHTML="No profit, No loss";
+                document.getElementById("profit").innerHTML = "No profit, No loss";
             }
 
             // brake even point
-            document.getElementById("bep").innerHTML="Brake even point is: "+BEP;
+            document.getElementById("bep").innerHTML = "Brake even point is: " + BEP;
 
             // max profit
-            document.getElementById("max-profit").innerHTML="Max profit can be: "+maxProfit;
+            document.getElementById("max-profit").innerHTML = "Max profit can be: " + maxProfit;
 
             // max loss
-            document.getElementById("max-loss").innerHTML="Max loss can be: "+maxLoss;
+            document.getElementById("max-loss").innerHTML = "Max loss can be: " + maxLoss;
 
             // max loss
-            document.getElementById("pay-off").innerHTML="Pay off: "+payOff;
+            document.getElementById("pay-off").innerHTML = "Pay off: " + payOff;
         }
     </script>
 </body>
