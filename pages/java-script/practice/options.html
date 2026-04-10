@@ -95,6 +95,9 @@
     </div>
     <script>
         function showDetails() {
+            let BEP;
+            let maxProfit;
+            let maxLoss;
             let profit;
             let payOff;
             let spot = Number(document.getElementById("spot-price").value);
@@ -113,9 +116,9 @@
                 else {
                     profit = -premium
                 }
-                let maxProfit = "Unlimited";
-                let maxLoss = premium;
-                let BEP = strike + premium;
+                maxProfit = "Unlimited";
+                maxLoss = premium;
+                BEP = strike + premium;
                 if (closing > strike) {
                     payOff = closing - strike;
                 }
@@ -126,26 +129,58 @@
             }
             else if (option == 2) {
                 // for short call
-                if (closing <= strike) {
-                    if(strike - closing <=premium){
-                        profit = premium-closing
-                    }
-                    else{
-                        profit = premium
-                        // profit = -((closing-strike)-premium);
-                    }
+                if (closing > strike) {
+                    profit = premium-closing+strike
                 }
                 else {
-                    profit = -((closing-strike)-premium);
+                    profit = premium
                 }
-                let maxProfit = premium;
-                let maxLoss = strike-premium;
-                let BEP = strike + premium;
+                maxProfit = premium;
+                maxLoss = "unlimited";
+                BEP = strike + premium;
                 if (closing > strike) {
+                    payOff = 0;
+                }
+                else {
                     payOff = closing - strike;
+                }
+
+            }
+            else if (option == 3) {
+                // for long put
+                if (closing > strike) {
+                    profit = -premium
+                }
+                else {
+                    profit = strike-closing-premium
+                }
+                maxProfit = strike-premium;
+                maxLoss = premium;
+                BEP = strike - premium;
+                if (strike > closing) {
+                    payOff = strike - closing;
                 }
                 else {
                     payOff = 0;
+                }
+
+            }
+            else if (option == 4) {
+                // for short put
+                if (closing > strike) {
+                    profit = premium
+                }
+                else {
+                    profit = strike-closing+premium
+                }
+                maxProfit = premium;
+                maxLoss = "unlimited";
+                BEP = strike - premium;
+                if (strike > closing) {
+                    payOff = 0
+                }
+                else {
+                    payOff = strike - closing;
                 }
 
             }
