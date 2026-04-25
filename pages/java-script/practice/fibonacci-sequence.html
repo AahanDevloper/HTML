@@ -45,6 +45,10 @@
             border-radius: 9px;
             margin: 20px;
         }
+        li{
+            font-size: 25px;
+            font-weight: 500;
+        }
     </style>
 </head>
 
@@ -53,6 +57,9 @@
         <h1>Print Fibonacci Sequence</h1>
         <input type="number" placeholder="Enter fibonacci count" id="input" />
         <button onclick="printFibonacci()">Print Sequence</button>
+        <ol id="list">
+
+        </ol>
     </div>
     <script>
         function printFibonacci() {
@@ -66,22 +73,22 @@
                 alert("Total numbers can't be less than 1");
             } 
             else if (totalNumbers == 1) {
-                document.getElementById("main-container").innerHTML += "<h2>1</h2>";
+                document.getElementById("list").innerHTML += "<li>1</li>";
             } 
             else if (totalNumbers == 2) {
-                document.getElementById("main-container").innerHTML += "<h2>1</h2>";
-                document.getElementById("main-container").innerHTML += "<h2>1</h2>";
+                document.getElementById("list").innerHTML += "<li>1</li>";
+                document.getElementById("list").innerHTML += "<li>1</li>";
             } 
             else {
-                document.getElementById("main-container").innerHTML += "<h2>1</h2>";
-                document.getElementById("main-container").innerHTML += "<h2>1</h2>";
+                document.getElementById("list").innerHTML += "<li>1</li>";
+                document.getElementById("list").innerHTML += "<li>1</li>";
 
                 while (inc < totalNumbers-2) {
                     nextNum = num2 + num;
                     num = num2;
                     num2 = nextNum;
-                    document.getElementById("main-container").innerHTML +=
-                        "<h2>" + BigInt(nextNum) + "</h2>";
+                    document.getElementById("list").innerHTML +=
+                        "<li>" + BigInt(nextNum) + "</li>";
                     inc++;
                 }
             }
