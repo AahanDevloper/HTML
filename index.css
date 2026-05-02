@@ -1,0 +1,153 @@
+
+        * {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            width: 100vw;
+            height: 188vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-container {
+            width: 100%;
+            height: 100%;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* header starts */
+        header {
+            width: 100%;
+            height: 12vh;
+            background-color: rgba(0, 14, 78, 0.945);
+            display: flex;
+            position: fixed;
+        }
+
+        .heading {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 30px;
+            color: white;
+            margin-left: 24px;
+        }
+
+        nav {
+            width: 50%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        ul {
+
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        a {
+            color: rgb(209, 209, 209);
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: white;
+        }
+
+        /* header ends */
+
+        /* home section */
+        .home {
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(0, 21, 143);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            scroll-margin-top: 12vh;
+        }
+
+        h1 {
+            font-size: 43px;
+            color: white;
+            margin-left: 30px;
+            margin-bottom: 0px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-left: 30px;
+            margin-top: 6px;
+            color: white;
+            width: 50%;
+        }
+        a{
+            width: 15%;
+            height: 7%;
+        }
+        button {
+            width: 100%;
+            height: 100%;
+            border-radius: 6px;
+            margin-left: 30px;
+            margin-top: 33px;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            border: 3px solid rgb(0, 17, 92);
+            background-color: rgb(0, 17, 92);
+        }
+
+        button:hover {
+            background-color: rgb(0, 19, 105);
+        }
+        /* home ends */
+
+        /* about starts */
+        .about{
+            width: 100%;
+            height: 88vh;
+            display: flex;
+            scroll-margin-top: 12vh;
+        }
+        .text-section{
+            width: 60%;
+            height: 100%;
+        }
+        .about-head{
+            margin-top: 109px;
+            color: rgb(0, 17, 92);
+        }
+        .about-p{
+            width: 70%;
+            margin-top: 35px;
+            color: #333333;
+        }
+        span{
+            color: #708090;
+            font-weight: 600;
+        }
+        .image-section{
+            width: 40%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .about-img{
+            width: 70%;
+            height: 80%;
+            border-radius: 10px;
+            box-shadow: 3px 3px 7px rgb(172, 172, 172);
+        }
+        /* about ends */
