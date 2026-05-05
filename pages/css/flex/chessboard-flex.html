@@ -1,145 +1,377 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chessboard</title>
     <style>
-        body{
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: rgb(227, 227, 227);
-        }
-        .container{
-            width: 600px;
-            height: 600px;
-            border-style: solid;
-            border-color: rgb(6, 6, 6);
-        }
-        .row{
-            width: 100%;
-            height: 12.5%;
-            display: flex;
-        }
-        .box-1{
-            width: 12.5%;
-            height: 100%;
-            background-color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        .box-2{
-            width: 12.5%;
-            height: 100%;
-            background-color: green;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        img{
-            width: 100%;
-            height: 100%;
-        }
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(227, 227, 227);
+      }
+
+      .container {
+        width: 600px;
+        height: 600px;
+        border-style: solid;
+        border-color: rgb(6, 6, 6);
+      }
+
+      .row {
+        width: 100%;
+        height: 12.5%;
+        display: flex;
+      }
+
+      .box-1 {
+        width: 12.5%;
+        height: 100%;
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .box-2 {
+        width: 12.5%;
+        height: 100%;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
     </style>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="container">
-        <div class="row">
-            <div class="box-1"><img id="b-r1" onclick="selectPiece('b-r1')" src="https://static.wikia.nocookie.net/chess/images/b/b9/DarkRook.png/revision/latest/scale-to-width/360?cb=20230320152625"></div>
-            <div class="box-2"><img id="b-n1" onclick="selectPiece('b-n1')" src="https://static.wikia.nocookie.net/chess/images/7/7d/DarkKnight.png/revision/latest/scale-to-width/360?cb=20230320152239"></div>
-            <div class="box-1"><img id="b-b1" onclick="selectPiece('b-b1')" src="https://static.wikia.nocookie.net/chess/images/c/c3/DarkBishop.png/revision/latest/scale-to-width/360?cb=20230320152509"></div>
-            <div class="box-2"><img id="b-q"  onclick="selectPiece('b-q')" src="https://static.wikia.nocookie.net/chess/images/9/90/DarkQueen.png/revision/latest/scale-to-width/360?cb=20230320152652"></div>
-            <div class="box-1"><img id="b-k"  onclick="selectPiece('b-k')" src="https://static.wikia.nocookie.net/chess/images/d/d7/DarkKing.png/revision/latest/scale-to-width/360?cb=20230320152719"></div>
-            <div class="box-2"><img id="b-b2" onclick="selectPiece('b-b2')" src="https://static.wikia.nocookie.net/chess/images/c/c3/DarkBishop.png/revision/latest/scale-to-width/360?cb=20230320152509"></div>
-            <div class="box-1"><img id="b-n2" onclick="selectPiece('b-n2')" src="https://static.wikia.nocookie.net/chess/images/7/7d/DarkKnight.png/revision/latest/scale-to-width/360?cb=20230320152239"></div>
-            <div class="box-2"><img id="b-r2" onclick="selectPiece('b-r2')" src="https://static.wikia.nocookie.net/chess/images/b/b9/DarkRook.png/revision/latest/scale-to-width/360?cb=20230320152625"></div>
+      <div class="row">
+        <div class="box-1">
+          <img
+            id="b-r1"
+            onclick="selectPiece('b-r1')"
+            src="https://static.wikia.nocookie.net/chess/images/b/b9/DarkRook.png/revision/latest/scale-to-width/360?cb=20230320152625"
+          />
         </div>
-        <div class="row">
-            <div class="box-2"><img id="b-p1" onclick="selectPiece('b-p1')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
-            <div class="box-1"><img id="b-p2" onclick="selectPiece('b-p2')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
-            <div class="box-2"><img id="b-p3" onclick="selectPiece('b-p3')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
-            <div class="box-1"><img id="b-p4" onclick="selectPiece('b-p4')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
-            <div class="box-2"><img id="b-p5" onclick="selectPiece('b-p5')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
-            <div class="box-1"><img id="b-p6" onclick="selectPiece('b-p6')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
-            <div class="box-2"><img id="b-p7" onclick="selectPiece('b-p7')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
-            <div class="box-1"><img id="b-p8" onclick="selectPiece('b-p8')" src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"></div>
+        <div class="box-2">
+          <img
+            id="b-n1"
+            onclick="selectPiece('b-n1')"
+            src="https://static.wikia.nocookie.net/chess/images/7/7d/DarkKnight.png/revision/latest/scale-to-width/360?cb=20230320152239"
+          />
         </div>
-        <div class="row">
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
+        <div class="box-1">
+          <img
+            id="b-b1"
+            onclick="selectPiece('b-b1')"
+            src="https://static.wikia.nocookie.net/chess/images/c/c3/DarkBishop.png/revision/latest/scale-to-width/360?cb=20230320152509"
+          />
         </div>
-        <div class="row">
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
+        <div class="box-2">
+          <img
+            id="b-q"
+            onclick="selectPiece('b-q')"
+            src="https://static.wikia.nocookie.net/chess/images/9/90/DarkQueen.png/revision/latest/scale-to-width/360?cb=20230320152652"
+          />
         </div>
-        <div class="row">
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
+        <div class="box-1">
+          <img
+            id="b-k"
+            onclick="selectPiece('b-k')"
+            src="https://static.wikia.nocookie.net/chess/images/d/d7/DarkKing.png/revision/latest/scale-to-width/360?cb=20230320152719"
+          />
         </div>
-        <div class="row">
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
-            <div class="box-2"></div>
-            <div class="box-1"></div>
+        <div class="box-2">
+          <img
+            id="b-b2"
+            onclick="selectPiece('b-b2')"
+            src="https://static.wikia.nocookie.net/chess/images/c/c3/DarkBishop.png/revision/latest/scale-to-width/360?cb=20230320152509"
+          />
         </div>
-        <div class="row">
-            <div class="box-1"><img id="w-p1" onclick="selectPiece('w-p1')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
-            <div class="box-2"><img id="w-p2" onclick="selectPiece('w-p2')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
-            <div class="box-1"><img id="w-p3" onclick="selectPiece('w-p3')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
-            <div class="box-2"><img id="w-p4" onclick="selectPiece('w-p4')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
-            <div class="box-1"><img id="w-p5" onclick="selectPiece('w-p5')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
-            <div class="box-2"><img id="w-p6" onclick="selectPiece('w-p6')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
-            <div class="box-1"><img id="w-p7" onclick="selectPiece('w-p7')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
-            <div class="box-2"><img id="w-p8" onclick="selectPiece('w-p8')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907" alt=""></div>
+        <div class="box-1">
+          <img
+            id="b-n2"
+            onclick="selectPiece('b-n2')"
+            src="https://static.wikia.nocookie.net/chess/images/7/7d/DarkKnight.png/revision/latest/scale-to-width/360?cb=20230320152239"
+          />
         </div>
-        <div class="row">
-            <div class="box-2"><img id="w-r1" onclick="selectPiece('w-r1')" src="https://static.wikia.nocookie.net/chess/images/9/97/LightRook.png/revision/latest/scale-to-width/360?cb=20230320152615" alt=""></div>
-            <div class="box-1"><img id="w-n1" onclick="selectPiece('w-n1')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightKnight.png/revision/latest/scale-to-width/360?cb=20230320152142" alt=""></div>
-            <div class="box-2"><img id="w-b1" onclick="selectPiece('w-b1')" src="https://static.wikia.nocookie.net/chess/images/d/d7/LightBishop.png/revision/latest/scale-to-width/360?cb=20230320152454" alt=""></div>
-            <div class="box-1"><img id="w-q " onclick="selectPiece('w-q ')" src="https://static.wikia.nocookie.net/chess/images/4/42/LightQueen.png/revision/latest/scale-to-width/360?cb=20230320152643"></div>
-            <div class="box-2"><img id="w-k " onclick="selectPiece('w-k ')" src="https://static.wikia.nocookie.net/chess/images/7/78/LightKing.png/revision/latest/scale-to-width/360?cb=20230320152710"></div>
-            <div class="box-1"><img id="w-b2" onclick="selectPiece('w-b2')" src="https://static.wikia.nocookie.net/chess/images/d/d7/LightBishop.png/revision/latest/scale-to-width/360?cb=20230320152454" alt=""></div>
-            <div class="box-2"><img id="w-n2" onclick="selectPiece('w-n2')" src="https://static.wikia.nocookie.net/chess/images/3/32/LightKnight.png/revision/latest/scale-to-width/360?cb=20230320152142" alt=""></div>
-            <div class="box-1"><img id="w-r2" onclick="selectPiece('w-r2')" src="https://static.wikia.nocookie.net/chess/images/9/97/LightRook.png/revision/latest/scale-to-width/360?cb=20230320152615" alt=""></div>
+        <div class="box-2">
+          <img
+            id="b-r2"
+            onclick="selectPiece('b-r2')"
+            src="https://static.wikia.nocookie.net/chess/images/b/b9/DarkRook.png/revision/latest/scale-to-width/360?cb=20230320152625"
+          />
         </div>
+      </div>
+      <div class="row">
+        <div class="box-2">
+          <img
+            id="b-p1"
+            onclick="selectPiece('b-p1')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="b-p2"
+            onclick="selectPiece('b-p2')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="b-p3"
+            onclick="selectPiece('b-p3')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="b-p4"
+            onclick="selectPiece('b-p4')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="b-p5"
+            onclick="selectPiece('b-p5')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="b-p6"
+            onclick="selectPiece('b-p6')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="b-p7"
+            onclick="selectPiece('b-p7')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="b-p8"
+            onclick="selectPiece('b-p8')"
+            src="https://static.wikia.nocookie.net/chess/images/8/8c/DarkPawn.png/revision/latest/scale-to-width/360?cb=20230320152043"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="box-1" id="a6" onclick="move('a6')"></div>
+        <div class="box-2" id="b6" onclick="move('b6')"></div>
+        <div class="box-1" id="c6" onclick="move('c6')"></div>
+        <div class="box-2" id="d6" onclick="move('d6')"></div>
+        <div class="box-1" id="e6" onclick="move('e6')"></div>
+        <div class="box-2" id="f6" onclick="move('f6')"></div>
+        <div class="box-1" id="g6" onclick="move('g6')"></div>
+        <div class="box-2" id="h6" onclick="move('h6')"></div>
+      </div>
+      <div class="row">
+        <div class="box-2" id="a5" onclick="move('a5')"></div>
+        <div class="box-1" id="b5" onclick="move('b5')"></div>
+        <div class="box-2" id="c5" onclick="move('c5')"></div>
+        <div class="box-1" id="d5" onclick="move('d5')"></div>
+        <div class="box-2" id="e5" onclick="move('e5')"></div>
+        <div class="box-1" id="f5" onclick="move('f5')"></div>
+        <div class="box-2" id="g5" onclick="move('g5')"></div>
+        <div class="box-1" id="h5" onclick="move('h5')"></div>
+      </div>
+      <div class="row">
+        <div class="box-1" id="a4" onclick="move('a4')"></div>
+        <div class="box-2" id="b4" onclick="move('b4')"></div>
+        <div class="box-1" id="c4" onclick="move('c4')"></div>
+        <div class="box-2" id="d4" onclick="move('d4')"></div>
+        <div class="box-1" id="e4" onclick="move('e4')"></div>
+        <div class="box-2" id="f4" onclick="move('f4')"></div>
+        <div class="box-1" id="g4" onclick="move('g4')"></div>
+        <div class="box-2" id="h4" onclick="move('h4')"></div>
+      </div>
+      <div class="row">
+        <div class="box-2" id="a3" onclick="move('a3')"></div>
+        <div class="box-1" id="b3" onclick="move('b3')"></div>
+        <div class="box-2" id="c3" onclick="move('c3')"></div>
+        <div class="box-1" id="d3" onclick="move('d3')"></div>
+        <div class="box-2" id="e3" onclick="move('e3')"></div>
+        <div class="box-1" id="f3" onclick="move('f3')"></div>
+        <div class="box-2" id="g3" onclick="move('g3')"></div>
+        <div class="box-1" id="h3" onclick="move('h3')"></div>
+      </div>
+      <div class="row">
+        <div class="box-1">
+          <img
+            id="w-p1"
+            onclick="selectPiece('w-p1')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="w-p2"
+            onclick="selectPiece('w-p2')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="w-p3"
+            onclick="selectPiece('w-p3')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="w-p4"
+            onclick="selectPiece('w-p4')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="w-p5"
+            onclick="selectPiece('w-p5')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="w-p6"
+            onclick="selectPiece('w-p6')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="w-p7"
+            onclick="selectPiece('w-p7')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="w-p8"
+            onclick="selectPiece('w-p8')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="box-2">
+          <img
+            id="w-r1"
+            onclick="selectPiece('w-r1')"
+            src="https://static.wikia.nocookie.net/chess/images/9/97/LightRook.png/revision/latest/scale-to-width/360?cb=20230320152615"
+            alt=""
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="w-n1"
+            onclick="selectPiece('w-n1')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightKnight.png/revision/latest/scale-to-width/360?cb=20230320152142"
+            alt=""
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="w-b1"
+            onclick="selectPiece('w-b1')"
+            src="https://static.wikia.nocookie.net/chess/images/d/d7/LightBishop.png/revision/latest/scale-to-width/360?cb=20230320152454"
+            alt=""
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="w-q "
+            onclick="selectPiece('w-q ')"
+            src="https://static.wikia.nocookie.net/chess/images/4/42/LightQueen.png/revision/latest/scale-to-width/360?cb=20230320152643"
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="w-k "
+            onclick="selectPiece('w-k ')"
+            src="https://static.wikia.nocookie.net/chess/images/7/78/LightKing.png/revision/latest/scale-to-width/360?cb=20230320152710"
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="w-b2"
+            onclick="selectPiece('w-b2')"
+            src="https://static.wikia.nocookie.net/chess/images/d/d7/LightBishop.png/revision/latest/scale-to-width/360?cb=20230320152454"
+            alt=""
+          />
+        </div>
+        <div class="box-2">
+          <img
+            id="w-n2"
+            onclick="selectPiece('w-n2')"
+            src="https://static.wikia.nocookie.net/chess/images/3/32/LightKnight.png/revision/latest/scale-to-width/360?cb=20230320152142"
+            alt=""
+          />
+        </div>
+        <div class="box-1">
+          <img
+            id="w-r2"
+            onclick="selectPiece('w-r2')"
+            src="https://static.wikia.nocookie.net/chess/images/9/97/LightRook.png/revision/latest/scale-to-width/360?cb=20230320152615"
+            alt=""
+          />
+        </div>
+      </div>
     </div>
 
     <script>
-        let selected = false;
-        function selectPiece(piece){
-            if(selected == false){
-                document.getElementById(piece).style.display="none";
-                selected=true;
-            }
+      let pieceVal;
+      function selectPiece(piece) {
+        document.getElementById(piece).style.display = "none";
+        pieceVal = piece;
+        alert(pieceVal)
+      }
+      function move(square) {
+        if (pieceVal == "w-r1" || pieceVal == "w-r2") {
+          document.getElementById(square).innerHTML =
+            "<img src = 'https://static.wikia.nocookie.net/chess/images/9/97/LightRook.png/revision/latest/scale-to-width/360?cb=20230320152615'>";
+        } else if (pieceVal == "w-n1" || pieceVal == "w-n2") {
+          document.getElementById(square).innerHTML =
+            "<img src = 'https://static.wikia.nocookie.net/chess/images/3/32/LightKnight.png/revision/latest/scale-to-width/360?cb=20230320152142";
+        } else if (
+          pieceVal == "w-p1" ||
+          pieceVal == "w-p2" ||
+          pieceVal == "w-p3" ||
+          pieceVal == "w-p4" ||
+          pieceVal == "w-p5" ||
+          pieceVal == "w-p6" ||
+          pieceVal == "w-p7" ||
+          pieceVal == "w-p8"
+        ) {
+          document.getElementById(square).innerHTML =
+            "<img src = 'https://static.wikia.nocookie.net/chess/images/3/32/LightPawn.png/revision/latest/scale-to-width/360?cb=20230320151907'>";
         }
+      }
     </script>
-</body>
+  </body>
 </html>
