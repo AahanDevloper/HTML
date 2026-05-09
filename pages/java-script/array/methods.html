@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+    <!-- Bootstrap css link  -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container">
+        <span id="display" class="fw-bold"></span>
+    </div>
+    <button onclick="addStudent()" class="btn bg-primary text-white">Push</button>
+    <button onclick="removeStudent()" class="btn bg-secondary text-white">Pop</button>
+    <button onclick="frontRemove()" class="btn bg-primary text-white">Shift</button>
+    <button onclick="frontAdd()" class="btn bg-secondary text-white">Unshift</button>
+    <script>
+        let student;
+        let students = ["One", "Two", "Three", "Four"]
+        let display = students
+        document.getElementById("display").innerHTML=display
+        function addStudent(){
+            student = prompt("Enter name")
+            students.push(student)
+        document.getElementById("display").innerHTML=display
+        }
+        function removeStudent(){
+            students.pop()
+        document.getElementById("display").innerHTML=display
+        }
+        function frontAdd(){
+            student = prompt("Enter a number")
+            students.unshift(student)
+        document.getElementById("display").innerHTML=display
+        }
+        function frontRemove(){
+            students.shift()
+        document.getElementById("display").innerHTML=display
+        }
+    </script>
+</body>
+</html>

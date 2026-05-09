@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Numbers</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .buttons{
+        width: 100vw;
+        height: 45vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      h1 {
+        margin-bottom: 19px;
+        color: rgb(83, 83, 83);
+      }
+      button {
+        width: 15%;
+        height: 16%;
+        background-color: rgb(0, 170, 255);
+        border: 2px solid rgb(0, 170, 255);
+        border-radius: 9px;
+        color: white;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: rgb(39, 183, 255);
+      }
+      hr {
+        width: 90%;
+        margin-top: 25px;
+      }
+      .display {
+        width: 100%;
+        height: auto;
+      }
+      p {
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(83, 83, 83);
+        margin-left: 40px;
+        margin-right: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <h1>Random Numbers 1 to 100</h1>
+      <button onclick="add()">Push</button>
+      <button onclick="remove()">Pop</button>
+      <button onclick="removeFront()">Shift</button>
+      <button onclick="addFront()">Unshift</button>
+    </div>
+    <hr />
+    <div class="display">
+      <p id="num"></p>
+    </div>
+    <script>
+      let random;
+      let randomNumbers = [];
+      function add() {
+        random = Math.floor((Math.random() * 100) + 1);
+        randomNumbers.push(" " + random + " ");
+        document.getElementById("num").innerHTML = randomNumbers;
+      }
+      function remove() {
+        randomNumbers.pop();
+        document.getElementById("num").innerHTML = randomNumbers;
+      }
+      function addFront() {
+        random = Math.floor((Math.random() * 100) + 1);
+        randomNumbers.unshift(" " + random + " ");
+        document.getElementById("num").innerHTML = randomNumbers;
+      }
+      function removeFront() {
+        randomNumbers.shift();
+        document.getElementById("num").innerHTML = randomNumbers;
+      }
+    </script>
+  </body>
+</html>
