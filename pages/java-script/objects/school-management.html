@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let school = {
+        s1: {
+          name: "Yash",
+          marks: {
+            physics: 80,
+            chemistry: 90,
+            maths: 95,
+          },
+        },
+        s2: {
+          name: "Rahul",
+          marks: {
+            physics: 70,
+            chemistry: 75,
+            maths: 80,
+          },
+        },
+        s3: {
+          name: "Amit",
+          marks: {
+            physics: 95,
+            chemistry: 92,
+            maths: 98,
+          },
+        },
+      };
+      // Total marks of each student
+      for (let student of Object.values(school)) {
+        let totalScore = 0
+        console.log(student+"'s Total Score: ")
+        for (let [score] of Object.values(student.marks)) {
+            
+        }
+      }
+
+      // Average marks of each student
+      // Overall topper
+      // Overall class average
+      // Subject topper in Physics
+      // Subject topper in Maths
+    </script>
+  </body>
+</html>

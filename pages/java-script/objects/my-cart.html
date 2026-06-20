@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>My Cart</title>
+  </head>
+  <body>
+    <script>
+      cart = {
+        item1: { name: "Mouse", price: 500, qty: 2 },
+        item2: { name: "Keyboard", price: 1000, qty: 1 },
+        item3: { name: "Monitor", price: 8000, qty: 2 },
+        item4: { name: "Headphones", price: 2500, qty: 1 },
+        item5: { name: "USB Cable", price: 300, qty: 3 },
+        item6: { name: "Laptop Stand", price: 1200, qty: 1 },
+        item7: { name: "Webcam", price: 3500, qty: 1 },
+        item8: { name: "Hard Drive", price: 4500, qty: 1 },
+        item9: { name: "Pen Drive", price: 600, qty: 4 },
+        item10: { name: "HDMI Cable", price: 400, qty: 2 },
+        item11: { name: "Desk Mat", price: 800, qty: 1 },
+        item12: { name: "Speakers", price: 5000, qty: 1 }
+      };
+      let totalItems = Object.keys(cart).length;
+      let totalQuantity = 0;
+      let totalBill = 0;
+      let heighestPrice = 0;
+      let mostExpensive = "";
+      for (let items of Object.values(cart)) {
+        totalQuantity += items.qty;
+        totalBill += items.qty * items.price;
+        if (items.price > heighestPrice) {
+          heighestPrice = items.price;
+          mostExpensive = items.name;
+        }
+      }
+      console.log("Total items: "+totalItems);
+      console.log("Total quantity: "+totalQuantity);
+      console.log("Bill : "+totalBill);
+      console.log("Heighest price: "+heighestPrice);
+      console.log("Most Expensive Product: "+mostExpensive);
+      // let car = {
+      //   brand: "BMW",
+      //   model: "X1",
+      //   color: "Black",
+      //   year: 2025,
+      // };
+      // for(let key in car){
+      //   console.log(key)
+      // }
+
+      // let student = {
+      //   name: "Yash",
+      //   age: 15,
+      //   city: 15,
+      // };
+      // let a = "city" in student
+      // if(a){
+      //   alert("City exists")
+      // }
+      // else{
+      //   alert("city doesn't exist")
+      // }
+    </script>
+  </body>
+</html>

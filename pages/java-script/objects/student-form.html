@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Students' Form</title>
+    <style>
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+      }
+      .main-container {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(249, 249, 249);
+      }
+      .form{
+        width: 60%;
+        height: 97%;
+        border-radius: 25px;
+        background-color: rgb(255, 255, 255);
+      }
+      .heading{
+        width: 100%;
+        height: 10%;
+        background-color: rgb(0, 110, 255);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="form">
+          <div class="heading"><h1>Admission Form</h1></div>
+          <br>
+        <fieldset>
+          <legend>Personal Information</legend>
+
+          <label>Full name:</label>
+          <!-- input type text  -->
+          <input id="name" type="text" placeholder="Enter your full name" />
+          <br /><br />
+          <label>Email:</label>
+          <!-- input type email  -->
+          <input type="email" placeholder="Enter your Email ID" id="email" />
+          <br /><br />
+          <!-- input type age  -->
+          <label>Age</label>
+          <input type="number" id="age" />
+          <!-- blood group -->
+          <br /><br />
+          <label>Blood group:</label>
+          <select id="blood-group">
+            <option>Select your blood group</option>
+            <option>O+ve</option>
+            <option>A+ve</option>
+            <option>B+ve</option>
+            <option>AB+ve</option>
+            <option>O-ve</option>
+            <option>A-ve</option>
+            <option>B-ve</option>
+            <option>AB-ve</option>
+          </select>
+        </fieldset>
+        <br />
+        <!-- contact details -->
+        <fieldset>
+          <legend>Contact details</legend>
+          <label>Phone no.</label>
+          <!-- input type number  -->
+          <input type="number" placeholder="123-456-7890" id="phone" />
+          <br /><br />
+          <label>Address:</label>
+          <br /><br />
+          <!-- textarea -->
+          <textarea
+            placeholder="Enter your address here..."
+            id="address"
+          ></textarea>
+        </fieldset>
+        <br>
+        <fieldset>
+          <legend>Additional information</legend>
+          <label>Country:</label>
+          <select id="country">
+            <option>Select your country</option>
+            <option>India</option>
+            <option>UK</option>
+            <option>USA</option>
+            <option>Australia</option>
+          </select>
+          <br /><br>
+          <!-- input type date  -->
+          <label>Date of birth:</label>
+          <input type="date" id="dob" />
+          <br /><br />
+          <!-- input type range  -->
+          <label>Arrange your satisfaction level</label>
+          <input type="range" id="satisfaction" />
+        </fieldset>
+        <button onclick="send()">Submit Information</button>
+    </div>
+    <script>
+        let i = 0
+        let students = {
+            s1:{},
+            s2:{},
+            s3:{}
+        }
+        function send(){
+            i++
+            for(let info of Object.values(students)){
+                if(i<1){
+                info.name=document.getElementById("name").value
+                info.email=document.getElementById("email").value
+                info.age=document.getElementById("age").value
+                info.bloodGroup=document.getElementById("blood-group").value
+                info.phoneNo=document.getElementById("phone").value
+                info.address=document.getElementById("address").value
+                info.country=document.getElementById("country").value
+                info.dob=document.getElementById("dob").value
+                info.satisfaction=document.getElementById("satisfaction").value}
+                else{
+                    break;
+                }
+        }}
+        console.log(students.s1)
+    </script>
+  </body>
+</html>

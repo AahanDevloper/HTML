@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Objects</title>
+  </head>
+  <body>
+    <script>
+      let students = {
+        s1: {
+          name: "Yash",
+          marks: 90,
+        },
+        s2: {
+          name: "Rahul",
+          marks: 75,
+        },
+        s3: {
+          name: "Amit",
+          marks: 95,
+        },
+      };
+      let topMarks = -1
+      let topStudent = ""
+      for(student of Object.values(students)){
+        if(student.marks>topMarks){
+            topMarks = student.marks
+            topStudent = student.name
+        }
+      }
+      alert(topStudent+"\n"+topMarks)
+
+
+      // let car = {
+      //   brand: "BMW",
+      //   model: "X1",
+      //   color: "Black",
+      //   year: 2025,
+      // };
+      // for(let key in car){
+      //   console.log(key)
+      // }
+
+      // let student = {
+      //   name: "Yash",
+      //   age: 15,
+      //   city: 15,
+      // };
+      // let a = "city" in student
+      // if(a){
+      //   alert("City exists")
+      // }
+      // else{
+      //   alert("city doesn't exist")
+      // }
+    </script>
+  </body>
+</html>

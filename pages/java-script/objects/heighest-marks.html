@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Heighest Marks</title>
+  </head>
+  <body>
+    <script>
+      let topMarks = 0
+      let topStudent = "";
+      let students = {
+        yash: 85,
+        rahul: 92,
+        amit: 78,
+        rohit: 96,
+        karan: 88,
+      };
+      for(let [name,marks] of Object.entries(students)){
+        if(topMarks<marks){
+            topMarks = marks;
+            topStudent = name
+        }
+      }
+      console.log("Top Student: "+topStudent)
+      console.log("Top Marks: "+topMarks)
+    </script>
+  </body>
+</html>
